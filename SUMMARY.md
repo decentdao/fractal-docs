@@ -5,8 +5,6 @@
 ## Overview
 
 * [What is Fractal?](overview/what-is-fractal.md)
-* [Why does it exist?](overview/why-does-it-exist.md)
-* [Who is Fractal for?](overview/who-is-fractal-for.md)
 * [What is Fractal made up of?](overview/what-is-fractal-made-up-of.md)
 * [Getting involved](overview/getting-involved.md)
 * [FAQ](overview/faq.md)
