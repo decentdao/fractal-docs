@@ -1,3 +1,7 @@
+---
+layout: landing
+---
+
 # Introduction
 
-Fractal let's you do more with DAO's. This documentation covers the overarching structure of Fractal, including the Fractal Framework and the Fractal Platform, defines the technical details underlying Fractals, and provides step-by-step guides for developers and user looking to incorporate Fractal into their Web3 applications.
+Fractal let's you do more with DAO's. This documentation provides an overview of the Fractal platform and describes how to use it to create and interact with DAOs.

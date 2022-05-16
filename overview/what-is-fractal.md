@@ -3,7 +3,7 @@
 Fractal is a [framework](what-is-fractal.md#fractal-framework) and a [platform](what-is-fractal.md#undefined) for launching, funding, governing, and scaling DAOs. Fractal provides the following benefits for Web3 creators:
 
 * A framework for structuring any organization (a Fractal) as a group of independent governing bodies (Nodes).
-* Modules for adding functionality to and defining governance models for Nodes, and a generic Module interface so that anyone can build new Modules.
+* Modules for adding functionality to and defining governance models for Nodes and a generic Module interface so that anyone can build new Modules.
 * A shared Node architecture that enables any Module to service any Node for any Fractal or even every Node for every Fractal.
 
 These features create a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations.
@@ -26,9 +26,8 @@ By building an organization from Nodes and establishing governance models using 
 
 The Fractal Platform provides the following functionality to make it easy for DAO creators and members to administer and participate in the operations of a DAO:
 
-* Formation - Creating a DAO and defining the governance rules.
-* Participation - Supporting and incentivizing member participation.
-* User Experience - Front-end applications for participating in and managing the day-to-day activities of a DAO.
+* Formation - Creating a DAO and defining the governance rules
+* Participation - Supporting and incentivizing member participation
+* User Experience - Front-end applications for participating in and managing the day-to-day activities of a DAO
 
 By providing tools for creating and managing DAOs, the Fractal Platform empowers the next generation of visionaries to launch transformative global movements, businesses, and social clubs harnessing the power of decentralized technology.
-

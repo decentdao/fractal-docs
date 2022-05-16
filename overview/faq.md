@@ -18,9 +18,9 @@ Fractal will start as an open-source framework. Then, the Fractal DAO and govern
 
 <details>
 
-<summary>What is a node?</summary>
+<summary>What is a Node?</summary>
 
-Within Fractal, a new instance of a Fractal can be created. This instance is called a _**node**_. A node can create another node with some link between the two. All nodes are created equal. Each node controls a set of modules and the ability to create a new node—i.e., the ability to _**fractalize.**_
+Within Fractal, a new instance of a Fractal can be created. This instance is called a _**Node**_. A Node can create another Node with some link between the two. All Nodes are created equal. Each Node controls a set of modules and the ability to create a new Node—i.e., the ability to _**fractalize.**_
 
 </details>
 
@@ -98,8 +98,8 @@ Fractal was launched through the Decent DAO.
 
 Fractal uses the following tech stacks for different features:
 
-* **Smart Contracts and Test Suite:** [Solidity](https://docs.soliditylang.org/en/v0.8.13/), [OpenZepplin](https://www.openzeppelin.com), [Hardhat](https://hardhat.org), [Ethers](https://docs.ethers.io/v5/)
-* **Web app:** [TypeScript](https://www.typescriptlang.org), [React](https://reactjs.org), [Ethers](https://docs.ethers.io/v5/)
+* **Smart Contracts and Test Suite:** [Solidity](https://docs.soliditylang.org/en/v0.8.13/), [OpenZepplin](https://www.openzeppelin.com/), [Hardhat](https://hardhat.org/), [Ethers](https://docs.ethers.io/v5/)
+* **Web app:** [TypeScript](https://www.typescriptlang.org/), [React](https://reactjs.org/), [Ethers](https://docs.ethers.io/v5/)
 
 </details>
 
@@ -115,7 +115,7 @@ The Fractal MVP includes everything you need to launch and manange a typical, ba
 * Smart contracts that implement the following features of a DAO:&#x20;
   * A voting token
   * Governance tools for creating proposals, submitting votes, and executing decisions
-  * Treasury tools for fundraising and vesting.
+  * Treasury tools for fundraising and vesting
 * Fractal Pad - An easy way to launch an Initial Dex Offering (IDO) to raise capital for your Fractal DAOs
 
 </details>
@@ -127,10 +127,10 @@ The Fractal MVP includes everything you need to launch and manange a typical, ba
 Fractal supports our community in several unique ways that will give us a competetive advantage in the DAO-platform ecosystem:
 
 * Fractal Pad - We provide tools and support to help newly formed DAOs with their IDO/IGO.
-* Support - We help DAOs with services like payroll, bookkeeping, taxes, voting, bounty and incentive programs to improve community participation.
+* Support - We help DAOs with services like payroll, bookkeeping, taxes, voting, bounty, and incentive programs to improve community participation.
 * Community Engagement - The organizational structures supported by Fractal enhance community engagement. Getting members to actively engage with each other is key to the health of any DAO. Members need to feel they have enough of a voice to keep contributing and participating. Fractal offers a more democratic governance model for voting to ensure that every member feels like they have a stake and a voice in the organization.
-* User Experience - We provide an easy to user user interface for DAO managers and members. Our dashboard gives managers a quick view of all the contributors and what they're working on.
-* Contributor Compensation - We provide tools to help DAOs compensate their contributors and track expenses. Many current DAOs are still using credit cards to pay contributors. It is difficult to transfer those payments to Gnosis Safe so having tools to help pay contributors and track expenses will be very valuable for communities as they choose which platform to launch and manage their DAO.
+* User Experience - We provide an easy-to-use user interface for DAO managers and members. Our dashboard gives managers a quick view of all the contributors and what they're working on.
+* Contributor Compensation - We provide tools to help DAOs compensate their contributors and track expenses. Many current DAOs are still using credit cards to pay contributors. It is difficult to transfer those payments to Gnosis Safe, so having tools to help pay contributors and track expenses will be very valuable for communities as they choose which platform to launch and manage their DAO.
 * Flexibility - The concept of the Minimum Viable DAO and Fractal's Node-base framework make it possible to create endless organization structures. As more DAOs are created, different DAOs will have specific nuances and needs for servicing their communities, which Fractal is uniquely positioned to support.
 
 </details>
