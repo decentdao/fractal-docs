@@ -1,17 +1,17 @@
 # Table of contents
 
-* [Fractal](README.md)
-* [FAQ](faq.md)
+* [Welcome to Fractal](README.md)
+* [FAQ](overview/faq.md)
 
 ## Use
 
-* [Open the Fractal App](use/open-the-fractal-app.md)
-* [Connect Your Wallet](use/connect-your-wallet.md)
-* [Creating a Fractal](use/creating-a-fractal.md)
-* [Find a Fractal](use/find-a-fractal.md)
-* [Interacting with DAOs](use/interacting-with-a-dao/README.md)
-  * [Delegate your voting power](use/interacting-with-a-dao/delegate-your-voting-power.md)
-  * [Create a Proposal](use/interacting-with-a-dao/create-a-proposal.md)
+* [Open the Fractal App](getting-started/open-the-fractal-app.md)
+* [Connect Your Wallet](getting-started/connect-your-wallet.md)
+* [Creating a Fractal](getting-started/creating-a-fractal.md)
+* [Find a Fractal](getting-started/find-a-fractal.md)
+* [Interacting with DAOs](getting-started/interacting-with-a-dao/README.md)
+  * [Delegate your voting power](getting-started/interacting-with-a-dao/delegate-your-voting-power.md)
+  * [Create a Proposal](getting-started/interacting-with-a-dao/create-a-proposal.md)
 
 ## Build
 
