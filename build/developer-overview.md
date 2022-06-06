@@ -6,8 +6,8 @@ description: An overview of how Fractal works
 
 The Fractal Protocol supports creating and managing DAOs by deploying contracts that establish a minimum viable DAO that can be extended using modules:
 
-* Minimum viable DAO (MVD) - At a minimum a DAO must be able to execute code on the blockchain and restrict access to that execution. To add flexibility, a core Fractal DAO can also be extended using modules and upgraded. The MVD is defined by the `fractal-core` contracts.
-* Modules - Modules add functionality or extend the capability of a Fractal DAO. For example, Fractal provides, governance, treasury, and voting modules. Modules implement the `ModuleBase` interface.
+* Minimum viable DAO (MVD) - At a minimum a DAO must be able to execute code on the blockchain and restrict access to that execution. To add flexibility, a core Fractal DAO can also be extended using modules and upgraded. The MVD is defined by the `fractal-core` contracts. See the [Fractal Core reference](reference/fractal-core.md) material for details.
+* Modules - Modules add functionality or extend the capability of a Fractal DAO. For example, Fractal provides, governance, treasury, and voting modules. Modules implement the `ModuleBase` interface. See the [Modules reference](reference/modules.md) material for details.
 
 Fractal's architecture targets the following design goals:
 

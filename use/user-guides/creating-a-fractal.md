@@ -12,15 +12,15 @@ Creating a Fractal adds a smart contract for a basic DAO at a new address on the
 
 Before you get started, open the Fractal app and connect to your wallet:
 
-![](../.gitbook/assets/fractal-app-landing-page.jpg)
+![](../../.gitbook/assets/fractal-app-landing-page.jpg)
 
 Click **Create Fractal**. The Essentials screen opens:
 
-![](../.gitbook/assets/create-fractal-configure-new-fractal.jpg)
+![](../../.gitbook/assets/create-fractal-configure-new-fractal.jpg)
 
 Enter a name for your Fractal DAO and click **Next**. The Mint a New Token screen opens:
 
-![](../.gitbook/assets/create-fractal-mint-token.jpg)
+![](../../.gitbook/assets/create-fractal-mint-token.jpg)
 
 This screen allows you to configure the governance token that will be used to allocate voting power for your DAO. Fill in values for the following fields:
 
@@ -39,7 +39,7 @@ The governance tokens are sent to the target addresses, but they cannot be used 
 
 When you have finished configuring your governance tokens, click **Next**. The Governance Setup screen opens:
 
-![](../.gitbook/assets/create-fractal-governance-setup.jpg)
+![](../../.gitbook/assets/create-fractal-governance-setup.jpg)
 
 The Governance Setup screen lets you define who can create proposals, the terms of voting on prposals, and how proposals will be executed if they are accepted. Fill in values for the following fields to configure your DAO's governance process:
 
@@ -53,7 +53,7 @@ These values can be edited using proposals in the Fractal Dashboard.
 
 Once you have configured your governance model, click **Deploy**. The Fractal App opens your connected wallet so that you can approve the transaction:
 
-![](../.gitbook/assets/metamask-confirm-trans.jpg)
+![](../../.gitbook/assets/metamask-confirm-trans.jpg)
 
 The transaction amount covers the gas fees required to get the transaction mined on chain. Review the transaction and click **Confirm**. MetaMask sends the transaction and the Fractal App deploys your DAO. MetaMask displays a notification when the transaction is completed. The Fractal app opens the DAO dashboard for your new DAO.
 
@@ -61,4 +61,4 @@ The transaction amount covers the gas fees required to get the transaction mined
 Grab the address of your new Fractal from the URL in your browser's address bar.
 {% endhint %}
 
-![](../.gitbook/assets/create-fractal-complete.jpg)
+![](../../.gitbook/assets/create-fractal-complete.jpg)

@@ -16,17 +16,17 @@ You can delegate your vote to a wallet that you own, or to any wallet owned by a
 
 Before delegating, launch the Fractal web app, connect your wallet, and find the Fractal that you want to interact with:
 
-![](../../.gitbook/assets/find-a-fractal-dashboard.jpg)
+![](../../../.gitbook/assets/find-a-fractal-dashboard.jpg)
 
 To delegate your voting power, click **Delegate** on the Fractal dashboard. The Delegate Vote screen opens:
 
-![](../../.gitbook/assets/delegate-vote.jpg)
+![](../../../.gitbook/assets/delegate-vote.jpg)
 
 Enter the address of the wallet or contract that will submit votes on behalf of your voting power. If you want to delegate your voting power to the wallet that is currently connected to the Fractal app, click **Self**, and it will automatically fill in the address.
 
 Once you have entered a wallet address, click **Delegate**. Your connected wallet opens and asks you to approve the transaction:
 
-![](../../.gitbook/assets/proposal-metamask-confirm-transaction.jpg)
+![](../../../.gitbook/assets/proposal-metamask-confirm-transaction.jpg)
 
 
 

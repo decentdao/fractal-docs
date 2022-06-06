@@ -1,11 +1,16 @@
-# Fractal
+# Welcome to Fractal
 
-Fractal let's you do more with DAO's. The Fractal Platform includes a web app and developer resources to support everyone from DAO members to Web3 developers:
+The components of the Fractal Platform support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. We provide tools to support everyone from DAO members to Web3 developers:
 
-* Web app - DAO participants can create and launch DAOs, mint governance tokens, and submit and vote on proposals.
-* Developer resources - Web3 builders can use our open source code and NPM package to launch and extend the capabilities of DAOs and build front-end user experiences for interacting with DAOs.
+* Developers - Build modules to extend the functionality of DAOs and develop new front end user experiences.
+* DAO Organizers - Create on chain DAOs and establish their governance models.
+* DAO Participants - Interact with DAOs, depending on the structure created by the organizers.
+* DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
 
-The components of the Fractal Platform support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. Fractal empowers the next generation of visionaries to launch transformative global movements, businesses, and social clubs harnessing the power of decentralized technology.
+This site includes the following documentation:
+
+* [Build ](build/developer-overview.md)- An overview of the Fractal Protocol, developer guides, and contract references.
+* [Use ](broken-reference)- Guides for using the Fractal web app to deploy, manage, and participate in DAOs.
 
 ## Why Fractal?
 
@@ -19,27 +24,16 @@ The Fractal Framework has several benefits over traditional DAO implementations:
 * Extensible - Modules that extend the capabilities of Nodes and a generic Module interface so that anyone can build new Modules.
 * Interoperable and Upgradable - A shared Node architecture that enables any Module to service any Node for any Fractal or even every Node for every Fractal.
 
-### Support
+### Features
 
 To ensure that DAO participants and Web3 developers can take full advantage of Fractal's capabilities, we provide the following resources:
 
-* NPM package - Adds the Fractal base contracts to your project so that you can use them to launch DAOs directly or as the backend for your UI.
+* NPM package - For module developers who want to extend the functionality of Fractal DAOs, the NPM package adds the MVD functionality to your project.
 * Module interfaces - Interface contracts that define and enforce the Fractal architecture, ensuring that all Nodes and Modules work together seamlessly.
-* Plugins / recipes - Standard modules, like voting and governance, that you can use directly or extend to meet your needs.
+* Modules - DAO features, like voting and governance, that you can use directly or extend to meet your needs.
+* Plugins / recipes - Code for adding features of the Fractal platform to your own user interface that you can use directly or extend to meet your needs.
 
-## Who is Fractal for?
-
-Fractal is meant for anyone working or building in the Web3 space who wants to create or use DAOs:
-
-* DAO participants - Create, launch, manage, and interact with DAOs.
-* Web3 developers - Extend the capabilities of Fractal DAOs and enhance the front-end user experience of your DAOs.
-* DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
-
-## What is Fractal?
-
-Fractal is a [framework](./#fractal-framework) and a [platform](./#undefined) for launching, funding, governing, and scaling DAOs.
-
-### Fractal Framework
+## The Fractal Framework
 
 The Fractal Framework is built around the idea of a minimum viable DAO (MVD) that can be extended by modules. Conceptually, it defines DAOs in terms of Fractals, Nodes, and Modules:
 
@@ -49,12 +43,3 @@ The Fractal Framework is built around the idea of a minimum viable DAO (MVD) tha
 
 By building an organization from Nodes and establishing governance models using Modules, Web3 builders can create on-chain organizations that serve any purpose they can imagine. The Fractal Framework is infinitely flexible and extensible.
 
-### Fractal Platform
-
-The Fractal Platform provides tools that make it easy for DAO creators and members to administer and participate in the operations of a DAO:
-
-* Formation - Creating a DAO and defining the governance rules.
-* Participation - Supporting and incentivizing member participation.
-* User Experience - Front-end applications for participating in and managing the day-to-day activities of a DAO.
-
-Fractal's tools for creating and managing DAOs, provide straightforward ways for creators to harness the power of DAOs.

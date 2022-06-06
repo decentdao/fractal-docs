@@ -16,11 +16,11 @@ Before creating a proposal, launch the Fractal web app, connect your wallet, and
 
 On the Fractal dashboard, click **Create Proposal**. The Essentials screen opens:
 
-![](../../.gitbook/assets/proposal-name.jpg)
+![](../../../.gitbook/assets/proposal-name.jpg)
 
 Enter a description for the proposal. Other stakeholders in the Fractal will use the name to understand the purpose of the proposal. Click **Next: Add Transactions** to open the Transaction screen:
 
-![](../../.gitbook/assets/proposal-transaction.jpg)
+![](../../../.gitbook/assets/proposal-transaction.jpg)
 
 Enter the following information in the Transaction form:
 
@@ -33,8 +33,8 @@ If the proposal involves more than one transaction, click **Add Another Transact
 
 Once you have entered all of the transaction information, click **Create Proposal**. Metamask opens and prompts you to confirm the transaction. The transaction covers the gas fees for creating the proposal:
 
-![](../../.gitbook/assets/metamask-confirm-trans.jpg)
+![](../../../.gitbook/assets/metamask-confirm-trans.jpg)
 
 Review the transaction and click **Confirm**. MetaMask closes and the Fractal app creates the Proposal. MetaMask pops up a Confirmed Transaction notification when the transaction is complete. Your proposal displays at the top of the Proposals list.
 
-![](../../.gitbook/assets/proposal-complete.jpg)
+![](../../../.gitbook/assets/proposal-complete.jpg)

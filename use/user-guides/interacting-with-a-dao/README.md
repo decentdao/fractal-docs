@@ -17,5 +17,5 @@ The Fractal platform currently adds the Governance module to every new DAO that 
 
 Go to fractalframework.xyz or app.dev.fractalframework.xyz. The web app landing screen displays:
 
-![](../../.gitbook/assets/fractal-app-landing-page.jpg)
+![](../../../.gitbook/assets/fractal-app-landing-page.jpg)
 
