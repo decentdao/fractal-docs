@@ -1,3 +1,9 @@
+---
+description: >-
+  Disclaimer: As of 06/06/2022, app.fractalframework.xyz is in alpha, on
+  mainnet, and unaudited. Use at your own risk.
+---
+
 # Welcome to Fractal
 
 The components of the Fractal Platform support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. We provide tools to support everyone from DAO members to Web3 developers:
