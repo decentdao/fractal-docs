@@ -1,7 +1,3 @@
----
-description: An overview of how Fractal works
----
-
 # Developer Overview
 
 The Fractal Protocol supports creating and managing DAOs by deploying contracts that establish a minimum viable DAO that can be extended using modules:
