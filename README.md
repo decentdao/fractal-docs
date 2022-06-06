@@ -1,7 +1,7 @@
 ---
 description: >-
-  Disclaimer: As of 06/06/2022, app.fractalframework.xyz is in alpha, on
-  mainnet, and unaudited. Use at your own risk.
+  Disclaimer: As of 06/06/2022, app.fractalframework.xyz is in alpha on mainnet
+  and unaudited. Use at your own risk.
 ---
 
 # Welcome to Fractal
