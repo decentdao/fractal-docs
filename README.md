@@ -6,7 +6,7 @@ description: >-
 
 # Welcome to Fractal
 
-The components of the Fractal Platform support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. We provide tools to support everyone from DAO members to Web3 developers:
+The components of the Fractal Framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. Fractal provides tools to support everyone from DAO members to Web3 developers:
 
 * Developers - Build modules to extend the functionality of DAOs and develop new front end user experiences.
 * DAO Organizers - Create on chain DAOs and establish their governance models.
@@ -27,14 +27,14 @@ Fractal fills the need for better DAO tooling and social coordination across the
 The Fractal Framework has several benefits over traditional DAO implementations:
 
 * Flexible - A framework for structuring any organization (a Fractal) as a group of independent governing bodies (Nodes).
-* Extensible - Modules that extend the capabilities of Nodes and a generic Module interface so that anyone can build new Modules.
+* Extensible - Modules extend the capabilities of Nodes by implementing specific business requirements that a DAO may have, such as treasury management and governance.
 * Interoperable and Upgradable - A shared Node architecture that enables any Module to service any Node for any Fractal or even every Node for every Fractal.
 
 ### Features
 
-To ensure that DAO participants and Web3 developers can take full advantage of Fractal's capabilities, we provide the following resources:
+To ensure that DAO participants and Web3 developers can take full advantage of Fractal's capabilities, the following resources exist:
 
-* NPM package - For module developers who want to extend the functionality of Fractal DAOs, the NPM package adds the MVD functionality to your project.
+* NPM package - For module developers who want to extend the functionality of Fractal DAOs, the NPM package adds the MVD integration to your project.
 * Module interfaces - Interface contracts that define and enforce the Fractal architecture, ensuring that all Nodes and Modules work together seamlessly.
 * Modules - DAO features, like voting and governance, that you can use directly or extend to meet your needs.
 * Plugins / recipes - Code for adding features of the Fractal platform to your own user interface that you can use directly or extend to meet your needs.
