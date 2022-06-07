@@ -37,7 +37,7 @@ To ensure that DAO participants and Web3 developers can take full advantage of F
 * NPM package - For module developers who want to extend the functionality of Fractal DAOs, the NPM package adds the MVD integration to your project.
 * Module interfaces - Interface contracts that define and enforce the Fractal architecture, ensuring that all Nodes and Modules work together seamlessly.
 * Modules - DAO features, like voting and governance, that you can use directly or extend to meet your needs.
-* Plugins / recipes - Code for adding features of the Fractal platform to your own user interface that you can use directly or extend to meet your needs.
+* Plugins - React code which makes the crafting transactions a breeze for the user. Regardless if they are connecting with the community by interacting with fractal modules or unlocking their inner Degen with Luna options, its just one click away.
 
 ## The Fractal Framework
 

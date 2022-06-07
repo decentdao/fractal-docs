@@ -12,9 +12,9 @@ The Fractal DAO structure is based on of the OpenZeppelin framework and contract
 
 The `fractal-contracts` repository includes the following contracts in the `/contracts` directory:
 
-* `DAO.sol` - Initializes a new DAO that can execute functions on other contracts and can check whether imported interfaces are supported.
-* `AccessControlDAO.sol` - Creates and modifies roles and grants or revokes roles from target addresses.
-* `DAOFactory.sol` - A factory contract for deploying DAOs that include the access control contract.
-* `MetaFactory.sol` - A factory contract for deploying DAOs along with the access control contract any other supported modules.
-* `ModuleBase.sol` - Defines the functions that support extending the capabilities of a Fractal DAO using modules: initialize a module contract, check authorizations, call functions on different contracts, include interfaces, and authorize upgrades.
+* DAO.sol - Initializes a new DAO that can execute functions on other contracts and can check whether imported interfaces are supported.
+* AccessControlDAO.sol - Creates and modifies roles and grants or revokes roles from target addresses.
+* DAOFactory.sol - A factory contract for deploying DAOs that include the access control contract.
+* MetaFactory.sol - A factory contract for deploying DAOs along with the access control contract any other supported modules.
+* ModuleBase.sol - Defines the functions that support extending the capabilities of a Fractal DAO using modules: initialize a module contract, check authorizations, call functions on different contracts, include interfaces, and authorize upgrades.
 * `/interfaces` - Interface contracts that define the signature functions of the Fractal core contracts described above.

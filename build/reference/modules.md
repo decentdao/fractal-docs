@@ -4,17 +4,17 @@ Modules extend the functionality of the basic DAO. Fractal modules must inherit 
 
 Fractal currently provides the following modules:
 
-* `fractal-module-token` - The Token Module mints and distributes vote tokens based on the ERC20 Votes OpenZ contracts.
-* `fractal-module-treasury` - The Treasury Module deploys deposits and withdraws tokens from addresses.
-* `fractal-module-governor` - The Governor Module supports creating proposals, voting on proposals, and executing transactions on an accompanying DAO as a result of the vote.
+* fractal-module-token - The Token Module mints and distributes vote tokens based on the ERC20 Votes OpenZ contracts.
+* fractal-module-treasury - The Treasury Module deploys deposits and withdraws tokens from addresses.
+* fractal-module-governor - The Governor Module supports creating proposals, voting on proposals, and executing transactions on an accompanying DAO as a result of the vote.
 
 ### Token Module
 
 The Token Module adds functionality to a basic DAO for minting and distributing vote tokens. The Token Module includes the following contracts:
 
-* `VotesToken.sol` - Defines the constructor for a vote token which requires a name and symbol, and must be one of the supported token types.
-* `VotesTokenWithSupply.sol` - Implements the VotesToken contract to mint vote tokens and allocates the tokens to an array of addresses.
-* `TokenFactory.sol` - Deploys a Token Module.
+* VotesToken.sol - Defines the constructor for a vote token which requires a name and symbol, and must be one of the supported token types.
+* VotesTokenWithSupply.sol - Implements the VotesToken contract to mint vote tokens and allocates the tokens to an array of addresses.
+* TokenFactory.sol - Deploys a Token Module.
 
 ### Treasury Module
 
@@ -22,12 +22,12 @@ The Treasury Module manages depositing and withdrawing ERC20, ERC721, and ERC115
 
 The Treasury Module includes the following contracts:
 
-* `TreasuryModule.sol` - Defines functions to initialize the contract with a set of authorization parameters and withdraw and deposit supported tokens to and from addresses.
-* `TreasuryModuleFactory.sol` - Deploys a Treasury Module.
+* TreasuryModule.sol - Defines functions to initialize the contract with a set of authorization parameters and withdraw and deposit supported tokens to and from addresses.
+* TreasuryModuleFactory.sol - Deploys a Treasury Module.
 
 ### Governor Module
 
 The Governor Module adds proposal and voting features to a Fractal DAO. The Governor Module includes the following contracts:
 
-* `GovernorModule.sol` - Defines functions for creating proposals, voting on proposals, and calling executing the related functions for the DAO.
-* `GovernorModuleFactory.sol` - Deploys a Governor Module.
+* GovernorModule.sol - Defines functions for creating proposals, voting on proposals, and calling executing the related functions for the DAO.
+* GovernorModileFactory.sol - Deploys a Governor Module.
