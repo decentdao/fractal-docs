@@ -20,7 +20,7 @@ Fractal will start as an open-source framework. Then, the Fractal DAO and govern
 
 <summary>What is a Node?</summary>
 
-Within Fractal, a new instance of a Fractal can be created. This instance is called a _**Node**_. A Node can create another Node with some link between the two. All Nodes are created equal. Each Node controls a set of modules and the ability to create a new Node—i.e., the ability to _**fractalize.**_
+Within Fractal, a new instance of a Fractal can be created. This instance is called a _**Node**_. A Node can create another Node with a thin link between the two. All Nodes are created equal. Each Node controls a set of modules and the ability to create a new Node—i.e., the ability to _**fractalize.**_
 
 </details>
 
