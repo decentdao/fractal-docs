@@ -9,7 +9,7 @@ description: >-
 The components of the Fractal Framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. Fractal provides tools to support everyone from DAO members to Web3 developers:
 
 * Developers - Build modules to extend the functionality of DAOs and develop new front end user experiences.
-* DAO Organizers - Create on chain DAOs and establish their governance models.
+* DAO Organizers - Create on-chain DAOs and establish their governance models.
 * DAO Participants - Interact with DAOs, depending on the structure created by the organizers.
 * DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
 
