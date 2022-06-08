@@ -15,7 +15,7 @@ The components of the Fractal Framework support the creation of a composable ope
 
 This site includes the following documentation:
 
-* [Build ](the-core-framwork/developer-overview.md)- An overview of the Fractal Protocol, developer guides, and contract references.
+* [Build ](the-core-framework/developer-overview.md)- An overview of the Fractal Protocol, developer guides, and contract references.
 * [Use ](broken-reference)- Guides for using the Fractal web app to deploy, manage, and participate in DAOs.
 
 ## Why Fractal?

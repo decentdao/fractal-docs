@@ -2,25 +2,25 @@
 
 * [Welcome to Fractal](README.md)
 
-## The Core Framwork
+## The Core Framework
 
-* [Developer Overview](the-core-framwork/developer-overview.md)
-* [Reference](the-core-framwork/reference/README.md)
-  * [Fractal Core](the-core-framwork/reference/fractal-core/README.md)
-    * [AccessControlDAO.md](the-core-framwork/reference/fractal-core/accesscontroldao.md.md)
-    * [DAO.md](the-core-framwork/reference/fractal-core/dao.md.md)
-    * [DAOFactory.md](the-core-framwork/reference/fractal-core/daofactory.md.md)
-    * [ModuleBase.md](the-core-framwork/reference/fractal-core/modulebase.md.md)
-    * [ModuleFactoryBase.md](the-core-framwork/reference/fractal-core/modulefactorybase.md.md)
-  * [Modules](the-core-framwork/reference/modules/README.md)
-    * [Governor Docs](the-core-framwork/reference/modules/governor-docs/README.md)
-      * [GovernorFactory.md](the-core-framwork/reference/modules/governor-docs/governorfactory.md.md)
-      * [GovernorModule.md](the-core-framwork/reference/modules/governor-docs/governormodule.md.md)
-      * [GovTimelockUpgradeable.md](the-core-framwork/reference/modules/governor-docs/govtimelockupgradeable.md.md)
-      * [TimelockUpgradeable.md](the-core-framwork/reference/modules/governor-docs/timelockupgradeable.md.md)
-    * [Treasury Docs](the-core-framwork/reference/modules/treasury-docs/README.md)
-      * [TreasuryModule.md](the-core-framwork/reference/modules/treasury-docs/treasurymodule.md.md)
-      * [TreasuryModuleFactory.md](the-core-framwork/reference/modules/treasury-docs/treasurymodulefactory.md.md)
+* [Developer Overview](the-core-framework/developer-overview.md)
+* [Reference](the-core-framework/reference/README.md)
+  * [Fractal Core](the-core-framework/reference/fractal-core/README.md)
+    * [AccessControlDAO.md](the-core-framework/reference/fractal-core/accesscontroldao.md.md)
+    * [DAO.md](the-core-framework/reference/fractal-core/dao.md.md)
+    * [DAOFactory.md](the-core-framework/reference/fractal-core/daofactory.md.md)
+    * [ModuleBase.md](the-core-framework/reference/fractal-core/modulebase.md.md)
+    * [ModuleFactoryBase.md](the-core-framework/reference/fractal-core/modulefactorybase.md.md)
+  * [Modules](the-core-framework/reference/modules/README.md)
+    * [Governor Docs](the-core-framework/reference/modules/governor-docs/README.md)
+      * [GovernorFactory.md](the-core-framework/reference/modules/governor-docs/governorfactory.md.md)
+      * [GovernorModule.md](the-core-framework/reference/modules/governor-docs/governormodule.md.md)
+      * [GovTimelockUpgradeable.md](the-core-framework/reference/modules/governor-docs/govtimelockupgradeable.md.md)
+      * [TimelockUpgradeable.md](the-core-framework/reference/modules/governor-docs/timelockupgradeable.md.md)
+    * [Treasury Docs](the-core-framework/reference/modules/treasury-docs/README.md)
+      * [TreasuryModule.md](the-core-framework/reference/modules/treasury-docs/treasurymodule.md.md)
+      * [TreasuryModuleFactory.md](the-core-framework/reference/modules/treasury-docs/treasurymodulefactory.md.md)
 
 ## Use
 
