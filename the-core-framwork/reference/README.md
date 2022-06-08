@@ -8,5 +8,5 @@ Fractal's software supports creating modular DAO contracts on the Ethereum block
 
 In order to support the basic functions of the DAO and introduce modularity, Fractal separates it's code into two categories:
 
-* [Core](fractal-core.md) - The portions of the software that apply to every DAO: function execution, access control, extensibility.
-* [Modules](modules.md) - Contracts that add functionality to the DAO. Currently Fractal offers governance and treasury modules.
+* [Core](fractal-core/) - The portions of the software that apply to every DAO: function execution, access control, extensibility.
+* [Modules](modules/) - Contracts that add functionality to the DAO. Currently Fractal offers governance and treasury modules.
