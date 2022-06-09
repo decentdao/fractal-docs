@@ -6,16 +6,16 @@ description: >-
 
 # Welcome to Fractal
 
-The components of the Fractal Framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. Fractal provides tools to support everyone from DAO members to Web3 developers:
+The components of the Fractal framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. Fractal provides tools to support everyone from DAO members to Web3 developers:
 
-* Developers - Build modules to extend the functionality of DAOs and develop new front end user experiences.
+* Developers - Build modules to extend the functionality of DAOs and develop new front-end user experiences.
 * DAO Organizers - Create on-chain DAOs and establish their governance models.
 * DAO Participants - Interact with DAOs, depending on the structure created by the organizers.
 * DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
 
 This site includes the following documentation:
 
-* [Build ](the-core-framework/developer-overview.md)- An overview of the Fractal Protocol, developer guides, and contract references.
+* [Build ](the-core-framework/developer-overview.md)- An overview of the Fractal protocol, developer guides, and contract references.
 * [Use ](broken-reference)- Guides for using the Fractal web app to deploy, manage, and participate in DAOs.
 
 ## Why Fractal?
@@ -24,11 +24,11 @@ Fractal fills the need for better DAO tooling and social coordination across the
 
 ### Benefits
 
-The Fractal Framework has several benefits over traditional DAO implementations:
+The Fractal framework has several benefits over traditional DAO implementations:
 
-* Flexible - A framework for structuring any organization (a Fractal) as a group of independent governing bodies (Nodes).
-* Extensible - Modules extend the capabilities of Nodes by implementing specific business requirements that a DAO may have, such as treasury management and governance.
-* Interoperable and Upgradable - A shared Node architecture that enables any Module to service any Node for any Fractal or even every Node for every Fractal.
+* Flexible - A framework for structuring any organization (a fractal) as a group of independent governing bodies (nodes).
+* Extensible - Modules extend the capabilities of nodes by implementing specific business requirements that a DAO may have, such as treasury management and governance.
+* Interoperable and upgradable - A shared Node architecture that enables any Module to service any Node for any Fractal or even every Node for every Fractal.
 
 ### Features
 
