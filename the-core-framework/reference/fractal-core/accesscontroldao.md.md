@@ -4,7 +4,7 @@
 
 > Access Control
 
-Use this contract for managing DAO role based permissions
+Use this contract for managing DAO role-based permissions
 
 ### Methods
 
@@ -16,9 +16,9 @@ function DAO_ROLE() external view returns (string)
 
 **Returns**
 
-| Name | Type   | Description                   |
-| ---- | ------ | ----------------------------- |
-| \_0  | string | string The string "DAO\_ROLE" |
+| Name | Type   | Description            |
+| ---- | ------ | ---------------------- |
+| \_0  | string | The string "DAO\_ROLE" |
 
 #### OPEN\_ROLE
 
@@ -64,11 +64,11 @@ Authorizes roles to execute the specified actions
 
 **Parameters**
 
-| Name          | Type         | Description                                                         |
-| ------------- | ------------ | ------------------------------------------------------------------- |
-| targets       | address\[]   | The contract addresses that the action functions are implemented on |
-| functionDescs | string\[]    | The function descriptions used to define the actions                |
-| roles         | string\[]\[] | Roles being granted permission for an action                        |
+| Name          | Type         | Description                                                          |
+| ------------- | ------------ | -------------------------------------------------------------------- |
+| targets       | address\[]   | The contract addresses on which the action functions are implemented |
+| functionDescs | string\[]    | The function descriptions used to define the actions                 |
+| roles         | string\[]\[] | Roles being granted permission for an action                         |
 
 #### getActionRoles
 
@@ -76,7 +76,7 @@ Authorizes roles to execute the specified actions
 function getActionRoles(address target, string functionDesc) external view returns (string[] roles)
 ```
 
-Returns the roles autorized to execute the specified action
+Returns the roles authorized to execute the specified action
 
 **Parameters**
 
@@ -101,15 +101,15 @@ Returns the role that is the admin of the specified role
 
 **Parameters**
 
-| Name | Type   | Description                                    |
-| ---- | ------ | ---------------------------------------------- |
-| role | string | Role that the admin role is being returned for |
+| Name | Type   | Description                                     |
+| ---- | ------ | ----------------------------------------------- |
+| role | string | Role for which the admin role is being returned |
 
 **Returns**
 
-| Name | Type   | Description                                 |
-| ---- | ------ | ------------------------------------------- |
-| \_0  | string | string The admin role of the specified role |
+| Name | Type   | Description                          |
+| ---- | ------ | ------------------------------------ |
+| \_0  | string | The admin role of the specified role |
 
 #### grantRole
 
@@ -151,11 +151,11 @@ Grants roles to the specified addresses and defines admin roles
 
 **Parameters**
 
-| Name       | Type          | Description                                                 |
-| ---------- | ------------- | ----------------------------------------------------------- |
-| roles      | string\[]     | The roles being granted                                     |
-| roleAdmins | string\[]     | The roles being granted as admins of the specified of roles |
-| members    | address\[]\[] | Addresses being granted each specified role                 |
+| Name       | Type          | Description                                              |
+| ---------- | ------------- | -------------------------------------------------------- |
+| roles      | string\[]     | The roles being granted                                  |
+| roleAdmins | string\[]     | The roles being defined as admins of the specified roles |
+| members    | address\[]\[] | Addresses being granted each specified role              |
 
 #### hasRole
 
@@ -167,16 +167,16 @@ Returns whether the account has been granted the role
 
 **Parameters**
 
-| Name    | Type    | Description                                           |
-| ------- | ------- | ----------------------------------------------------- |
-| role    | string  | Role that authorization is being checked on           |
-| account | address | Address that the role authorization is being check on |
+| Name    | Type    | Description                                             |
+| ------- | ------- | ------------------------------------------------------- |
+| role    | string  | Role for which authorization is being checked           |
+| account | address | Address for which the role authorization is being check |
 
 **Returns**
 
-| Name | Type | Description                                                     |
-| ---- | ---- | --------------------------------------------------------------- |
-| \_0  | bool | boolean Indicates whether the address has been granted the role |
+| Name | Type | Description                                             |
+| ---- | ---- | ------------------------------------------------------- |
+| \_0  | bool | Indicates whether the address has been granted the role |
 
 #### initialize
 
