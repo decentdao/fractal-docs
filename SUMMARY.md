@@ -21,6 +21,7 @@
     * [Treasury Docs](the-core-framework/reference/modules/treasury-docs/README.md)
       * [TreasuryModule.md](the-core-framework/reference/modules/treasury-docs/treasurymodule.md.md)
       * [TreasuryModuleFactory.md](the-core-framework/reference/modules/treasury-docs/treasurymodulefactory.md.md)
+  * [Deployed Contracts](the-core-framework/reference/deployed-contracts.md)
 
 ## Use
 
