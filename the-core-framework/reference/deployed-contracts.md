@@ -17,7 +17,6 @@ description: Core & Module addresses
 | GovernorFactory.sol       | [Github](https://github.com/decent-dao/fractal-module-governor/blob/main/contracts/Governor/GovernorFactory.sol)     | 0x30b41d98aec7a6d6012524B553c655202f10259e |
 | GovernorModule.sol        | [Github](https://github.com/decent-dao/fractal-module-governor/blob/main/contracts/Governor/GovernorModule.sol)      | 0xFa37Fab964dCfaF5d48F67037Ae03d2C69bdd3fe |
 | TimelockUpgradeable.sol   | [Github](https://github.com/decent-dao/fractal-module-governor/blob/main/contracts/Governor/TimelockUpgradeable.sol) | 0x09F6fF3D26b21B2180fA9423507b64dA6E080Cf9 |
-|                           |                                                                                                                      |                                            |
 {% endtab %}
 
 {% tab title="Gorerli" %}
