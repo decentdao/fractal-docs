@@ -43,6 +43,8 @@ import {
 } from "../typechain-types";
 import chai from "chai";
 import { ethers } from "hardhat";
+
+const expect = chai.expect;
 ```
 
 ### Mocks

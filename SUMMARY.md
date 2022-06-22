@@ -29,10 +29,8 @@
   * [Quick Setup](guides/introduction-to-modules/quick-setup.md)
   * [Creating a Module](guides/introduction-to-modules/creating-a-module.md)
   * [Testing the Module](guides/introduction-to-modules/testing-the-module.md)
-
-***
-
-* [Page 2](page-2.md)
+  * [Creating a Factory](guides/introduction-to-modules/creating-a-factory.md)
+  * [Testing the Factory](guides/introduction-to-modules/testing-the-factory.md)
 
 ## Use
 
