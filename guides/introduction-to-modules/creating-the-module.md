@@ -10,7 +10,7 @@ This guide shows how to create a simple implementation module that lets the DAO 
 This guide creates the CelTreasury.sol file in the contracts/ directory of the Treasury Module Example project.
 {% endhint %}
 
-Before proceeding, set up your dev environment as described in the [Quick Start](quick-start.md) guide.
+Before proceeding, set up your dev environment as described in the [Quick Start](setup.md) guide.
 
 ### Create the contract
 

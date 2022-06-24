@@ -28,6 +28,6 @@ Integration modules enable transactions between Ethereum protocols and apps. If 
 
 ### Next Up
 
-The [Quick Setup](quick-start.md), [Creating the Module](creating-the-module.md), and [Testing the Module](testing-the-module.md) guides provide a walkthrough of creating a basic implementation module that enables a DAO to control some funds.
+The [Quick Setup](setup.md), [Creating the Module](creating-the-module.md), and [Testing the Module](testing-the-module.md) guides provide a walkthrough of creating a basic implementation module that enables a DAO to control some funds.
 
 Before working with Fractal module's you need to know Solidity, IDEs, Hardhat, and TypeScript.

@@ -26,7 +26,7 @@
 ## Guides
 
 * [Introduction To Modules](guides/introduction-to-modules/README.md)
-  * [Quick Start](guides/introduction-to-modules/quick-start.md)
+  * [Setup](guides/introduction-to-modules/setup.md)
   * [Creating the Module](guides/introduction-to-modules/creating-the-module.md)
   * [Testing the Module](guides/introduction-to-modules/testing-the-module.md)
   * [Creating a Factory](guides/introduction-to-modules/creating-a-factory.md)
