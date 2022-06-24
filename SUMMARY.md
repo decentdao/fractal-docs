@@ -26,8 +26,8 @@
 ## Guides
 
 * [Introduction To Modules](guides/introduction-to-modules/README.md)
-  * [Quick Setup](guides/introduction-to-modules/quick-setup.md)
-  * [Creating a Module](guides/introduction-to-modules/creating-a-module.md)
+  * [Quick Start](guides/introduction-to-modules/quick-start.md)
+  * [Creating the Module](guides/introduction-to-modules/creating-the-module.md)
   * [Testing the Module](guides/introduction-to-modules/testing-the-module.md)
   * [Creating a Factory](guides/introduction-to-modules/creating-a-factory.md)
   * [Testing the Factory](guides/introduction-to-modules/testing-the-factory.md)
@@ -43,4 +43,3 @@
     * [Delegate your voting power](use/user-guides/interacting-with-a-dao/delegate-your-voting-power.md)
     * [Create a Proposal](use/user-guides/interacting-with-a-dao/create-a-proposal.md)
 * [FAQ](use/faq.md)
-* [Page 1](use/page-1.md)

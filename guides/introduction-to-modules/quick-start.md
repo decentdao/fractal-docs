@@ -1,8 +1,8 @@
-# Quick Setup
+# Quick Start
 
 To set things up, we're going to create a repository, set up the environment, and finally, create and deploy our contract.
 
-#### 1. Create a Github repo
+#### 1. Clone the module repo
 
 This module should exist in your own Github account. You do not need to submit a  PR to the Fractal team.
 
@@ -28,15 +28,16 @@ npx hardhat
 // Choose Create w/ Typescript
 ```
 
-#### 3. Setup Dev Environment&#x20;
+#### 3. Configure Your Dev Environment&#x20;
 
-Please setup your dev environment to your specifications. If you would like to guidance on a proper set up - please utilize [https://github.com/decent-dao/fractal-module-treasury](https://github.com/decent-dao/fractal-module-treasury).
+Set up and configure your dev environment based on the needs of your project. At a minimum, you will need to edit the following files:
 
-Here are some files that need to be configured:&#x20;
+* [ ] .env
+* [ ] .nvmrc
+* [ ] .gitignore
+* [ ] tsconfig.json
+* [ ] package.json
+* [ ] hardhat.config.ts
 
-* [ ] Setup .env
-* [ ] Setup .nvmrc
-* [ ] Setup .gitignore files
-* [ ] Setup tsconfig.json
-* [ ] Setup package.json
-* [ ] Setup your hardhat config
+See the [Fractal Treasury Module](https://github.com/decent-dao/fractal-module-treasury) repo for an example of a configured environment.
+

@@ -6,28 +6,28 @@ description: Learn to understand and work with modules!
 
 ### Getting Started
 
-Modules are an integral part of Fractal Framework: If the MVD is the engine and drivetrain, the modules are the composable pieces which allow you to build a car, train, or plane. These community built plug-ins greatly expand the functionality of the standard DAO execute method.
+Modules are an integral part of Fractal Framework: if the MVD is the engine and drivetrain, the modules are the parts that you use to build a car, train, or plane. Modules are community built plug-ins that expand the functionality of the standard DAO execute method.
 
-From a more technical perspective, modules are MVD authorized smart contracts that adhere to a specified interface which are called by the DAO or utilizes the permissions of the DAOaccessContol.sol. In other terms, modules present code akin to "hooks" that are run at predetermined points.
+From a more technical perspective, modules are MVD authorized smart contracts that adhere to a specified interface. Modules are called by the DAO's execute function or utilize the permissions of the DAOaccessContol.sol to execute their own functions. In other terms, modules present code akin to "hooks" that are run at predetermined points.
 
-There is no limit to the different modules you can create; therefore, we will focus on explaining the most likely to be created modules: Governance modules, Implementation Modules, and Integration Modules.&#x20;
+There is no limit to the modules you can create. Most DAOs will need governance modules, implementation modules, and integration modules.&#x20;
 
 #### Governance Modules
 
-Governance modules allow for more complicated DAO execution control. The MVD only allows for addresses to call the DAO execution function. These addresses can be EOAs or other smart contracts. Here is where the magic is, so if you wanted to create a contract which acts as a multi-sig, you can. Create the contract, allow the multi-sig to call the DAO contract, and now you have a multi-sig DAO.
+Governance modules allow for more complicated DAO execution control. The MVD allows addresses to call the DAO execution function. These addresses can be EOAs or other smart contracts, which makes it possible to scaffold functionality across multiple contracts. For example, to create a multisig module, first create the multisig module contract, then give the module contract permission to call the DAO contract. Now you have a multisig DAO.
 
-This quick example should open your mind to all of the governance possibilities you could have, you could even have your DAO controlled by another DAO that is controlled by a DAO multi-sig... whoa.
+This is just one example of all of the governance possibilities enabled by Fractal. With extensible DAOs, you could even build a DAO controlled by another DAO that is controlled by a multisig.
 
 #### Implementation Modules
 
-Implementation modules provide the DAO with more functionality by empowering the standard execute method. So what do I mean... lets say you have a DAO but you would like for your DAO to keep funds in a treasury. Well, that is kind of tough to do without a treasury and a way to access this treasury. So you, as the module creator expert, decide to create a treasury contract that authorizes only the DAO to make withdrawals.
+Implementation modules add functionality to the DAO's standard execute method. For example, you can create a withdraw module that withdraws funds from a treasury, and that can only be called by the DAO contract. The DAO contract's execute function calls the withdraw module when certain conditions are met. You could create another module that checks for the withdraw conditions and calls the DAO's execute function to make the withdraw. Those conditions could involve a multisig.
 
 #### Integration Modules
 
-So now the questions on everyone's mind is... what do we do with this billion TUSD in our treasury? Simple, place it on Anchor protocol. Hard, how do I do that from a treasury? Integration Modules! Create a smart contract that is allowed to pull from the treasury and deposit on Anchor. Module done, Money made!
+Integration modules enable transactions between Ethereum protocols and apps. If you want to make the tokens in your DAO's treasury available for lending, create a contract that can transfer tokens from the treasury contract to the lending platform using the lending platforms developer tools.&#x20;
 
 ### Next Up
 
-Now that you understand how modules work and that Decent labs loves terra(JK... please do not buy terra, but please make modules for it). It's time to get your hands degen dirty.
+The [Quick Setup](quick-start.md), [Creating the Module](creating-the-module.md), and [Testing the Module](testing-the-module.md) guides provide a walkthrough of creating a basic implementation module that enables a DAO to control some funds.
 
-We will be creating a custom Implementation Module from scratch (please wash your hands first). Please know Solidity, IDEs, Hardhat, and blah, blah, blah
+Before working with Fractal module's you need to know Solidity, IDEs, Hardhat, and TypeScript.

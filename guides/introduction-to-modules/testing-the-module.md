@@ -4,30 +4,34 @@ description: Deploy and interact with your module locally!
 
 # Testing the Module
 
-There comes a time in everyones life where they see if they are as good as they claim to be... Today is that day. Put your module to the test!
+There comes a time in everyone's life when they find out whether they are up to the task. For you, today is that day: put your module to the test!
 
-We are going to setup your test-suite, make sure we have the correct types, and make sure it integrates nicely with the MVD.&#x20;
+This guide covers setting up your test-suite, and testing your module to make sure it has the correct types and that it integrates with the MVD.&#x20;
 
 ### Types
 
-You will need to import the MVD contracts and the CelTreasury. To get access to the MVD, you must use the [https://www.npmjs.com/package/hardhat-dependency-compiler](https://www.npmjs.com/package/hardhat-dependency-compiler).
+First, install `hardhat-dependency-compiler` in your project directory so that your test will be able to access the MVD:
 
 ```
 npm i hardhat-dependency-compiler
 ```
 
-Then add this to the hardhat.config file.
+{% hint style="info" %}
+See [https://www.npmjs.com/package/hardhat-dependency-compiler](https://www.npmjs.com/package/hardhat-dependency-compiler) for details.
+{% endhint %}
+
+Then, import the MVD and CelTreasury contracts by adding the code below to you hardhat.config file:
 
 ```
 dependencyCompiler: {
-  paths: [
+paths: [
     "@fractal-framework/core-contracts/contracts/DAO.sol",
     "@fractal-framework/core-contracts/contracts/AccessControlDAO.sol",
   ],
 },
 ```
 
-Then you can add the types to your test file.
+Finally, add the types to your test file:
 
 ```
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
@@ -49,13 +53,19 @@ const expect = chai.expect;
 
 ### Mocks
 
-Add a mock ERC20 token to your contracts for easy testing. If you would like to create your own - please do. But for the purpose of this tutorial, you may copy the code found in the mocks folder of this github repo - [https://github.com/christopherdancy/treasury-module-example](https://github.com/christopherdancy/treasury-module-example).
+Add a mock ERC20 token to your contracts for easy testing. If you would like to create your own - please do. For this tutorial, you can copy the code found in the mocks folder of this GitHub repo: [https://github.com/christopherdancy/treasury-module-example](https://github.com/christopherdancy/treasury-module-example).
 
 ### Before Each Block
 
-This is where we setup the tests and make sure we have all the variables we need to properly test our treasury. Most importantly, we have to set up our DAOAccessControl so that authorizations are accounted for.
+The `beforeEach` block is where you set up tests and make sure you have all the variables you need to properly test the treasury. Most importantly, set up DAOAccessControl to ensure that authorizations are working.
 
-Let's take a look at the before block. Here we deploy and initialize all the contracts we need for proper integration testing. If we look a little closer at Access Control, we are passing in a role for the withdraw function, a list of addresses that have that role, a contract address, a function sig, and the role which is authorized to call this function sig.
+The `beforeEach` block below performs several large tasks:
+
+* Deploys and initializes the contracts needed for integration testing
+* Defines roles and authorizations for the AccessControl functions
+* Defines the values used by the treasury module.
+
+. Here we deploy and initialize all the contracts we need for proper integration testing. If we look a little closer at Access Control, we are passing in a role for the withdraw function, a list of addresses that have that role, a contract address, a function sig, and the role which is authorized to call this function sig.
 
 This is what makes the access control unique, each method on a contract have an authorized modifier which determines who can call this method.&#x20;
 
@@ -102,9 +112,13 @@ beforeEach(async function () {
     });
 ```
 
+{% hint style="info" %}
+In the code above, you can see that`accessControl` is set on each method. Function-level, role-based permissions is a powerful feature of Fractal DAOs.
+{% endhint %}
+
 ### Contract Tests
 
-Here is the easy part. Use waffle and chai matchers to make sure you have the intended behavior. For our tests, we will test that someone can deposit celToken, and only the withdrawer can withdraw the tokens.
+To run the tests, use [waffle and chai matchers](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html) to make sure your contracts have the intended behavior. The tests below check that someone can deposit celToken, and that only a specified address can withdraw the tokens:
 
 ```
 it("Receives ERC-20 tokens using the deposit function", async () => {
@@ -150,7 +164,7 @@ it("Reverts when a non authorized user attempts to withdraw ERC-20 tokens", asyn
 
 ### Recap
 
-Alright that is it, here is what the final code should look like:
+The code below shows the entire test code:
 
 ```
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
@@ -269,13 +283,13 @@ describe("Treasury", function () {
 });
 ```
 
-Make sure the tests pass by running the command:
+Use the command below to execute the tests:
 
 ```
 $ npx hardhat test
 ```
 
-And on that note, congratulations! You've successfully created and tested an entirely new module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal-Framework community.
+You've successfully created and tested an entirely new module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal-Framework community.
 
 Happy hacking!
 
