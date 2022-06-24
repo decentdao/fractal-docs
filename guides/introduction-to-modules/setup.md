@@ -27,7 +27,7 @@ If you do not already have hardhat installed, run the command below in your proj
 npm install --save-dev hardhat
 ```
 
-Use `npx` to create a hardhat project and respond to the prompts:
+Use `npx` to create a Hardhat project and respond to the prompts:
 
 ```
 // Create A hardhat project
