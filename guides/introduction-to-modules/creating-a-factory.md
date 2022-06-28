@@ -4,13 +4,15 @@ description: Building a factory for your module
 
 # Creating a Factory
 
+Factory contracts make it possible for other DAO creators to use your module. By providing a simple way to create/deploy modules, Fractal can enable broad organizational models without having to anticipate every DAO's needs.\
+\
+Technically speaking, a Factory contract is a contract knows the bytecode of another contract and uses a create opcode function to deploy that contract at another address.
+
+This guide describes how to create a factory contract for the Treasury module you [created](creating-the-module.md) and [tested](testing-the-module.md) in the previous guides. To follow along, look at the TreasuryModuleFactory.sol contract in the /contracts directory of the [Fractal Module Example repo](https://github.com/decent-dao/fractal-module-example).
+
 ### Creating The Factory
 
-So you may be asking, Decent... why do I need to create a factory contract? Well the simple answer is - other DAO creators would most likely like to use your module! So these users need a simple way to create/deploy their own module. That's where the factory comes in.\
-\
-Next question is what is a factory contract? Well it is a contract... that knows the bytecode of another contract. Therefore, by utilizing the create opcode - you can deploy this bytecode at an address on chain. It is like an factory that builds cars but instead we are building contracts.
-
-Cool. So we know why so know we have to figure out how. That is why I am here. In the same repo - create a new file called TreasuryModuleFactory.sol and define our contract, we will inherit from the imported ModuleFactoryBase and ERC165. We will also import Create2 and ERC1967Proxy so we may [deterministically](https://docs.openzeppelin.com/cli/2.8/deploying-with-create2) create [UUPS contracts](https://docs.openzeppelin.com/upgrades-plugins/1.x/writing-upgradeable).&#x20;
+In the /contracts directory of your module project, create a new file called TreasuryModuleFactory.sol. The contract should inherit from the imported ModuleFactoryBase and ERC165. Also import Create2 and ERC1967Proxy so you can [deterministically](https://docs.openzeppelin.com/cli/2.8/deploying-with-create2) create [UUPS contracts](https://docs.openzeppelin.com/upgrades-plugins/1.x/writing-upgradeable).&#x20;
 
 ```
 //SPDX-License-Identifier: Unlicense
@@ -34,9 +36,13 @@ contract TreasuryModuleFactory is
 
 ### Implementing ModuleFactoryBase Functions
 
-So if we look at ModuleFactoryBase.sol, we will find the functions required to turn your contract into a Fractal Module! Do you see the function called \_\_initFactoryBase? This will set the factory contract up so you can notify the community of new versions of TreasuryModules.
+To add functionality to your factory module, you will implement three methods: `initialize`, `create`, and `supportsInterface`.
 
-To implement this function, create a function called initialize, give it the initializer modifier, and implement \_\_initFactoryBase.
+#### Initialize
+
+Look at [ModuleFactoryBase.sol](https://github.com/decent-dao/fractal-core-contracts/blob/main/contracts/ModuleFactoryBase.sol) in the Fractal Core Contracts repo to find the functions required to turn your contract into a Fractal Module. The `__initFactoryBase` function sets the factory contract up so that you can notify the community of new versions of the module.
+
+To implement the `__initFactoryBase` function in your factory, create a function called `initialize`, give it the `initializer` modifier, and implement `__initFactoryBase`:
 
 ```
 function initialize() external initializer {
@@ -44,11 +50,15 @@ function initialize() external initializer {
 }
 ```
 
-The function we should implement is called create. This is the main function DAO will utilize to create and deploy new modules. This method takes an array of bytes which are decoded within the function to help initialize/setup each module.&#x20;
+#### Create
+
+Next, add a `create` method to your factory. This will be the method that the DAO uses to create and deploy new modules. This method takes an array of bytes and decodes them to help initialize/setup each module.&#x20;
 
 {% hint style="info" %}
-The salt - is an encoded array of bytes used by Create2 to determine the contract address of the deployed treasury module. This salt value is hashed together with tx.orgin, the chain.Id to create unique salt values per user and contract deployment.
+The salt variable created in line 14 below is an encoded array of bytes used by Create2 to determine the contract address of the deployed treasury module. This salt value is hashed together with tx.orgin, the chain.Id to create unique salt values per user and contract deployment.
 {% endhint %}
+
+The code below shows an example of the `create` method:
 
 ```
 /// @dev Creates a Treasury module
@@ -80,7 +90,9 @@ function create(bytes[] calldata data)
 }
 ```
 
-The method is supports interface. This simple function provides the UI an easy way to determine if the contract in question is a contract which inherits from moduleFactoryBase.sol.
+#### Supports Interface
+
+Finally, add a`supportsInterface` method. This method provides an easy way for the UI to determine whether the contract inherits from moduleFactoryBase.sol.
 
 ```
 /// @notice Returns whether a given interface ID is supported
@@ -101,7 +113,7 @@ function supportsInterface(bytes4 interfaceId)
 
 ### Recap
 
-And that's it! You've successfully created your module's factory. Let's take a look at our full TreasuryModuleFactory`.sol` file:
+That's it! You've successfully created your module's factory. Here is the complete `TreasuryModuleFactory.sol` file:
 
 ```
 //SPDX-License-Identifier: Unlicense
@@ -168,10 +180,10 @@ contract TreasuryModuleFactory is
 }
 ```
 
-Before we move on the testing, let's make sure everything compiles:
+Before moving on to testing, make sure everything compiles:
 
 ```
 $ npm run compile
 ```
 
-Assuming nothing broke, let's go ahead and write a Hardhat task testing that everything works as intended. It's time to put this shiny new module to good use!
+Assuming nothing broke, the next step is to write a Hardhat task that [tests](testing-the-factory.md) whether everything works as intended.

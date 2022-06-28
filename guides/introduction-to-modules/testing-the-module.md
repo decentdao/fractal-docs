@@ -65,9 +65,9 @@ The `beforeEach` block below performs several large tasks:
 * Defines roles and authorizations for the AccessControl functions
 * Defines the values used by the treasury module.
 
-. Here we deploy and initialize all the contracts we need for proper integration testing. If we look a little closer at Access Control, we are passing in a role for the withdraw function, a list of addresses that have that role, a contract address, a function sig, and the role which is authorized to call this function sig.
+Here we deploy and initialize all the contracts we need for proper integration testing. If we look a little closer at Access Control, we are passing in a role for the withdraw function, a list of addresses that have that role, a contract address, a function sig, and the role which is authorized to call this function sig.
 
-This is what makes the access control unique, each method on a contract have an authorized modifier which determines who can call this method.&#x20;
+This is what makes the access control unique, each method on a contract has an authorized modifier which determines who can call the method.&#x20;
 
 ```
 beforeEach(async function () {

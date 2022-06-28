@@ -4,11 +4,36 @@ description: Testing the factory contract
 
 # Testing the Factory
 
-We are going to setup your test-suite, make sure we have the correct types, and make sure it integrates nicely with the your new module.&#x20;
+This guide describes how to set up your test-suite, set the test types, and make sure the factory integrates nicely with your new module.&#x20;
+
+### Set Up Your Test Suite
+
+You may have already set up your test suite as part of the [Testing the Module](testing-the-module.md) guide. If you have not, follow the steps below to install and configure Hardhat:
+
+First, install `hardhat-dependency-compiler` in your project directory so that your test will be able to access the MVD:
+
+```
+npm i hardhat-dependency-compiler
+```
+
+{% hint style="info" %}
+See [https://www.npmjs.com/package/hardhat-dependency-compiler](https://www.npmjs.com/package/hardhat-dependency-compiler) for details.
+{% endhint %}
+
+Then, import the MVD and CelTreasury contracts by adding the code below to you hardhat.config file:
+
+```
+dependencyCompiler: {
+paths: [
+    "@fractal-framework/core-contracts/contracts/DAO.sol",
+    "@fractal-framework/core-contracts/contracts/AccessControlDAO.sol",
+  ],
+},
+```
 
 ### Types
 
-Then you can add the types to your test file.
+If you haven't already done so, create a file called TresuryFactory.tests.ts in a /tests directory in your project, then add the types shown below to the file:
 
 ```
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
@@ -30,9 +55,7 @@ const expect = chai.expect;
 
 ### Before Each Block
 
-This is where we setup the tests and make sure we have all the variables we need to properly test our treasury factory.
-
-Let's take a look at the before block. Here we deploy and initialize all the contracts we need for proper integration testing.
+The `beforeEach` block is where you set up tests and make sure you have all the variables you need to properly test the treasury. For testing the factory contract, you must deploy and initialize all the contracts needed for integration testing, as shown below:
 
 ```
 beforeEach(async function () {
@@ -62,7 +85,7 @@ beforeEach(async function () {
 
 ### Contract Tests
 
-Here is the easy part. Use waffle and chai matchers to make sure you have the intended behavior. For our tests, we will test that someone can create a new Treasury, and it is properly initialized.
+To run the tests, use [waffle and chai matchers](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html) to make sure your contracts have the intended behavior. For these tests, make sure that someone can use the factory to create a new treasury module, and that the module is properly initialized:
 
 ```
 it("Creates a treasury", async () => {
@@ -89,7 +112,7 @@ it("Creates a treasury", async () => {
 
 ### Recap
 
-Alright that is it, here is what the final code should look like:
+That's it! Here is what the final code should look like:
 
 ```
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
@@ -175,6 +198,6 @@ Make sure the tests pass by running the command:
 $ npx hardhat test
 ```
 
-And on that note, congratulations! You've successfully created and tested a factory module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal-Framework community.
+Congratulations! You've successfully created and tested a factory module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal-Framework community.
 
 Happy hacking!
