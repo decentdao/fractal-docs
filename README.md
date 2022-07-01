@@ -1,21 +1,26 @@
 ---
 description: >-
-  Disclaimer: app.fractalframework.xyz is in alpha on mainnet and unaudited. Use at your own risk.
+  Disclaimer: app.fractalframework.xyz is in alpha on mainnet and unaudited. Use
+  at your own risk.
 ---
 
 # Welcome to Fractal
 
-The components of the Fractal framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations. Fractal provides tools to support everyone from DAO members to Web3 developers:
+&#x20;Fractal provides tools to support everyone from DAO members to Web3 developers:
 
 * Developers - Build modules to extend the functionality of DAOs and develop new front-end user experiences.
 * DAO Organizers - Create on-chain DAOs and establish their governance models.
 * DAO Participants - Interact with DAOs, depending on the structure created by the organizers.
 * DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
 
+<img src=".gitbook/assets/file.drawing.svg" alt="Ecosystem" class="gitbook-drawing">
+
+The components of the Fractal framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations.
+
 This site includes the following documentation:
 
 * [Build ](the-core-framework/developer-overview.md)- An overview of the Fractal protocol, developer guides, and contract references.
-* [Use ](broken-reference)- Guides for using the Fractal web app to deploy, manage, and participate in DAOs.
+* [Use ](broken-reference/)- Guides for using the Fractal web app to deploy, manage, and participate in DAOs.
 
 ## Why Fractal?
 
@@ -47,4 +52,3 @@ The Fractal Framework is built around the idea of a minimum viable DAO (MVD) tha
 * Module - A standard interface for extending the functions of a Node. Modules can support functions like funding, payroll, or voting.
 
 By building an organization from Nodes and establishing governance models using Modules, Web3 builders can create on-chain organizations that serve any purpose they can imagine. The Fractal Framework is infinitely flexible and extensible.
-

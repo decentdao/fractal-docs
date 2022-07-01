@@ -1,5 +1,9 @@
 # Developer Overview
 
+Fractal's core framework leverages factory contracts and interfaces to make it possible to create DAO protocols from composable blocks:
+
+<img src="../.gitbook/assets/file.drawing (1).svg" alt="DAO Creation Diagram" class="gitbook-drawing">
+
 The Fractal Protocol supports creating and managing DAOs by deploying contracts that establish a minimum viable DAO that can be extended using modules:
 
 * Minimum viable DAO (MVD) - At a minimum an on-chain DAO must be able to execute code on the blockchain and restrict access to that execution. To add flexibility, a core Fractal DAO can also be extended using modules. The MVD is defined by the `fractal-core` contracts. See the [Fractal Core reference](reference/fractal-core/) material for details.
