@@ -31,6 +31,7 @@
   * [Testing the Module](guides/introduction-to-modules/testing-the-module.md)
   * [Creating a Factory](guides/introduction-to-modules/creating-a-factory.md)
   * [Testing the Factory](guides/introduction-to-modules/testing-the-factory.md)
+* [Deploy Custom DAO](guides/deploy-custom-dao.md)
 
 ## Use
 
