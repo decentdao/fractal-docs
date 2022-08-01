@@ -1,22 +1,25 @@
-# TimelockUpgradeable.md
+---
+description: >-
+  Contract module which acts as a timelocked controller. When set as the
+  executor for the DAO execute action, it enforces a timelock on all DAO
+  executions initiated by the governor contract. This gives
+---
 
-## TimelockUpgradeable
-
-_Contract module which acts as a timelocked controller. When set as the executor for the DAO execute action, it enforces a timelock on all DAO executions initiated by the governor contract. This gives time for users of the controlled contract to exit before a potentially dangerous maintenance operation is applied._
+# Timelock
 
 ### Methods
 
 #### accessControl
 
 ```solidity
-function accessControl() external view returns (contract IAccessControlDAO)
+function accessControl() external view returns (contract IDAOAccessControl)
 ```
 
 **Returns**
 
 | Name | Type                       | Description |
 | ---- | -------------------------- | ----------- |
-| \_0  | contract IAccessControlDAO | undefined   |
+| \_0  | contract IDAOAccessControl | undefined   |
 
 #### cancel
 
@@ -293,19 +296,19 @@ _Schedule an operation containing a batch of transactions. Emits one {CallSchedu
 function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
-Returns whether a given interface ID is supported
+_See {IERC165-supportsInterface}._
 
 **Parameters**
 
-| Name        | Type   | Description                                  |
-| ----------- | ------ | -------------------------------------------- |
-| interfaceId | bytes4 | An interface ID bytes4 as defined by ERC-165 |
+| Name        | Type   | Description |
+| ----------- | ------ | ----------- |
+| interfaceId | bytes4 | undefined   |
 
 **Returns**
 
-| Name | Type | Description                                       |
-| ---- | ---- | ------------------------------------------------- |
-| \_0  | bool | bool Indicates whether the interface is supported |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| \_0  | bool | undefined   |
 
 #### updateDelay
 

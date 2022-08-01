@@ -53,7 +53,7 @@ const expect = chai.expect;
 
 ### Mocks
 
-Add a mock ERC20 token to your contracts for easy testing. If you would like to create your own - please do. For this tutorial, you can copy the code found in the mocks folder of this GitHub repo: [https://github.com/christopherdancy/treasury-module-example](https://github.com/christopherdancy/treasury-module-example).
+Add a mock ERC20 token to your contracts for easy testing. If you would like to create your own - please do. For this tutorial, you can copy the code found in the mocks folder of this GitHub repo: [https://github.com/decent-dao/fractal-module-example](https://github.com/decent-dao/fractal-module-example).
 
 ### Before Each Block
 

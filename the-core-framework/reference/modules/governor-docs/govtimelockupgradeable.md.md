@@ -1,8 +1,11 @@
-# GovTimelockUpgradeable.md
+---
+description: >-
+  Extension of {Governor} that binds the execution process to an instance of
+  {TimelockController}. This adds a delay, enforced by the {TimelockController}
+  to all successful proposal (in addition to the
+---
 
-## GovTimelockUpgradeable
-
-_Extension of {Governor} that binds the execution process to an instance of {TimelockController}. This adds a delay, enforced by the {TimelockController} to all successful proposal (in addition to the voting duration). The {Governor} needs to be authorized within the Access Control Contract in order to execute transactions on the TimelockController. Using this model means the proposal will be operated by the MVD._
+# GovernorTimelock
 
 ### Methods
 
@@ -395,15 +398,15 @@ _See {IERC165-supportsInterface}._
 
 **Parameters**
 
-| Name        | Type   | Description                                  |
-| ----------- | ------ | -------------------------------------------- |
-| interfaceId | bytes4 | An interface ID bytes4 as defined by ERC-165 |
+| Name        | Type   | Description |
+| ----------- | ------ | ----------- |
+| interfaceId | bytes4 | undefined   |
 
 **Returns**
 
-| Name | Type | Description                                       |
-| ---- | ---- | ------------------------------------------------- |
-| \_0  | bool | bool Indicates whether the interface is supported |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| \_0  | bool | undefined   |
 
 #### timelock
 
@@ -422,16 +425,16 @@ _Public accessor to check the address of the timelock_
 #### updateTimelock
 
 ```solidity
-function updateTimelock(contract ITimelockUpgradeable newTimelock) external nonpayable
+function updateTimelock(contract ITimelock newTimelock) external nonpayable
 ```
 
 _Public endpoint to update the underlying timelock instance. Restricted to the timelock itself, so updates must be proposed, scheduled, and executed through governance proposals. CAUTION: It is not recommended to change the timelock while there are other queued governance proposals._
 
 **Parameters**
 
-| Name        | Type                          | Description                     |
-| ----------- | ----------------------------- | ------------------------------- |
-| newTimelock | contract ITimelockUpgradeable | Address of new Timelock Address |
+| Name        | Type               | Description                     |
+| ----------- | ------------------ | ------------------------------- |
+| newTimelock | contract ITimelock | Address of new Timelock Address |
 
 #### version
 
@@ -543,8 +546,6 @@ event ProposalQueued(uint256 proposalId, uint256 eta)
 ```solidity
 event TimelockChange(address oldTimelock, address newTimelock)
 ```
-
-_Emitted when the timelock controller used for proposal execution is modified._
 
 **Parameters**
 

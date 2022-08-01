@@ -1,8 +1,11 @@
-# GovernorModule.md
+---
+description: >-
+  Governor Module used to implement 1 token 1 vote. This acts as an extension of
+  the MVD and permissions are controlled by access control.Gov Module is
+  extended by the timelock contract which creates a
+---
 
-## GovernorModule
-
-_Governor Module used to implement 1 token 1 vote. This acts as an extension of the MVD and permissions are controlled by access control.Gov Module is extended by the timelock contract which creates a lockup period before execution._
+# GovernorModule
 
 ### Methods
 
@@ -35,14 +38,14 @@ _See {IGovernor-COUNTING\_MODE}._
 #### accessControl
 
 ```solidity
-function accessControl() external view returns (contract IAccessControlDAO)
+function accessControl() external view returns (contract IDAOAccessControl)
 ```
 
 **Returns**
 
 | Name | Type                       | Description |
 | ---- | -------------------------- | ----------- |
-| \_0  | contract IAccessControlDAO | undefined   |
+| \_0  | contract IDAOAccessControl | undefined   |
 
 #### castVote
 
@@ -204,23 +207,23 @@ _See {IGovernor-hashProposal}. The proposal id is produced by hashing the RLC en
 #### initialize
 
 ```solidity
-function initialize(contract IVotesUpgradeable _token, contract ITimelockUpgradeable _timelock, uint64 _initialVoteExtension, uint256 _initialVotingDelay, uint256 _initialVotingPeriod, uint256 _initialProposalThreshold, uint256 _initialQuorumNumeratorValue, address _accessControl) external nonpayable
+function initialize(contract IVotesUpgradeable _token, contract ITimelock _timelock, uint64 _initialVoteExtension, uint256 _initialVotingDelay, uint256 _initialVotingPeriod, uint256 _initialProposalThreshold, uint256 _initialQuorumNumeratorValue, address _accessControl) external nonpayable
 ```
 
 _Configures Gov Module implementationCalled once during deployment atomically_
 
 **Parameters**
 
-| Name                          | Type                          | Description                                                |
-| ----------------------------- | ----------------------------- | ---------------------------------------------------------- |
-| \_token                       | contract IVotesUpgradeable    | Voting token uses snapshot feature                         |
-| \_timelock                    | contract ITimelockUpgradeable | Timelock vest proposals to allow detractors to exit system |
-| \_initialVoteExtension        | uint64                        | Allow users to vote if quorum attack is preformed          |
-| \_initialVotingDelay          | uint256                       | Allow users to research proposals before voting period     |
-| \_initialVotingPeriod         | uint256                       | Length of voting period (blocks)                           |
-| \_initialProposalThreshold    | uint256                       | Total tokens required to submit a proposal                 |
-| \_initialQuorumNumeratorValue | uint256                       | Total votes needed to reach quorum                         |
-| \_accessControl               | address                       | Address of Access Control                                  |
+| Name                          | Type                       | Description                                                |
+| ----------------------------- | -------------------------- | ---------------------------------------------------------- |
+| \_token                       | contract IVotesUpgradeable | Voting token uses snapshot feature                         |
+| \_timelock                    | contract ITimelock         | Timelock vest proposals to allow detractors to exit system |
+| \_initialVoteExtension        | uint64                     | Allow users to vote if quorum attack is preformed          |
+| \_initialVotingDelay          | uint256                    | Allow users to research proposals before voting period     |
+| \_initialVotingPeriod         | uint256                    | Length of voting period (blocks)                           |
+| \_initialProposalThreshold    | uint256                    | Total tokens required to submit a proposal                 |
+| \_initialQuorumNumeratorValue | uint256                    | Total votes needed to reach quorum                         |
+| \_accessControl               | address                    | Address of Access Control                                  |
 
 #### lateQuorumVoteExtension
 
@@ -625,16 +628,16 @@ _Changes the quorum numerator. Emits a {QuorumNumeratorUpdated} event. Requireme
 #### updateTimelock
 
 ```solidity
-function updateTimelock(contract ITimelockUpgradeable newTimelock) external nonpayable
+function updateTimelock(contract ITimelock newTimelock) external nonpayable
 ```
 
 _Public endpoint to update the underlying timelock instance. Restricted to the timelock itself, so updates must be proposed, scheduled, and executed through governance proposals. CAUTION: It is not recommended to change the timelock while there are other queued governance proposals._
 
 **Parameters**
 
-| Name        | Type                          | Description                     |
-| ----------- | ----------------------------- | ------------------------------- |
-| newTimelock | contract ITimelockUpgradeable | Address of new Timelock Address |
+| Name        | Type               | Description                     |
+| ----------- | ------------------ | ------------------------------- |
+| newTimelock | contract ITimelock | Address of new Timelock Address |
 
 #### upgradeTo
 

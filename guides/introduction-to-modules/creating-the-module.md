@@ -50,12 +50,14 @@ At this point, your linter or compiler is probably pretty upset, and with good r
 Look at the ModuleBase.sol contract to find the required functions:
 
 * `_initBase` - Sets up the module and provides access to all of Fractal's features.
+* `_registerInterface` - Sets up the module interface to be read by the Fractal frontend.
 
 To implement this function, create a function called `initialize`, give it the `initializer` modifier, and implement `__initBase`:
 
 ```
 function initialize(address _accessControl) external initializer {
     __initBase(_accessControl, msg.sender, "CelTreasury");
+    _registerInterface(type(ICelTreasury).interfaceId);
 }
 ```
 

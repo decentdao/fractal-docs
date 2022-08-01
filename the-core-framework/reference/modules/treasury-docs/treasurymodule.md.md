@@ -1,22 +1,22 @@
-# TreasuryModule.md
+---
+description: A treasury module contract for managing a DAOs assets
+---
 
-## TreasuryModule
-
-A treasury module contract for managing a DAOs assets
+# TreasuryModule
 
 ### Methods
 
 #### accessControl
 
 ```solidity
-function accessControl() external view returns (contract IAccessControlDAO)
+function accessControl() external view returns (contract IDAOAccessControl)
 ```
 
 **Returns**
 
 | Name | Type                       | Description |
 | ---- | -------------------------- | ----------- |
-| \_0  | contract IAccessControlDAO | undefined   |
+| \_0  | contract IDAOAccessControl | undefined   |
 
 #### depositERC20Tokens
 
@@ -133,19 +133,19 @@ _Implementation of the ERC1822 {proxiableUUID} function. This returns the storag
 function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
-Returns whether a given interface ID is supported
+_See {IERC165-supportsInterface}._
 
 **Parameters**
 
-| Name        | Type   | Description                                  |
-| ----------- | ------ | -------------------------------------------- |
-| interfaceId | bytes4 | An interface ID bytes4 as defined by ERC-165 |
+| Name        | Type   | Description |
+| ----------- | ------ | ----------- |
+| interfaceId | bytes4 | undefined   |
 
 **Returns**
 
-| Name | Type | Description                                       |
-| ---- | ---- | ------------------------------------------------- |
-| \_0  | bool | bool Indicates whether the interface is supported |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| \_0  | bool | undefined   |
 
 #### upgradeTo
 

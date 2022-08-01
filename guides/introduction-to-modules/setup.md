@@ -12,7 +12,7 @@ If you just want to follow along with the module developer guides, clone the Tre
 Run the command below in your project directory to clone the example project, then continue with the rest of the steps on this page:
 
 ```
-git@github.com:christopherdancy/treasury-module-example.git
+https://github.com/decent-dao/fractal-module-example
 ```
 {% endhint %}
 

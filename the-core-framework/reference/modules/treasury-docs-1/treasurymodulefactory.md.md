@@ -1,8 +1,8 @@
 ---
-description: Governor Factory used to deploy Gov ModulesDeploys Timelock dependecies
+description: Token Factory used to deploy votes tokens
 ---
 
-# GovernorFactory
+# TokenFactory
 
 ### Methods
 
@@ -28,20 +28,20 @@ _add a new version to update module users_
 function create(address creator, bytes[] data) external nonpayable returns (address[])
 ```
 
-_Creates a Governor module_
+_Creates an ERC-20 votes token_
 
 **Parameters**
 
-| Name    | Type     | Description                                  |
-| ------- | -------- | -------------------------------------------- |
-| creator | address  | The address creating the module              |
-| data    | bytes\[] | The array of bytes used to create the module |
+| Name    | Type     | Description                                 |
+| ------- | -------- | ------------------------------------------- |
+| creator | address  | The address creating the module             |
+| data    | bytes\[] | The array of bytes used to create the token |
 
 **Returns**
 
-| Name | Type       | Description                                             |
-| ---- | ---------- | ------------------------------------------------------- |
-| \_0  | address\[] | address\[] The array of addresses of the created module |
+| Name | Type       | Description                              |
+| ---- | ---------- | ---------------------------------------- |
+| \_0  | address\[] | address The address of the created token |
 
 #### initialize
 
@@ -127,19 +127,6 @@ function versionControl(uint256) external view returns (string semanticVersion, 
 
 ### Events
 
-#### GovernorCreated
-
-```solidity
-event GovernorCreated(address timelock, address governorModule)
-```
-
-**Parameters**
-
-| Name           | Type    | Description |
-| -------------- | ------- | ----------- |
-| timelock       | address | undefined   |
-| governorModule | address | undefined   |
-
 #### OwnershipTransferred
 
 ```solidity
@@ -152,6 +139,18 @@ event OwnershipTransferred(address indexed previousOwner, address indexed newOwn
 | ----------------------- | ------- | ----------- |
 | previousOwner `indexed` | address | undefined   |
 | newOwner `indexed`      | address | undefined   |
+
+#### TokenCreated
+
+```solidity
+event TokenCreated(address indexed tokenAddress)
+```
+
+**Parameters**
+
+| Name                   | Type    | Description |
+| ---------------------- | ------- | ----------- |
+| tokenAddress `indexed` | address | undefined   |
 
 #### VersionCreated
 
