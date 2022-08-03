@@ -144,10 +144,10 @@ const predictedTreasuryAddress = ethers.utils.getCreate2Address(
 
 5\. Finally, create the `calldata` that will set up the treasury and access control contracts.
 
-6\. Set the call data define below to deploy a CelTreasury contract from the TreasuryFactory:
+6\. Set the call data define below to deploy a Treasury contract from the TreasuryFactory:
 
 * `predictedAddress` - This address is the same as the `predictedAddress` parameter defined above.
-* `treasuryImpl.address` - This address is created after deploying your first celTreasury.sol contract.
+* `treasuryImpl.address` - This address is created after deploying your first treasury.sol contract.
 * The salt value as defined above.
 * `calldata`  - Created using `encodeFunctionData`.
 

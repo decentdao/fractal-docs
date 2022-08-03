@@ -4,10 +4,10 @@ description: Build your first module!
 
 # Creating the Module
 
-This guide shows how to create a simple implementation module that lets the DAO manage funds. The smart contract allows anyone to deposit CEL tokens, and restricts the addresses that can withdraw them.
+This guide shows how to create a simple implementation module that lets the DAO manage funds. The smart contract allows anyone to deposit tokens, and restricts the addresses that can withdraw them.
 
 {% hint style="info" %}
-This guide creates the CelTreasury.sol file in the contracts/ directory of the Treasury Module Example project.
+This guide creates the Treasury.sol file in the contracts/ directory of the Treasury Module Example project.
 {% endhint %}
 
 Before proceeding, set up your dev environment as described in the [Quick Start](setup.md) guide.
@@ -22,9 +22,9 @@ npm i @fractal-framework/core-contracts
 
 The Fractal core contracts include the module base contracts that your module will implement.
 
-2\. Create a file in your project's contracts/ directory called CelTreasury.sol.&#x20;
+2\. Create a file in your project's contracts/ directory called Treasury.sol.&#x20;
 
-3\. In your CelTreasury.sol file, set the `pragma` to `^0.8.0` and import the Fractal `ModuleBase.sol` and OpenZeppelin `SafeERC20.sol` interfaces:
+3\. In your Treasury.sol file, set the `pragma` to `^0.8.0` and import the Fractal `ModuleBase.sol` and OpenZeppelin `SafeERC20.sol` interfaces:
 
 ```
 // Install Fractal-MVD NPM Packagae
@@ -37,7 +37,7 @@ import "@fractal-framework/core-contracts/contracts/ModuleBase.sol";
 4\. Define your contract. The contract inherits from the imported ModuleBase.sol and casts it as IERC20 using the SafeERC20 library:
 
 ```
-contract CelTreasury is ModuleBase {
+contract Treasury is ModuleBase {
   using SafeERC20 for IERC20;
   
 }
@@ -56,8 +56,8 @@ To implement this function, create a function called `initialize`, give it the `
 
 ```
 function initialize(address _accessControl) external initializer {
-    __initBase(_accessControl, msg.sender, "CelTreasury");
-    _registerInterface(type(ICelTreasury).interfaceId);
+    __initBase(_accessControl, msg.sender, "Treasury");
+    _registerInterface(type(ITreasury).interfaceId);
 }
 ```
 
@@ -73,28 +73,28 @@ Now for the fun part: add the deposit and withdraw functions to your contract.
 
 #### Deposit
 
-The deposit function is simple: it allows a transfer of CEL tokens from any address to the DAO's wallet address.
+The deposit function is simple: it allows a transfer of tokens from any address to the DAO's wallet address.
 
-1. Add the address for CEL to storage in your `contract` definition.
+1. Add the address for the token to storage in your `contract` definition.
 2. Write a `depositERC20Tokens` function that performs the transfer:
 
 ```
-contract CelTreasury is ModuleBase {
+contract Treasury is ModuleBase {
     using SafeERC20 for IERC20;
-    address celToken;
+    address tokenAddress;
 
     /// @notice Function for initializing the contract that can only be called once
     /// @param _accessControl The address of the access control contract
-    function initialize(address _accessControl, address _celToken)
+    function initialize(address _accessControl, address _tokenAddress)
         external
         initializer
     {
-        __initBase(_accessControl, msg.sender, "CelTreasury");
-        celToken = _celToken;
+        __initBase(_accessControl, msg.sender, "Treasury");
+        tokenAddress = _tokenAddress;
     }
 
     function depositERC20Tokens(uint256 amount) external {
-        IERC20(celToken).safeTransferFrom(msg.sender, address(this), amount);
+        IERC20(tokenAddress).safeTransferFrom(msg.sender, address(this), amount);
     }
 }
 ```
@@ -110,7 +110,7 @@ function withdrawERC20Tokens(
     address recipient,
     uint256 amount
 ) external authorized {
-    IERC20(celToken).safeTransfer(
+    IERC20(token).safeTransfer(
         recipient,
         amount
     );
@@ -123,7 +123,7 @@ Permissions are stored on the DAOAccessContol.sol contract.
 
 ### Recap
 
-At this point, you've successfully created your own module that transfers funds to and from a treasury. The example below shows the complete CelTreasury.sol file:
+At this point, you've successfully created your own module that transfers funds to and from a treasury. The example below shows the complete Treasury.sol file:
 
 ```
 //SPDX-License-Identifier: Unlicense
@@ -132,30 +132,30 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@fractal-framework/core-contracts/contracts/ModuleBase.sol";
 
-contract CelTreasury is ModuleBase {
+contract Treasury is ModuleBase {
     using SafeERC20 for IERC20;
-    address celToken;
+    address tokenAddress;
     
 
     /// @notice Function for initializing the contract that can only be called once
     /// @param _accessControl The address of the access control contract
-    function initialize(address _accessControl, address _celToken)
+    function initialize(address _accessControl, address _tokenAddress)
         external
         initializer
     {
-        __initBase(_accessControl, msg.sender, "CelTreasury");
-        celToken = _celToken;
+        __initBase(_accessControl, msg.sender, "Treasury");
+        tokenAddress = _tokenAddress;
     }
 
     function depositERC20Tokens(uint256 amount) external authorized {
-        IERC20(celToken).safeTransferFrom(msg.sender, address(this), amount);
+        IERC20(tokenAddress).safeTransferFrom(msg.sender, address(this), amount);
     }
 
     function withdrawERC20Tokens(
         address recipient,
         uint256 amount
     ) external authorized {
-        IERC20(celToken).safeTransfer(
+        IERC20(tokenAddress).safeTransfer(
             recipient,
             amount
         );

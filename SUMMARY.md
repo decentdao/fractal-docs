@@ -28,24 +28,24 @@
       * [ClaimFactory](the-core-framework/reference/modules/treasury-docs-1/treasurymodulefactory.md-2.md)
   * [Deployed Contracts](the-core-framework/reference/deployed-contracts.md)
 
-## Guides
+## Developer Guides
 
-* [Introduction To Modules](guides/introduction-to-modules/README.md)
-  * [Setup](guides/introduction-to-modules/setup.md)
-  * [Creating the Module](guides/introduction-to-modules/creating-the-module.md)
-  * [Testing the Module](guides/introduction-to-modules/testing-the-module.md)
-  * [Creating a Factory](guides/introduction-to-modules/creating-a-factory.md)
-  * [Testing the Factory](guides/introduction-to-modules/testing-the-factory.md)
-* [Deploy Custom DAO](guides/deploy-custom-dao.md)
+* [Introduction To Modules](developer-guides/introduction-to-modules/README.md)
+  * [Setup](developer-guides/introduction-to-modules/setup.md)
+  * [Creating the Module](developer-guides/introduction-to-modules/creating-the-module.md)
+  * [Testing the Module](developer-guides/introduction-to-modules/testing-the-module.md)
+  * [Creating a Factory](developer-guides/introduction-to-modules/creating-a-factory.md)
+  * [Testing the Factory](developer-guides/introduction-to-modules/testing-the-factory.md)
+* [Deploy Custom DAO](developer-guides/deploy-custom-dao.md)
 
-## Use
+## User Guides
 
-* [User Guides](use/user-guides/README.md)
-  * [Open the Fractal App](use/user-guides/open-the-fractal-app.md)
-  * [Connect Your Wallet](use/user-guides/connect-your-wallet.md)
-  * [Creating a Fractal](use/user-guides/creating-a-fractal.md)
-  * [Find a Fractal](use/user-guides/find-a-fractal.md)
-  * [Interacting with DAOs](use/user-guides/interacting-with-a-dao/README.md)
-    * [Delegate your voting power](use/user-guides/interacting-with-a-dao/delegate-your-voting-power.md)
-    * [Create a Proposal](use/user-guides/interacting-with-a-dao/create-a-proposal.md)
-* [FAQ](use/faq.md)
+* [User Guides](user-guides/user-guides/README.md)
+  * [Open the Fractal App](user-guides/user-guides/open-the-fractal-app.md)
+  * [Connect Your Wallet](user-guides/user-guides/connect-your-wallet.md)
+  * [Creating a Fractal](user-guides/user-guides/creating-a-fractal.md)
+  * [Find a Fractal](user-guides/user-guides/find-a-fractal.md)
+  * [Interacting with DAOs](user-guides/user-guides/interacting-with-a-dao/README.md)
+    * [Delegate your voting power](user-guides/user-guides/interacting-with-a-dao/delegate-your-voting-power.md)
+    * [Create a Proposal](user-guides/user-guides/interacting-with-a-dao/create-a-proposal.md)
+* [FAQ](user-guides/faq.md)

@@ -42,8 +42,8 @@ import {
   DAO__factory,
   VotesTokenWithSupply,
   VotesTokenWithSupply__factory,
-  CelTreasury,
-  CelTreasury__factory,
+  Treasury,
+  Treasury__factory,
 } from "../typechain-types";
 import chai from "chai";
 import { ethers } from "hardhat";
@@ -75,7 +75,7 @@ beforeEach(async function () {
 
       dao = await new DAO__factory(deployer).deploy();
       accessControl = await new AccessControlDAO__factory(deployer).deploy();
-      treasury = await new CelTreasury__factory(deployer).deploy();
+      treasury = await new Treasury__factory(deployer).deploy();
 
       await accessControl
         .connect(deployer)
@@ -113,12 +113,12 @@ beforeEach(async function () {
 ```
 
 {% hint style="info" %}
-In the code above, you can see that`accessControl` is set on each method. Function-level, role-based permissions is a powerful feature of Fractal DAOs.
+In the code above, you can see that `accessControl` is set on each method. Function-level, role-based permissions is a powerful feature of Fractal DAOs.
 {% endhint %}
 
 ### Contract Tests
 
-To run the tests, use [waffle and chai matchers](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html) to make sure your contracts have the intended behavior. The tests below check that someone can deposit celToken, and that only a specified address can withdraw the tokens:
+To run the tests, use [waffle and chai matchers](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html) to make sure your contracts have the intended behavior. The tests below check that someone can deposit a token, and that only a specified address can withdraw the tokens:
 
 ```
 it("Receives ERC-20 tokens using the deposit function", async () => {
@@ -175,8 +175,8 @@ import {
   DAO__factory,
   VotesTokenWithSupply,
   VotesTokenWithSupply__factory,
-  CelTreasury,
-  CelTreasury__factory,
+  Treasury,
+  Treasury__factory,
 } from "../typechain-types";
 import chai from "chai";
 import { ethers } from "hardhat";
@@ -186,7 +186,7 @@ const expect = chai.expect;
 describe("Treasury", function () {
   let dao: DAO;
   let accessControl: AccessControlDAO;
-  let treasury: CelTreasury;
+  let treasury: Treasury;
 
   // eslint-disable-next-line camelcase
   let erc20TokenAlpha: VotesTokenWithSupply;

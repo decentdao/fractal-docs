@@ -20,7 +20,7 @@ npm i hardhat-dependency-compiler
 See [https://www.npmjs.com/package/hardhat-dependency-compiler](https://www.npmjs.com/package/hardhat-dependency-compiler) for details.
 {% endhint %}
 
-Then, import the MVD and CelTreasury contracts by adding the code below to you hardhat.config file:
+Then, import the MVD and Treasury contracts by adding the code below to you hardhat.config file:
 
 ```
 dependencyCompiler: {
@@ -42,8 +42,8 @@ import {
   AccessControlDAO__factory,
   VotesTokenWithSupply,
   VotesTokenWithSupply__factory,
-  CelTreasury,
-  CelTreasury__factory,
+  Treasury,
+  Treasury__factory,
   TreasuryModuleFactory,
   TreasuryModuleFactory__factory,
 } from "../typechain-types";
@@ -62,7 +62,7 @@ beforeEach(async function () {
   [deployer, userA] = await ethers.getSigners();
 
   accessControl = await new AccessControlDAO__factory(deployer).deploy();
-  treasury = await new CelTreasury__factory(deployer).deploy();
+  treasury = await new Treasury__factory(deployer).deploy();
   treasuryFactory = await new TreasuryModuleFactory__factory(
     deployer
   ).deploy();
@@ -99,14 +99,14 @@ it("Creates a treasury", async () => {
   ];
   const returnedContract = await treasuryFactory.callStatic.create(data);
   await treasuryFactory.create(data);
-  treasuryCreated = CelTreasury__factory.connect(
+  treasuryCreated = Treasury__factory.connect(
     returnedContract[0],
     deployer
   );
   expect(await treasuryCreated.accessControl()).to.eq(
     accessControl.address
   );
-  expect(await treasuryCreated.celToken()).to.eq(erc20TokenAlpha.address);
+  expect(await treasuryCreated.tokenAddress()).to.eq(erc20TokenAlpha.address);
 });
 ```
 
@@ -121,8 +121,8 @@ import {
   AccessControlDAO__factory,
   VotesTokenWithSupply,
   VotesTokenWithSupply__factory,
-  CelTreasury,
-  CelTreasury__factory,
+  Treasury,
+  Treasury__factory,
   TreasuryModuleFactory,
   TreasuryModuleFactory__factory,
 } from "../typechain-types";
@@ -133,8 +133,8 @@ const expect = chai.expect;
 
 describe("Treasury Factory", function () {
   let accessControl: AccessControlDAO;
-  let treasury: CelTreasury;
-  let treasuryCreated: CelTreasury;
+  let treasury: Treasury;
+  let treasuryCreated: Treasury;
   let treasuryFactory: TreasuryModuleFactory;
 
   // eslint-disable-next-line camelcase
@@ -147,7 +147,7 @@ describe("Treasury Factory", function () {
       [deployer, userA] = await ethers.getSigners();
 
       accessControl = await new AccessControlDAO__factory(deployer).deploy();
-      treasury = await new CelTreasury__factory(deployer).deploy();
+      treasury = await new Treasury__factory(deployer).deploy();
       treasuryFactory = await new TreasuryModuleFactory__factory(
         deployer
       ).deploy();
@@ -179,14 +179,14 @@ describe("Treasury Factory", function () {
       ];
       const returnedContract = await treasuryFactory.callStatic.create(data);
       await treasuryFactory.create(data);
-      treasuryCreated = CelTreasury__factory.connect(
+      treasuryCreated = Treasury__factory.connect(
         returnedContract[0],
         deployer
       );
       expect(await treasuryCreated.accessControl()).to.eq(
         accessControl.address
       );
-      expect(await treasuryCreated.celToken()).to.eq(erc20TokenAlpha.address);
+      expect(await treasuryCreated.tokenAddress()).to.eq(erc20TokenAlpha.address);
     });
   });
 });
