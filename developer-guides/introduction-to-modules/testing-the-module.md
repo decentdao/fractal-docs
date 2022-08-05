@@ -20,7 +20,7 @@ npm i hardhat-dependency-compiler
 See [https://www.npmjs.com/package/hardhat-dependency-compiler](https://www.npmjs.com/package/hardhat-dependency-compiler) for details.
 {% endhint %}
 
-Then, import the MVD and CelTreasury contracts by adding the code below to you hardhat.config file:
+Then, import the MVD and Treasury contracts by adding the code below to you hardhat.config file:
 
 ```
 dependencyCompiler: {
@@ -204,7 +204,7 @@ describe("Treasury", function () {
 
       dao = await new DAO__factory(deployer).deploy();
       accessControl = await new AccessControlDAO__factory(deployer).deploy();
-      treasury = await new CelTreasury__factory(deployer).deploy();
+      treasury = await new Treasury__factory(deployer).deploy();
 
       await accessControl
         .connect(deployer)
