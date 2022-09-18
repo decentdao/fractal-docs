@@ -34,22 +34,22 @@ The `createDAOAndExectute` function calls two internal functions:
 
 The example below shows how to use the Metafactory to create a custom DAO:
 
-1\. Choose your network. This example uses the Goreli testnet.
+1\. Choose your network. This example uses the Goerli testnet.
 
-2\. Choose your daoFactory.sol by setting the contract address based on your network. For this example, use 0xEc42913bB12d8976BADf0000151B679Dc4e549BC.
+2\. Choose your DAOFactory.sol by setting the contract address based on your network. For this example, use 0xEc42913bB12d8976BADf0000151B679Dc4e549BC.
 
-3\. Define values for `createDAOParams`. The `createDAOParams` values will create a proxy contract that references the include `daoImpl` and `AccessControlImpl`.&#x20;
+3\. Define values for `createDAOParams`. The `createDAOParams` values will create a proxy contract that references the include `daoImpl` and `AccessControlImpl`.
 
 * DAO Impl - 0x8A96a09b48e6968bF4e1Ac068C56446F4606F339
 * DAOAccessControl Impl - 0x300Ce4fe07fbF0F1021060eCb788A9956810D920
 * Salt values predetermine a contract's address to make it simple to reference a contract before the contract is fully deployed.
 * The `roles` parameter determines the authorizations required for each module. For this example, only the `WITHDRAWER_ROLE` is required.
-* Use the `roleAdmins` parameter to create one or more mangers. Managers will be able to update the roles of other members.
-* The `members` parameter defines the addresses that will have the role types specified in the `roles` array:&#x20;
-  * EXECUTE\_ROLE&#x20;
-    * `metaFactory.address` - During DAO creation, the Metafactory contract needs to have the execute role so that it can call `execute` on the DAO contract to setup the  system. Remove the Metafactory from the member list at the end of the transaction.
+* Use the `roleAdmins` parameter to create one or more admins. Admins will be able to update the roles of other members.
+* The `members` parameter defines the addresses that will have the role types specified in the `roles` array:
+  * EXECUTE\_ROLE
+    * `metaFactory.address` - During DAO creation, the Metafactory contract needs to have the EXECUTE_ROLE so that it can call `execute` on the DAO contract to set up the  system. Remove the Metafactory from the member list at the end of the transaction.
     * `executor.address` - The address that can call the DAO's execute function.
-  * WITHDRAWER\_ROLE - In this case, we only want the DAO to be able to withdraw from the treasury.&#x20;
+  * WITHDRAWER\_ROLE - In this case, we only want the DAO to be able to withdraw from the treasury.
 * `daoFunctionDescs` and `daoActionRoles` set up the DAO's roles in the access control contract. This can remain the same.
 
 ```
@@ -147,7 +147,7 @@ const predictedTreasuryAddress = ethers.utils.getCreate2Address(
 6\. Set the call data define below to deploy a Treasury contract from the TreasuryFactory:
 
 * `predictedAddress` - This address is the same as the `predictedAddress` parameter defined above.
-* `treasuryImpl.address` - This address is created after deploying your first treasury.sol contract.
+* `treasuryImpl.address` - This address is created after deploying your first Treasury.sol contract.
 * The salt value as defined above.
 * `calldata`  - Created using `encodeFunctionData`.
 
@@ -190,7 +190,7 @@ const outerAddActionsRolesCalldata = dao.interface.encodeFunctionData(
 );
 ```
 
-9\. Finally, remove the metafactory from the executerole so the system is secured.
+9\. Finally, remove the metafactory from the EXECUTE_ROLE so the system is secured.
 
 ```
 const revokeMetafactoryRoleCalldata =

@@ -14,5 +14,5 @@ The `fractal-core-contracts` repository includes the following contracts in the 
 * `AccessControlDAO.sol` - This contract defines the permissions for the DAO and its modules. Methods that belong to the DAO's system, which require authorization, check the calling party's permissions and either grants or denies the party access based on this check.
 * `DAOFactory.sol` - A factory contract that deploys instances of a DAO and an AccessControlDAO.
 * `ModuleBase.sol` - An abstract contract that defines the required methods/interfaces to deploy a Fractal compatible module.
-* ModuleFactoryBase.sol - An abstract contract that defines the required methods/interfaces to be compatible with the Metafactory and to contain the standard versioning system.
+* `ModuleFactoryBase.sol` - An abstract contract that defines the required methods/interfaces to be compatible with the Metafactory and to contain the standard versioning system.
 * `/interfaces` - Interface contracts that define the signature functions of the Fractal-core-contracts described above.

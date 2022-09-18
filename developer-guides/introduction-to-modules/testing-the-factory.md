@@ -4,7 +4,7 @@ description: Testing the factory contract
 
 # Testing the Factory
 
-This guide describes how to set up your test-suite, set the test types, and make sure the factory integrates nicely with your new module.&#x20;
+This guide describes how to set up your test suite, set the test types, and make sure the factory integrates nicely with your new module.
 
 ### Set Up Your Test Suite
 
@@ -20,7 +20,7 @@ npm i hardhat-dependency-compiler
 See [https://www.npmjs.com/package/hardhat-dependency-compiler](https://www.npmjs.com/package/hardhat-dependency-compiler) for details.
 {% endhint %}
 
-Then, import the MVD and Treasury contracts by adding the code below to you hardhat.config file:
+Then, import the MVD and Treasury contracts by adding the code below to your hardhat.config file:
 
 ```
 dependencyCompiler: {
@@ -198,6 +198,6 @@ Make sure the tests pass by running the command:
 $ npx hardhat test
 ```
 
-Congratulations! You've successfully created and tested a factory module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal-Framework community.
+Congratulations! You've successfully created and tested a factory module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal Framework community.
 
 Happy hacking!

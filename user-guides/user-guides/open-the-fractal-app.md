@@ -1,5 +1,5 @@
 ---
-description: Open the Fracatal app in a desktop or mobile web browser.
+description: Open the Fractal app in a desktop or mobile web browser.
 ---
 
 # Open the Fractal App

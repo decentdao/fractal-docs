@@ -12,7 +12,7 @@ This guide describes how to create a factory contract for the Treasury module yo
 
 ### Creating The Factory
 
-In the /contracts directory of your module project, create a new file called TreasuryModuleFactory.sol. The contract should inherit from the imported ModuleFactoryBase and ERC165. Also import Create2 and ERC1967Proxy so you can [deterministically](https://docs.openzeppelin.com/cli/2.8/deploying-with-create2) create [UUPS contracts](https://docs.openzeppelin.com/upgrades-plugins/1.x/writing-upgradeable).&#x20;
+In the /contracts directory of your module project, create a new file called TreasuryModuleFactory.sol. The contract should inherit from the imported ModuleFactoryBase and ERC165. Also import Create2 and ERC1967Proxy so you can [deterministically](https://docs.openzeppelin.com/cli/2.8/deploying-with-create2) create [UUPS contracts](https://docs.openzeppelin.com/upgrades-plugins/1.x/writing-upgradeable).
 
 ```
 //SPDX-License-Identifier: Unlicense
@@ -52,7 +52,7 @@ function initialize() external initializer {
 
 #### Create
 
-Next, add a `create` method to your factory. This will be the method that the DAO uses to create and deploy new modules. This method takes an array of bytes and decodes them to help initialize/setup each module.&#x20;
+Next, add a `create` method to your factory. This will be the method that the DAO uses to create and deploy new modules. This method takes an array of bytes and decodes them to help initialize/setup each module.
 
 {% hint style="info" %}
 The salt variable created in line 14 below is an encoded array of bytes used by Create2 to determine the contract address of the deployed treasury module. This salt value is hashed together with tx.orgin, the chain.Id to create unique salt values per user and contract deployment.
@@ -92,7 +92,7 @@ function create(bytes[] calldata data)
 
 #### Supports Interface
 
-Finally, add a`supportsInterface` method. This method provides an easy way for the UI to determine whether the contract inherits from moduleFactoryBase.sol.
+Finally, add a`supportsInterface` method. This method provides an easy way for the UI to determine whether the contract inherits from ModuleFactoryBase.sol.
 
 ```
 /// @notice Returns whether a given interface ID is supported

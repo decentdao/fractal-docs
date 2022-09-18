@@ -16,7 +16,7 @@ If you are using MetaMask, click the browser extension icon and enter your passw
 
 ### Open the Fractal App
 
-Go to fractalframework.xyz or app.dev.fractalframework.xyz. The web app landing screen displays:
+Go to [app.fractalframework.xyz](https://app.fractalframework.xyz) or [app.dev.fractalframework.xyz](https://app.dev.fractalframework.xyz). The web app landing screen displays:
 
 ![](../../.gitbook/assets/fractal-app-landing-page.jpg)
 
@@ -30,11 +30,11 @@ The app displays your options. If you are logged in to a wallet with a browser p
 
 ![](../../.gitbook/assets/connect-wallet-select.jpg)
 
-To connect to a browser-based wallet, select it from the list. If you have not connected your wallet before, the wallet add-on may open a window and prompt you to select which wallet you want to connect:
+To connect to a browser-based wallet, select it from the list. If you have not connected your wallet before, the wallet extension may open a window and prompt you to select which wallet you want to connect:
 
 ![](../../.gitbook/assets/metamask-connect-wallet.jpg)
 
-Select the correct wallet and click **Next**. The Fractal app connects to your wallet and displays your wallet address in the upper right corner of the page, as shown below:
+Select the correct wallet and click **Next**. The Fractal app connects to your wallet and displays your wallet address (or ENS name) in the upper right corner of the page, as shown below:
 
 ![](../../.gitbook/assets/connect-wallet-connected.jpg)
 

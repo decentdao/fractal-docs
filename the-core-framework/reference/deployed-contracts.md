@@ -19,7 +19,7 @@ description: Core & Module addresses
 | TimelockUpgradeable.sol   | [Github](https://github.com/decent-dao/fractal-module-governor/blob/main/contracts/Governor/TimelockUpgradeable.sol) | 0x09F6fF3D26b21B2180fA9423507b64dA6E080Cf9 |
 {% endtab %}
 
-{% tab title="Gorerli" %}
+{% tab title="Goerli" %}
 
 
 | Contract                  | Github                                                                                                               | Address                                    |
