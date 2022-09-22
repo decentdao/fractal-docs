@@ -6,7 +6,7 @@ description: Deploy and interact with your module locally!
 
 There comes a time in everyone's life when they find out whether they are up to the task. For you, today is that day: put your module to the test!
 
-This guide covers setting up your test-suite, and testing your module to make sure it has the correct types and that it integrates with the MVD.&#x20;
+This guide covers setting up your test suite, and testing your module to make sure it has the correct types and that it integrates with the MVD.
 
 ### Types
 
@@ -20,7 +20,7 @@ npm i hardhat-dependency-compiler
 See [https://www.npmjs.com/package/hardhat-dependency-compiler](https://www.npmjs.com/package/hardhat-dependency-compiler) for details.
 {% endhint %}
 
-Then, import the MVD and Treasury contracts by adding the code below to you hardhat.config file:
+Then, import the MVD and Treasury contracts by adding the code below to your hardhat.config file:
 
 ```
 dependencyCompiler: {
@@ -67,7 +67,7 @@ The `beforeEach` block below performs several large tasks:
 
 Here we deploy and initialize all the contracts we need for proper integration testing. If we look a little closer at Access Control, we are passing in a role for the withdraw function, a list of addresses that have that role, a contract address, a function sig, and the role which is authorized to call this function sig.
 
-This is what makes the access control unique, each method on a contract has an authorized modifier which determines who can call the method.&#x20;
+This is what makes the access control unique, each method on a contract has an authorized modifier which determines who can call the method.
 
 ```
 beforeEach(async function () {
@@ -289,7 +289,7 @@ Use the command below to execute the tests:
 $ npx hardhat test
 ```
 
-You've successfully created and tested an entirely new module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal-Framework community.
+You've successfully created and tested an entirely new module. This means you're now geared-up to start building and proposing your own custom modules to the Fractal Framework community.
 
 Happy hacking!
 

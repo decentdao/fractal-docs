@@ -10,7 +10,7 @@ This guide shows how to create a simple implementation module that lets the DAO 
 This guide creates the Treasury.sol file in the contracts/ directory of the Treasury Module Example project.
 {% endhint %}
 
-Before proceeding, set up your dev environment as described in the [Quick Start](setup.md) guide.
+Before proceeding, set up your dev environment as described in the [Setup](setup.md) guide.
 
 ### Create the contract
 
@@ -22,7 +22,7 @@ npm i @fractal-framework/core-contracts
 
 The Fractal core contracts include the module base contracts that your module will implement.
 
-2\. Create a file in your project's contracts/ directory called Treasury.sol.&#x20;
+2\. Create a file in your project's contracts/ directory called Treasury.sol.
 
 3\. In your Treasury.sol file, set the `pragma` to `^0.8.0` and import the Fractal `ModuleBase.sol` and OpenZeppelin `SafeERC20.sol` interfaces:
 
@@ -118,7 +118,7 @@ function withdrawERC20Tokens(
 ```
 
 {% hint style="info" %}
-Permissions are stored on the DAOAccessContol.sol contract.
+Permissions are stored on the DAOAccessControl.sol contract.
 {% endhint %}
 
 ### Recap

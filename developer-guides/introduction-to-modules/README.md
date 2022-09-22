@@ -8,9 +8,9 @@ description: Learn to understand and work with modules!
 
 Modules are an integral part of Fractal Framework: if the MVD is the engine and drivetrain, the modules are the parts that you use to build a car, train, or plane. Modules are community built plug-ins that expand the functionality of the standard DAO execute method.
 
-From a more technical perspective, modules are MVD authorized smart contracts that adhere to a specified interface. Modules are called by the DAO's execute function or utilize the permissions of the DAOaccessContol.sol to execute their own functions. In other terms, modules present code akin to "hooks" that are run at predetermined points.
+From a more technical perspective, modules are MVD authorized smart contracts that adhere to a specified interface. Modules are called by the DAO's execute function or utilize the permissions of the DAOaccessControl.sol to execute their own functions. In other terms, modules present code akin to "hooks" that are run at predetermined points.
 
-There is no limit to the modules you can create. Most DAOs will need governance modules, implementation modules, and integration modules.&#x20;
+There is no limit to the modules you can create. Most DAOs will need governance modules, implementation modules, and integration modules.
 
 #### Governance Modules
 
@@ -24,10 +24,10 @@ Implementation modules add functionality to the DAO's standard execute method. F
 
 #### Integration Modules
 
-Integration modules enable transactions between Ethereum protocols and apps. If you want to make the tokens in your DAO's treasury available for lending, create a contract that can transfer tokens from the treasury contract to the lending platform using the lending platforms developer tools.&#x20;
+Integration modules enable transactions between Ethereum protocols and apps. If you want to make the tokens in your DAO's treasury available for lending, create a contract that can transfer tokens from the treasury contract to the lending platform using the lending platforms developer tools.
 
 ### Next Up
 
-The [Quick Setup](setup.md), [Creating the Module](creating-the-module.md), and [Testing the Module](testing-the-module.md) guides provide a walkthrough of creating a basic implementation module that enables a DAO to control some funds.
+The [Setup](setup.md), [Creating the Module](creating-the-module.md), and [Testing the Module](testing-the-module.md) guides provide a walkthrough of creating a basic implementation module that enables a DAO to control some funds.
 
 Before working with Fractal module's you need to know Solidity, IDEs, Hardhat, and TypeScript.

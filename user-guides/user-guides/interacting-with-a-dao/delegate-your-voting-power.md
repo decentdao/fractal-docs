@@ -30,4 +30,4 @@ Once you have entered a wallet address, click **Delegate**. Your connected walle
 
 
 
-The transaction covers the gas fees for the delegation transaction. Review the transaction and click **Confirm**. You will be returned to the Fractal app. Your wallet and the Fractal app will display notifications when the transaction is complete and your vote has been successfully delegated.
+The transaction covers the gas fees for the delegation transaction. Review the transaction and click **Confirm**. You will be returned to the Fractal app. Your wallet and the Fractal app will display notifications when the transaction is complete and your voting power has been successfully delegated.

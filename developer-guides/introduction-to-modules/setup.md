@@ -12,7 +12,7 @@ If you just want to follow along with the module developer guides, clone the Tre
 Run the command below in your project directory to clone the example project, then continue with the rest of the steps on this page:
 
 ```
-https://github.com/decent-dao/fractal-module-example
+git clone https://github.com/decent-dao/fractal-module-example
 ```
 {% endhint %}
 
@@ -35,7 +35,7 @@ npx hardhat
 // Choose Create w/ Typescript
 ```
 
-#### 2. Configure Your Dev Environment&#x20;
+#### 2. Configure Your Dev Environment
 
 Set up and configure your dev environment based on the needs of your project. At a minimum, you will need to edit the following files:
 
@@ -48,5 +48,5 @@ Set up and configure your dev environment based on the needs of your project. At
 
 See the [Fractal Treasury Module](https://github.com/decent-dao/fractal-module-treasury) repo for an example of a fully configured environment.
 
-Once your project is set up, move on to the [Creating The Module](creating-the-module.md) guide and start coding.
+Once your project is set up, move on to the [Creating the Module](creating-the-module.md) guide and start coding.
 

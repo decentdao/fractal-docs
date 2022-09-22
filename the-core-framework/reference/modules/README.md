@@ -4,18 +4,18 @@ Modules extend the functionality of a basic DAO. Fractal modules must inherit fr
 
 Fractal currently provides the following modules:
 
-* `fractal-module-token` - The Token Module mints and distributes vote tokens based on the ERC20 Votes OpenZ contracts and creates a claim contract which allows parent DAOs to mirror their token holdings to a sub DAO.
+* `fractal-module-token` - The Token Module mints and distributes vote tokens based on the [ERC20Votes](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20Votes) OpenZeppelin contracts and creates a claim contract which allows parent DAOs to mirror their token holdings to a sub DAO.
 * `fractal-module-treasury` - The Treasury Module allows the depositing and withdrawing of arbitrary value on chain. Currently supported is ETH, ERC20, ERC721, ERC1155.
-* `fractal-module-governor` - The Governor Module supports creating proposals, voting on proposals, and executing transactions on an accompanying DAO as a result of the vote based on the Governor OpenZ contracts.
+* `fractal-module-governor` - The Governor Module supports creating proposals, voting on proposals, and executing transactions on an accompanying DAO as a result of the vote based on the [Governor](https://docs.openzeppelin.com/contracts/4.x/api/governance#Governor) OpenZeppelin contracts.
 
 ### Token Module
 
 The Token Module adds functionality to a basic DAO for minting and distributing vote tokens. The Token Module includes the following contracts:
 
-* `VotesToken.sol` - Defines the constructor for a vote token which requires a name, symbol, holders, and allocations. This contract also inherits from OpenZeppelin' Snapshot.sol which provides a snapshot of a user's balance at a particular block-height.&#x20;
+* `VotesToken.sol` - Defines the constructor for a vote token which requires a name, symbol, holders, and allocations. This contract also inherits from OpenZeppelin' Snapshot.sol which provides a snapshot of a user's balance at a particular block-height.
 * `TokenFactory.sol` - Deploys a Token Module.
-* ClaimSubsidiary.sol - If a DAO is classified as a SubDAO - they have the ability to mirror/fork the parent DAO's token allocations across the subDAO's token holders. This contract takes a snapshot of the parent token's user balances and sets aside some subDAO tokens which can be claimed by holders of the parent DAO's token.
-* ClaimFactory.sol - Deploys a Claim Module.
+* `ClaimSubsidiary.sol` - If a DAO is classified as a SubDAO - they have the ability to mirror/fork the parent DAO's token allocations across the subDAO's token holders. This module contract takes a snapshot of the parent token's user balances and sets aside some subDAO tokens which can be claimed by holders of the parent DAO's token.
+* `ClaimFactory.sol` - Deploys a Claim Subsidiary Module.
 
 ### Treasury Module
 
@@ -31,6 +31,6 @@ The Treasury Module includes the following contracts:
 The Governor Module adds proposal and voting features to a Fractal DAO. The Governor Module includes the following contracts:
 
 * `GovernorModule.sol` - Defines functions for creating proposals, voting on proposals, and executing proposal transaction on the the accompanying DAO.
-* &#x20;`GovTimelockUpgradeable.sol` - Extension of {Governor} that binds the execution process to an instance of {TimelockController}. This adds a delay, enforced by the {TimelockController} to all successful proposal (in addition to the voting duration).
-* `TimelockUpgradeable.sol` - Module which acts as a timelocked controller. When set as the executor for the DAO execute action, it enforces a timelock/timeDelay on all DAO executions. This gives time for users of the controlled contract to exit before a potentially dangerous operation is applied.
+* `GovTimelockUpgradeable.sol` - Extension of [Governor](https://docs.openzeppelin.com/contracts/4.x/api/governance#Governor) that binds the execution process to an instance of [TimelockController](https://docs.openzeppelin.com/contracts/4.x/api/governance#TimelockController). This adds a delay, enforced by the `TimelockController` to all successful proposals (in addition to the voting duration).
+* `TimelockUpgradeable.sol` - Module which acts as a timelocked controller. When set as the executor for the DAO's execute action, it enforces a timelock/timeDelay on all DAO executions. This gives time for users of the controlled contract to exit before a potentially dangerous operation is applied.
 * `GovernorModuleFactory.sol` - Deploys a Governor Module.
