@@ -2,7 +2,27 @@
 
 * [Welcome to Fractal](README.md)
 
-## The Core Framework
+## User Guides
+
+* [User Guides](user-guides/user-guides/README.md)
+  * [Getting Started](user-guides/user-guides/getting-started.md)
+  * [Find a Fractal](user-guides/user-guides/find-a-fractal.md)
+  * Multisig DAO
+    * Create a Fractal
+      * [Create a Fractal RootDAO](user-guides/user-guides/multisig-dao/create-a-fractal/create-a-root-dao.md)
+      * [Create a Fractal SubDAO](user-guides/user-guides/multisig-dao/create-a-fractal/create-a-sub-dao.md)
+    * Interact with a DAO
+      * [Create a Proposal](user-guides/user-guides/multisig-dao/interacting-with-a-dao/create-a-proposal.md)
+      * [Vote on a Proposal](user-guides/user-guides/multisig-dao/interacting-with-a-dao/vote-on-a-proposal.md)
+      * [Execute a Proposal](user-guides/user-guides/multisig-dao/interacting-with-a-dao/execute-a-proposal.md)
+    * Proposal Lifecycle
+      * [RootDAO Proposal Lifecycle](user-guides/user-guides/multisig-dao/proposal-lifecycle/root-dao-proposal-lifecycle.md)
+      * [SubDAO Proposal Lifecycle](user-guides/user-guides/multisig-dao/proposal-lifecycle/sub-dao-proposal-lifecycle.md)
+* [FAQ](user-guides/faq.md)
+
+---
+
+## The Core Framework (deprecated)
 
 * [Developer Overview](the-core-framework/developer-overview.md)
 * [Reference](the-core-framework/reference/README.md)
@@ -28,7 +48,7 @@
       * [ClaimFactory](the-core-framework/reference/modules/treasury-docs-1/treasurymodulefactory.md-2.md)
   * [Deployed Contracts](the-core-framework/reference/deployed-contracts.md)
 
-## Developer Guides
+## Developer Guides (deprecated)
 
 * [Introduction To Modules](developer-guides/introduction-to-modules/README.md)
   * [Setup](developer-guides/introduction-to-modules/setup.md)
@@ -37,15 +57,3 @@
   * [Creating a Factory](developer-guides/introduction-to-modules/creating-a-factory.md)
   * [Testing the Factory](developer-guides/introduction-to-modules/testing-the-factory.md)
 * [Deploy Custom DAO](developer-guides/deploy-custom-dao.md)
-
-## User Guides
-
-* [User Guides](user-guides/user-guides/README.md)
-  * [Open the Fractal App](user-guides/user-guides/open-the-fractal-app.md)
-  * [Connect Your Wallet](user-guides/user-guides/connect-your-wallet.md)
-  * [Creating a Fractal](user-guides/user-guides/creating-a-fractal.md)
-  * [Find a Fractal](user-guides/user-guides/find-a-fractal.md)
-  * [Interacting with DAOs](user-guides/user-guides/interacting-with-a-dao/README.md)
-    * [Delegate your voting power](user-guides/user-guides/interacting-with-a-dao/delegate-your-voting-power.md)
-    * [Create a Proposal](user-guides/user-guides/interacting-with-a-dao/create-a-proposal.md)
-* [FAQ](user-guides/faq.md)
