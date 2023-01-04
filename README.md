@@ -19,8 +19,8 @@ The components of the Fractal framework support the creation of a composable ope
 
 This site includes the following documentation:
 
-* **The Core Framework** - An [overview](the-core-framework/developer-overview.md) of the Fractal protocol and architecture, and detailed [contract references](the-core-framework/reference/).
-* **Developer Guides** - Step-by-step guides for [building Fractal modules](developer-guides/introduction-to-modules/) and [deploying custom DAOs](developer-guides/deploy-custom-dao.md).
+* **The Core Framework** - <TBD>
+* **Developer Guides** - <TBD>
 * **User Guides** - Information about [using the Fractal app](broken-reference) to deploy, manage, and participate in DAOs.
 * **FAQ** - Short answers to common [questions](user-guides/faq.md) about Fractal.
 
@@ -36,21 +36,16 @@ The Fractal framework has several benefits over traditional DAO implementations:
 * Extensible - Modules extend the capabilities of nodes by implementing specific business requirements that a DAO may have, such as treasury management and governance.
 * Interoperable and upgradable - A shared Node architecture that enables any Module to service any Node for any Fractal or even every Node for every Fractal.
 
-### Features
+### Nomenclature
 
-To ensure that DAO participants and Web3 developers can take full advantage of Fractal's capabilities, the following resources exist:
+##### A Fractal
+A specific type of DAO where contributors can be structured into unique Parent and subDAO hierarchies each with its own governance and Safe treasury (by Gnosis). What makes these hierarchies stand out as a Fractal DAO is that each ParentDAO has certain on-chain checks and balances over the Sub-DAO that it formed.
 
-* NPM package - For module developers who want to extend the functionality of Fractal DAOs, the NPM package adds the Minimum Viable DAO (MVD) integration to your project.
-* Module interfaces - Interface contracts that define and enforce the Fractal architecture, ensuring that all Nodes and Modules work together seamlessly.
-* Modules - DAO features, like voting and governance, that you can use directly or extend to meet your needs.
-* Plugins - React code which makes crafting transactions a breeze for the user. Regardless if they are connecting with the community by interacting with Fractal modules or unlocking their inner-degen with Luna options, it's just a few clicks away.
+##### SubDAO
+A Safe treasury that has been spawned by a ParentDAO. This SubDAO always has certain on-chain safe-guards and controls that the ParentDAO has customized on creation. Otherwise, the SubDAO has autonomy to use it's treasury to make on-chain asset decisions with it's own distinct governance method (e.g. Multi-sig vs. Token Vote). Any SubDAO also has the autonomy to additionally become a ParentDAO
 
-## The Fractal Framework
+##### ParentDAO 
+A Safe treasury that has spawned a SubDAO. On creation, the ParentDAO can set the SubDAOs governance method, send it funds and set certain on-chain safe-guards and controls to keep the Parent in some sort of control.
 
-The Fractal Framework is built around the idea of a Minimum Viable DAO (MVD) that can be extended by modules. Conceptually, it defines DAOs in terms of _Fractals_, _Nodes_, and _Modules_:
-
-* Fractal - An organization with a flexible and scalable governance model made up of Nodes. Every Fractal consists of a root Node and any number of child Nodes.
-* Node - An independent governing body with an on-chain address and contracts that control permissions. Every Node is a fully-featured DAO with the ability to create additional Nodes. All interactions between Nodes are dictated by the governance models established by the contracts associated with the Nodes. Nodes can be extended using Modules.
-* Module - A standard interface for extending the functions of a Node. Modules can support functions like funding, payroll, or voting.
-
-By building an organization from Nodes and establishing governance models using Modules, Web3 builders can create on-chain organizations that serve any purpose they can imagine. The Fractal Framework is infinitely flexible and extensible.
+##### RootDAO 
+The initial ParentDAO that started the on-chain hierarchies that form the Fractal. This is the only Safe treasury that has no safeguards, checks or balances within the Fractal.
