@@ -36,7 +36,7 @@ The Fractal framework has several benefits over traditional DAO implementations:
 * Extensible - Modules extend the capabilities of nodes by implementing specific business requirements that a DAO may have, such as treasury management and governance.
 * Interoperable and upgradable - A shared Node architecture that enables any Module to service any Node for any Fractal or even every Node for every Fractal.
 
-### Nomenclature
+## Nomenclature
 
 ##### A Fractal
 A specific type of DAO where contributors can be structured into unique Parent and subDAO hierarchies each with its own governance and Safe treasury (by Gnosis). What makes these hierarchies stand out as a Fractal DAO is that each ParentDAO has certain on-chain checks and balances over the Sub-DAO that it formed.
