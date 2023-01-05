@@ -5,11 +5,11 @@ description: Use the Fractal web app to create a new Fractal Multisig Proposal.
 # Creating a Multisig Proposal
 
 ## Overview
-A proposal is a way to suggest that a Fractal DAO to initiates one or more transactions between the DAO and other addresses (contracts or wallets). 
-
-A proposal must be passed in order for the proposal to be executed.
+A proposal is a way to suggest that a Fractal DAO initiates one or more transactions between the DAO and other addresses (contracts or wallets). 
 
 A proposal is passed when the number of signers has reached the signer threshold.
+
+A proposal must be passed in order for the proposal to be executed.
 
 If the DAO where a proposal is submitted is a SubDAO, then guards are put in place which allow the ParentDAO to potentially block a proposal from being executed.
 
@@ -17,19 +17,21 @@ If the DAO where a proposal is submitted is a SubDAO, then guards are put in pla
 
 First, visit a Multisig DAO you are a signer of.
 
-In the left-hand menu, click the "proposals" icon
+In the left-hand menu, click the **proposals** icon.
 
 ![](../../../../.gitbook/assets/proposals-icon.png)
 
 Click "Create Proposal" in the upper right corner.
 
-![img.png](../../../../.gitbook/assets/create-proposal-icon.png)
+![](../../../../.gitbook/assets/create-proposal-icon.png)
 
-Enter the transactions that will execute if the proposal passes **and** is executed.
+Enter the transactions that should be executed (if the proposal passes and is executed).
 
-To enter multiple transactions, click **Add Transaction**
+{% hint style="info" %}
+To enter multiple transactions, click **Add Transaction**.
+{% endhint %}
 
-**Each transaction requires the following properties:**
+Each transaction requires the following properties:
 - **Target Address** - The smart contract address this proposal will modify
 - **Function Name** - The name of the function to be called if this proposal passes
 - **Function Signature** - The function of the smart contract (above) to be called if this proposal passes
