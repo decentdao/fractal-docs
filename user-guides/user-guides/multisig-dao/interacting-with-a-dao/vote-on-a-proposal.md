@@ -5,15 +5,16 @@ description: Use the Fractal web app to vote on a Fractal Multisig Proposal.
 # Vote on a Multisig Proposal
 
 ## Overview
-If you are a signer on a Mulitsig DAO, you can vote on a proposal which has not yet been executed.
+This will give an overview of how to vote on a Multisig proposal. 
 
-## Vote on a proposal
+To vote on the proposal, **you must be a signer on the DAO**.
 
 For Mulitsig DAOs, you can only vote "yes" on a proposal, you cannot vote "no".
 
-**To vote on a proposal:**
+## Vote on a proposal
+
 1. Visit a DAO you are the signer on.
 2. Visit the proposal you want to approve.
-3. Click "Approve" under "Sign Transaction"
-
-![](../../../../.gitbook/assets/vote-button.png)
+3. Click "Approve" under "Sign Transaction". You will be prompted to sign a transaction with your wallet.
+<br>![](../../../../.gitbook/assets/vote-button.png)
+4. Once the transaction confirms, your vote will show on the a

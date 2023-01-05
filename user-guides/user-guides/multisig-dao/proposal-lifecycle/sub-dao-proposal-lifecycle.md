@@ -5,8 +5,9 @@ description: View and understand the lifecycle of a Multisig SubDAO proposal.
 # RootDAO Proposal Lifecycle
 
 ## Overview
+A proposal in a Multisig SubDAO follows the lifecycle displayed in the diagram below.
 
-A Multisig SubDAO is displayed below in a diagram. The different phases are explained in a key underneath.
+The different phases are explained in a key underneath.
 
 ![](../../../../.gitbook/assets/multisig-subdao-proposal-lifecycle.png)
 
