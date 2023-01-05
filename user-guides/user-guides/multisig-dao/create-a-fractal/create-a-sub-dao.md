@@ -1,5 +1,5 @@
 ---
-description: Use the Fractal web app to create a new Fractal RootDAO.
+description: Use the Fractal web app to create a new Fractal SubDAO.
 ---
 
 # Creating a Fractal Multisig SubDAO
@@ -20,7 +20,7 @@ Visit the Multisig DAO you would like to create a SubDAO for (this DAO will be t
 You must be a signer on the parent DAO.
 {% endhint %}
 
-Click the three dots icon next to the DAO name, and click "Add a subDAO"
+Click the three dots icon next to the DAO name, and click **Add a subDAO**
 
 ![](../../../../.gitbook/assets/add-a-sub-dao.png)
 
@@ -28,14 +28,14 @@ Enter a name for your SubDAO and click **Next**.
 
 ![](../../../../.gitbook/assets/enter-fractal-name.png)
 
-Select "Governance Type" as "Multisig" and click "Next".
+Select **Governance Type** as **Multisig** and click **Next**.
 
 ![](../../../../.gitbook/assets/choose-governance.png)
 
 The **Configure Multisig** screen lets you define the signers who can create and vote on proposals.
 
 Set your signatories and signer threshold:
-- **Total signers**: The number of signers that can submit and approve transactions. One address must be entered under "Signer Addresses" for each signer.
+- **Total signers**: The number of signers that can submit and approve transactions. One address must be entered under **Signer Addresses** for each signer.
 - **Threshold**: How many signers must sign a proposal for it to pass (and be executed).
 
 In the example image below, a proposal for this DAO would have 3 total signers, and would require 2 of those signers to sign for the proposal to pass.
@@ -57,16 +57,19 @@ Confirm the SubDAO proposal TX with your wallet. Once the SubDAO proposal transa
 
 This proposal should be the most recent proposal in the proposals list. 
 
-Click "View Proposal" on the proposal to view it.
+Click **View Proposal** on the proposal to view it.
 
 ![](../../../../.gitbook/assets/view-subdao-proposal.png)
 
-Once this proposal is passed (has enough signatures), click "Execute". 
+Once this proposal is passed (has enough signatures), click **Execute**. 
+
+**Note: if you are adding a SubDAO to another SubDAO, the proposal will follow a proposal lifecycle.**
+Learn more about [SubDAO proposal lifecycle](../proposal-lifecycle/sub-dao-proposal-lifecycle.md).
 
 ![](../../../../.gitbook/assets/execute-transaction.png)
 
 After the execution TX confirms, the SubDAO will be deployed.
 
-Visit the "DAO Heirarchy" page from the left menu of your parent DAO, and you will see the SubDAO listed as a child.
+Visit the **DAO Heirarchy** page from the left menu of your parent DAO, and you will see the SubDAO listed as a child.
 
 ![](../../../../.gitbook/assets/dao-heirarchy-icon.png)
