@@ -1,12 +1,12 @@
 ---
-description: View and understand the lifecycle of a Multisig RootDAO proposal.
+description: View and understand the lifecycle of a Multisig rootDAO proposal.
 ---
 
-# RootDAO Proposal Lifecycle
+# rootDAO Proposal Lifecycle
 
 ## Overview
 
-A proposal in a Multisig RootDAO follows the lifecycle displayed in the diagram below.
+A proposal in a Multisig rootDAO follows the lifecycle displayed in the diagram below.
 
 The different phases are explained in a key underneath.
 
