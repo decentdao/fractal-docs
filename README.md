@@ -1,7 +1,6 @@
 ---
 description: >-
-  Disclaimer: app.fractalframework.xyz is in alpha on mainnet and unaudited. Use
-  at your own risk.
+  Do more with DAOs
 ---
 
 # Welcome to Fractal
@@ -13,8 +12,6 @@ Fractal offers value to everyone from DAO members to Web3 developers:
 * DAO Organizers - Create your own on-chain DAOs, establish their structure and governance and track outcomes to keep them accountabile (note - soon switching will be even easier with an upcoming 'import your existing Safe Treasuries' feature).
 * DAO Participants - Interact with the DAO based on subDAO permissions as well as track proposals, activities and asset movements.
 * DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
-
-<img src=".gitbook/assets/file.drawing.svg" alt="Ecosystem" class="gitbook-drawing">
 
 The components of the Fractal framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations.
 
