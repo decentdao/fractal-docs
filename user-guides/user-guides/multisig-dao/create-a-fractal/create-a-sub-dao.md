@@ -6,7 +6,7 @@ description: Use the Fractal web app to create a new Fractal subDAO.
 
 ## Overview
 
-This guide shows how to create a **subDAO**. If you would like to create a RootDAO, please visit: [Create a RootDAO](create-a-root-dao.md)
+This guide shows how to create a **subDAO**. If you would like to create a rootDAO, please visit: [Create a rootDAO](create-a-root-dao.md)
 
 A subDAO is a Fractal which has a parentDAO. A parentDAO is the DAO the subDAO was deployed from.
 

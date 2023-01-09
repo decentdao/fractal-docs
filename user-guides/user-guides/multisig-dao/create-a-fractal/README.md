@@ -5,9 +5,9 @@ description: Create Multisig DAOs in Fractal
 ## Overview
 Follow the guide for the type of Fractal you would like to create:
 
-### RootDAO
+### rootDAO
 This is a DAO with no parents (not a subDAO).
-[Create a RootDAO](create-a-root-dao.md)
+[Create a rootDAO](create-a-root-dao.md)
 
 ### subDAO
 This DAO will have a parentDAO.

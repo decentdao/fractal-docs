@@ -2,7 +2,7 @@
 description: View and understand the lifecycle of a Multisig subDAO proposal.
 ---
 
-# RootDAO Proposal Lifecycle
+# subDAO Proposal Lifecycle
 
 ## Overview
 A proposal in a Multisig subDAO follows the lifecycle displayed in the diagram below.

@@ -9,9 +9,9 @@ If you are a signer on a Mulitsig DAO, you can execute a proposal which has been
 
 If the DAO is a subDAO, there are some stipulations around if/when a proposal can be executed.
 
-See [RootDAO proposal lifecycle](../proposal-lifecycle/root-dao-proposal-lifecycle.md) and [subDAO proposal lifecycle](../proposal-lifecycle/sub-dao-proposal-lifecycle.md) for more information on the lifecycle of a proposal.
+See [rootDAO proposal lifecycle](../proposal-lifecycle/root-dao-proposal-lifecycle.md) and [subDAO proposal lifecycle](../proposal-lifecycle/sub-dao-proposal-lifecycle.md) for more information on the lifecycle of a proposal.
 
-## Parent/RootDAO
+## parent/rootDAO
 **For DAOs that are *not* subDAOs (have no parents)**, to execute a passed proposal:
 
 1. Visit the proposal that you would like to execute. 
