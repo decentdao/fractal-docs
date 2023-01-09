@@ -2,157 +2,100 @@
 description: Answers to the most common questions about Fractal.
 ---
 
-# FAQ
-
-## Background
+# Frequently Asked Questions (FAQ)
 
 <details>
-
 <summary>What is Fractal?</summary>
+The Fractal framework is for on-chain DAOs to construct on-chain subDAO hierarchies in whatever structure unleashes effective and secure decision-making. This empowers your existing Safe Treasuries (by Gnosis) with the power of a truly composable governance layer, meaning DAOs can construct and scale their contributors in any hierarchy that unlocks effective execution.
 
-Fractal is a framework and platform that helps Web3 builders launch, fund, govern, and scale DAOs (Fractals). In the Fractal framework, a Fractal is a decentralized organization composed of a network of independent governing **Nodes**, which makes the organizing structures of Fractals infinitely adaptable.
+For example, DAOs can formalize their contributor Multi-Sigs into subDAO hierachies all accountable to a parentDAO of community token voters. Or do you prefer a governing council of expert individuals with protection powers over a token voting community? All these structures and more are available as Fractal empowers builders to build their DAO in any structure that makes them uniquely effective. 
 
-Fractal will start as an open-source framework. Then, the Fractal DAO and governance token $FRAC will launch as the first project built on Fractal. The Fractal DAO will serve as governance for the future development of Fractal and the **Fractal Pad.**
-
+With different governance structures per subDAO, safeguard checks and balances at the parent level, and modular plug-and-play ecosystem additions available at each level of the DAO, this means DAOs no longer compromise on effectiveness as they scale.
 </details>
 
 <details>
+<summary>What Problem does Fractal solve and how did the idea come to be?</summary>
+DAOs are stuck. Stuck choosing between on-chain community decision-making (democratic but slow, expensive and tricky to tackle nuanced issues) and overly compromising on individuals executing ‘the community will’ via multi-signature. Neither is a perfect solution for everyday DAO decision-making, but DAOs shouldn’t have to choose. Why can’t DAOs be formed in a subDAO hierarchy that empowers different governance structures per working group whilst enabling on-chain safeguards to the Parent? 
 
-<summary>What is a Node?</summary>
-
-Within Fractal, a new instance of a Fractal can be created. This instance is called a _**Node**_. A Node can create another Node with a thin link between the two. All Nodes are created equal. Each Node controls a set of modules and the ability to create a new Node—i.e., the ability to _**fractalize.**_
-
+The [DecentDAO](https://www.decentlabs.io/) venture studio experienced this challenge firsthand as they transitioned from LLC to DAO, so they created Fractal. This novel governance framework helps DAOs who are struggling to flexibly structure their contributors’ on-chain decision-making without compromising day-to-day effectiveness. In short, Fractal empowers DAOs to get things done!
 </details>
 
 <details>
-
-<summary>What is a subDAO?</summary>
-
-A child DAO spawned from the parent or root DAO. Fractal’s core framework allows DAOs to exist as clusters of independent subDAOs.
-
-</details>
-
-<details>
-
-<summary>What is the Fractal Pad?</summary>
-
-The Fractal Pad is an easy way to launch an Initial Dex Offering (IDO) to raise capital for your Fractal DAOs.
-
-The Fractal Pad is an IDO Launchpad platform for EVM-based DeFi protocols. Fractal Pad listings will be approved entirely by a decentralized consortium (the Fractal DAO) enabling users across the world to access capital at the frontier of DeFi.
-
-</details>
-
-<details>
-
-<summary>What is the Fractal DAO?</summary>
-
-The Fractal DAO is a decentralized consortium that will provide oversight and support for DAOs in the Fractal ecosystem. The Fractal DAO and the governance token $FRAC will be the first projects built on Fractal, with the goal of onboarding and growing additional projects from our community.
-
-</details>
-
-<details>
-
-<summary>Why are you building Fractal?</summary>
-
-Fractal aims to fill the need for better DAO tooling and social coordination across the Web3 space. We envision decentralized organizational structures made up of independent, but connected DAOs. To support this vision, we developed the concept of the [Minimum Viable DAO](https://mirror.xyz/decent-dao.eth/j0vupePJK2Xcpp6rt53mvcu6IfZJlGXinTz6WNgAkdI) (MVD), which serves as the basic building block for all organizations launched on Fractal. The concept of the MVD makes it possible to create extremely flexible organizational structures with all the benefits of decentralization, which is one of the major drawbacks of previous DAO platforms.
-
-</details>
-
-<details>
-
 <summary>Who is Fractal for?</summary>
+Fractal is for DAO members and builders who find existing DAO tools and ‘all-in-one-platforms’ rigid and restrictive for their DAO needs. As their DAO evolves and scales, they’ve seen the benefits - and at times restrictions - of different governance methods. They know there’s no such thing as ‘one governance fits all.’ They know that at times small groups of domain experts can act faster than a large community, but the community requires on-chain restrictions to protect them from losing control. 
 
-Fractal is meant for builders and founders in the Web3 space who want to launch their own DAO. Fractal is also for DeFi organizations looking to use DAOs to enhance the functionality of their protocols
-
-</details>
-
-## Technology
-
-<details>
-
-<summary>Is Fractal Open-Source?</summary>
-
-Yes.
-
+Fractal is for the DAOs that have so far defaulted to Multi-Signatories and off-chain Snapshot voting… but know they need something more!
 </details>
 
 <details>
+<summary>What is an Open Governance Framework?</summary>
+A governance framework is made up of composable components which manage on-chain powers and relationships between DAO contributors.
 
+The fact it’s ‘open’ means that this framework isn’t limited to what we build. Instead it can be built on by DAOs with the latest tooling from across the crypto ecosystem
+</details>
+
+<details>
+<summary>Why did you choose to build around Safe (by Gnosis) treasuries</summary>
+DAOs are governance structures for decentralized on-chain decision-making around digital assets. This requires maintaining a treasury of assets. We chose to build around Safe contract wallet (formerly Gnosis Safe) because it is the Web3 industry standard for storing treasuries of assets. Not only do 90%+ of DAOs use them but they are secure, modular and empower multiple governance options for decisions on on-chain assets.
+</details>
+
+<details>
+<summary>How is Fractal composable and modular? What does this mean for my DAO?</summary>
+Fractal is a small set of components and permissions attached to a Safe contract wallet.  While we provide the initial set of defaults, the Fractal framework itself is infinitely customizable.
+
+Don’t like ERC20 token-based voting?  Your DAO can vote to remove the strategy and approve a new one.  Does your community require a childDAO to manage specific assets?  They can vote to create sub-DAOs and give custody of those assets to it. The crypto ecosystem is always expanding so your DAO from day 1 needs to be upgradeable to the latest and greatest.
+</details>
+
+<details>
 <summary>What chain is Fractal built on?</summary>
-
-Fractal is built on the Ethereum Virtual Machine (EVM).
-
+Fractal is built on the Ethereum Virtual Machine (EVM), and at full launch will support Ethereum Mainnet.  Following launch, we will work to support any EVM chain where Safe is also supported.
 </details>
 
 <details>
+<summary>Can I import an existing Safe treasury and governance token?</summary>
+Our initial beta launch will allow for the creation of a new Safe-based Fractal DAO, along with a new governance token. By Beta-end, users will also be able to convert an existing Safe to a Fractal DAO as well as utilize an existing ERC-20 token as governance. Get involved with our Beta if you want even earlier access to these features.
+</details>
 
+<details>
 <summary>What DAO is Fractal launched through?</summary>
-
-Fractal was launched through [Decent DAO](https://www.decentlabs.io/).
-
+Fractal was incubated and launched by Decent DAO.
 </details>
 
 <details>
+<summary>What functionality will there be at launch?</summary>
+The Beta Launch in Q1 of 2023, will allow for the creation of subDAOs either with a (Safe) multi-sig-based governance structure, or a 1:1 ERC20 token voting structure (Usul).
 
+Members in either structure will be able to submit transaction proposals, vote on them, and ultimately execute them, provided they pass the governance vote.
+
+Every Parent DAOs will also have on-chain safeguard over subDAOs to also form proposals or optionally freeze the subDAO assets in case of bad actors or disagreements.
+
+All of this will be managed in an intuitive, simple front end, designed to make managing DAO interactions easy and seamless.
+</details>
+
+<details>
 <summary>What is the tech stack for Fractal?</summary>
+Smart Contracts and Test Suite: solidity, openZepplin, Hardhat, Ethers
 
-Fractal uses the following tech stacks for different features:
-
-* **Smart Contracts and Test Suite:** [Solidity](https://docs.soliditylang.org), [OpenZeppelin](https://www.openzeppelin.com/), [Hardhat](https://hardhat.org/), [Ethers](https://docs.ethers.io/)
-* **Web app:** [TypeScript](https://www.typescriptlang.org/), [React](https://reactjs.org/), [Ethers](https://docs.ethers.io/)
-
-</details>
-
-## Product
-
-<details>
-
-<summary>What features does the Fractal MVP support?</summary>
-
-The Fractal MVP includes everything you need to launch and manange a typical, basic DAO:
-
-* UI/UX - An easy set of tools for creating a minimum viable DAO.
-* Smart contracts that implement the following features of a DAO:
-  * A voting token
-  * Governance tools for creating proposals, submitting votes, and executing decisions
-  * Treasury tools for fundraising and vesting
-* Fractal Pad - An easy way to launch an Initial Dex Offering (IDO) to raise capital for your Fractal DAOs
-
+Web app: typescript, react, ethers
 </details>
 
 <details>
+<summary>What are Fractal’s core benefits and competitive advantages?</summary>
+1) **We’re** **Composable to any Structure** - Form a truly composable DAO as a constellation of on-chain decision-making bodies with optional checks and balances between working groups.
 
-<summary>Why will Fractal succeed?</summary>
+2) **Different Governance per working group** - Some groups require domain experts to act fast and autonomously via a Multi-Signatory. This shouldn’t mean other decisions can’t bring the diversity of the entire community to critical decisions. Pick and choose whatever suits your DAO including some of the latest in voting methodologies
 
-Fractal supports our community in several unique ways that will give us a competitive advantage in the DAO-platform ecosystem:
+3) **Set On-Chain Relationships between groups** - Keep the community in control with optional restrictions of veto, budgeting and freezing powers over smaller working groups. 
 
-* Fractal Pad - We provide tools and support to help newly formed DAOs with their IDO/IGO.
-* Support - We help DAOs with services like payroll, bookkeeping, taxes, voting, bounty, and incentive programs to improve community participation.
-* Community Engagement - The organizational structures supported by Fractal enhance community engagement. Getting members to actively engage with each other is key to the health of any DAO. Members need to feel they have enough of a voice to keep contributing and participating. Fractal offers a more democratic governance model for voting to ensure that every member feels like they have a stake and a voice in the organization.
-* User Experience - We provide an easy-to-use user interface for DAO managers and members. Our dashboard gives managers a quick view of all the contributors and what they're working on.
-* Contributor Compensation - We provide tools to help DAOs compensate their contributors and track expenses. Many current DAOs are still using credit cards to pay contributors. It is difficult to transfer those payments to Gnosis Safe, so having tools to help pay contributors and track expenses will be very valuable for communities as they choose which platform to launch and manage their DAO.
-* Flexibility - The concept of the Minimum Viable DAO and Fractal's Node-base framework make it possible to create endless organizational structures. As more DAOs are created, different DAOs will have specific nuances and needs for servicing their communities, which Fractal is uniquely positioned to support.
-
+4) **A Modular & Upgradeable DAO ready to scale** - Ensure your DAO is always evolving with the latest and vetted cross-ecosystem tools and protocols; all plug-and-play. Then take this one-step further by creating your own custom integration functionality to unlock your personal favourite tools in the ecosystem
 </details>
 
 <details>
+<summary>Is Fractal Open-Source?</summary>
+Yes, Fractal is completely open source.  You can find all of our code at the Decent DAO Github: https://github.com/decent-dao 
+</details>
 
-<summary>What is the current roadmap for Fractal?</summary>
-
-Fractal development will follow the basic roadmap below:
-
-* Q1 2022
-  * Design the Fractal concept, brand, and Pad UI/UX.
-  * Develop and launch the alpha version of the Fractal Framework.
-  * Deploy the Fractal DAO and $FRAC to the Mainnet.
-* Q2 2022
-  * Launch community incentive programs.
-  * Develop and launch the Fractal Pad app.
-* Q3 2022
-  * Launch three new DAOs on Fractal.
-  * Continue growing the Fractal community.
-  * Add additional community incentive programs to Fractal.
-* Q4 2022
-  * Develop and launch the Fractal Venture Yield.
-
+<details>
+<summary>How can I get started with Fractal?</summary>
+Learn more at https://www.fractalframework.xyz/ and [join our Discord](https://discord.com/invite/decent-dao).
 </details>
