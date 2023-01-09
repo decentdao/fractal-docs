@@ -1,11 +1,11 @@
 ---
-description: View and understand the lifecycle of a Multisig SubDAO proposal.
+description: View and understand the lifecycle of a Multisig subDAO proposal.
 ---
 
 # RootDAO Proposal Lifecycle
 
 ## Overview
-A proposal in a Multisig SubDAO follows the lifecycle displayed in the diagram below.
+A proposal in a Multisig subDAO follows the lifecycle displayed in the diagram below.
 
 The different phases are explained in a key underneath.
 
@@ -46,4 +46,4 @@ After a proposal is executed, it enters the Executed state.
 If another proposal with the same nonce is executed, then a proposal with the same nonce which is not executed will enter a Rejected state. A rejected proposal can no longer be executed.
 
 #### Frozen
-If a SubDAO is frozen by the ParentDAO, it can't execute transactions.
+If a subDAO is frozen by the ParentDAO, it can't execute transactions.
