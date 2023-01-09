@@ -1,12 +1,12 @@
 ---
-description: Use the Fractal web app to create a new Fractal RootDAO.
+description: Use the Fractal web app to create a new Fractal rootDAO.
 ---
 
-# Creating a Fractal Multisig RootDAO
+# Creating a Fractal Multisig rootDAO
 
 ## Overview
 
-This guide shows how to create a **RootDAO**. If you would like to create a SubDAO, please visit: [Create a SubDAO](create-a-sub-dao.md)
+This guide shows how to create a **rootDAO**. If you would like to create a subDAO, please visit: [Create a subDAO](create-a-sub-dao.md)
 
 Creating a Fractal adds a smart contract for a basic DAO at a new address on the blockchain. You can create new Fractals on any supported Ethereum testnet or mainnet. All you need is an ERC20 wallet and some ETH to cover the gas fees.
 
