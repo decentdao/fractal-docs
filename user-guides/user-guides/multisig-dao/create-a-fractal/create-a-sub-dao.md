@@ -8,13 +8,13 @@ description: Use the Fractal web app to create a new Fractal subDAO.
 
 This guide shows how to create a **subDAO**. If you would like to create a RootDAO, please visit: [Create a RootDAO](create-a-root-dao.md)
 
-A subDAO is a Fractal which has a ParentDAO. A ParentDAO is the DAO the subDAO was deployed from.
+A subDAO is a Fractal which has a parentDAO. A parentDAO is the DAO the subDAO was deployed from.
 
-A ParentDAO has the ability to set proposal parameters on the subDAO and freeze the subDAO which prevents the subDAO from executing proposals.
+A parentDAO has the ability to set proposal parameters on the subDAO and freeze the subDAO which prevents the subDAO from executing proposals.
 
 ## Create a Multisig subDAO:
 
-Visit the Multisig DAO you would like to create a subDAO for (this DAO will be the parent). You will need to know the ParentDAO's address.
+Visit the Multisig DAO you would like to create a subDAO for (this DAO will be the parent). You will need to know the parentDAO's address.
 
 {% hint style="info" %}
 You must be a signer on the parent DAO.

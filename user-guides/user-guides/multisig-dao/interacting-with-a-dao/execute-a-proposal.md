@@ -32,7 +32,7 @@ You can view the transaction by clicking on the link next to **Transaction Hash*
 
 1. Queue the proposal by visiting the proposal and clicking the "Queue" button. You will be prompted to sign a transaction in your wallet.
 <br>![](../../../../.gitbook/assets/queue-proposal-button.png)
-2. Once the transaction confirms, the timelock period starts. This is the period of time (set by the ParentDAO) which must pass before the transaction can be executed. The **Execute** button will be disabled until the timelock period ends.
+2. Once the transaction confirms, the timelock period starts. This is the period of time (set by the parentDAO) which must pass before the transaction can be executed. The **Execute** button will be disabled until the timelock period ends.
 3. Once the timelock period ends, the execution period starts. During this period, the proposal can be executed by clicking the "Execute" button.
 <br> ![](../../../../.gitbook/assets/execute-transaction.png)
 

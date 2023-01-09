@@ -11,7 +11,7 @@ A proposal is passed when the number of signers has reached the signer threshold
 
 A proposal must be passed in order for the proposal to be executed.
 
-If the DAO where a proposal is submitted is a subDAO, then guards are put in place which allow the ParentDAO to potentially block a proposal from being executed.
+If the DAO where a proposal is submitted is a subDAO, then guards are put in place which allow the parentDAO to potentially block a proposal from being executed.
 
 ## Create a Proposal
 

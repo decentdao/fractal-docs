@@ -25,7 +25,7 @@ Once the transaction has been queued. The timelock period starts when the transa
 #### Timelock period
 The timelock period is the time between when a transaction is queued and becomes executable. During this time, the proposal can't be executed.
 
-The ParentDAO is responsible for setting the timelock period.
+The parentDAO is responsible for setting the timelock period.
 
 #### Executable
 Once the timelock period ends, a queued proposal becomes executable and the execution period starts.
@@ -37,7 +37,7 @@ After a transaction is executable, there is a limited amount of time when the tr
 
 If a proposal is not executed in this time period, the proposal becomes expired. 
 
-The ParentDAO is responsible for setting the execution period.
+The parentDAO is responsible for setting the execution period.
 
 #### Executed
 After a proposal is executed, it enters the Executed state.
@@ -46,4 +46,4 @@ After a proposal is executed, it enters the Executed state.
 If another proposal with the same nonce is executed, then a proposal with the same nonce which is not executed will enter a Rejected state. A rejected proposal can no longer be executed.
 
 #### Frozen
-If a subDAO is frozen by the ParentDAO, it can't execute transactions.
+If a subDAO is frozen by the parentDAO, it can't execute transactions.

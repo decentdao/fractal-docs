@@ -10,5 +10,5 @@ This is a DAO with no parents (not a subDAO).
 [Create a RootDAO](create-a-root-dao.md)
 
 ### subDAO
-This DAO will have a ParentDAO.
+This DAO will have a parentDAO.
 [Create a subDAO](create-a-sub-dao.md)
