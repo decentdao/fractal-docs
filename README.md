@@ -9,7 +9,7 @@ Fractal is a an open DAO framework that unleashes a new wave of efficient, compo
 
 Fractal offers value to everyone from DAO members to Web3 developers:
 
-* DAO Organizers - Create your own on-chain DAOs, establish their structure and governance and track outcomes to keep them accountabile (note - soon switching will be even easier with an upcoming 'import your existing Safe Treasuries' feature).
+* DAO Organizers - Create your own on-chain DAOs, establish their structure and governance and track outcomes to keep them accountable (note - soon switching will be even easier with an upcoming 'import your existing Safe Treasuries' feature).
 * DAO Participants - Interact with the DAO based on subDAO permissions as well as track proposals, activities and asset movements.
 * DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
 
@@ -29,7 +29,7 @@ Fractal fills the need for better DAO tooling and social coordination across the
 The Fractal framework has several benefits over traditional DAO implementations:
 
 * Build - A composable framework for organizations (a _Fractal_) to be formed as a group of independent governing bodies (_subDAOs) in any structure
-* Govern - Custom governance for each subDAO with custom on-chain parent safeguards such as Freezing the subDAO in case of emergency.
+* Govern - Custom governance for each subDAO with custom on-chain parent safeguards such as freezing the subDAO in case of emergency.
 * Scale - An expanding, “plug-and-play” feature set that allows your DAO (or specific subDAOs) to extend the capabilities including treasury management and governance.
 
 ## Nomenclature
