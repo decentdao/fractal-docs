@@ -2,7 +2,7 @@
 description: Use the Fractal web app to create a new Token Voting Fractal rootDAO.
 ---
 
-# Creating a Multisig rootDAO
+# Creating a Token Voting rootDAO
 
 ## Overview
 
@@ -26,9 +26,9 @@ Enter a name for your Fractal DAO and click **Next**.
 
 Select "Governance Type" as "Multisig" and click "Next".
 
-![](../../../../.gitbook/assets/choose-governance.png)
+![](../../../../.gitbook/assets/choose-governance-token-voting.png)
 
-The **Configure Multisig** screen lets you define the signers who can create and vote on proposals.
+The **Configure Voting Token** screen lets you configure your voting token parameters.
 
 Set your signatories and signer threshold:
 - **Total signers**: The number of signers that can submit and approve transactions. One address must be entered under "Signer Addresses" for each signer.

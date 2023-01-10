@@ -40,7 +40,7 @@ If a proposal is not executed in this time period, the proposal becomes expired.
 The parentDAO is responsible for setting the execution period.
 
 #### Executed
-After a proposal is executed, it enters the Executed state.
+After a proposal is executed, the transactions on the proposal are executed and the proposal enters the **Executed** state.
 
 #### Rejected
 If another proposal with the same nonce is executed, then a proposal with the same nonce which is not executed will enter a Rejected state. A rejected proposal can no longer be executed.

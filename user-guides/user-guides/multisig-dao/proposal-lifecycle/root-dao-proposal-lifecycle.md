@@ -23,7 +23,7 @@ Once the threshold number of signers have signed the proposal, the proposal is p
 A proposal that is executable can be executed, executing the transactions in the proposal.
 
 #### Executed
-After a proposal is executed, it enters the Executed state.
+After a proposal is executed, the transactions on the proposal are executed and the proposal enters the **Executed** state.
 
 #### Rejected
 If another proposal with the same nonce is executed, then a proposal with the same nonce which is not executed will enter a Rejected state. A rejected proposal can no longer be executed.
