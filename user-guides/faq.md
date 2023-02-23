@@ -73,11 +73,11 @@ Fractal was incubated and launched by [decentDAO](https://www.decent-dao.org/).
 <details>
 <summary>What functionality will there be at launch?</summary>
 
-The Beta Launch in Q1 of 2023, will allow for the creation of subDAOs either with a (Safe) multi-sig-based governance structure, or a 1:1 ERC20 token voting structure (Usul).
+The Beta Launch in Q1 of 2023 will allow for the creation of subDAOs either with a (Safe) multi-sig-based governance structure, or a 1:1 ERC20 token voting structure.
 
 Members in either structure will be able to submit transaction proposals, vote on them, and ultimately execute them, provided they pass the governance vote.
 
-Every Parent DAOs will also have on-chain safeguard over subDAOs to also form proposals or optionally freeze the subDAO assets in case of bad actors or disagreements.
+Parent DAOs will also have on-chain safeguards over subDAOs allowing them to form proposals or optionally freeze the subDAO assets in case of bad actors or disagreements.
 
 All of this will be managed in an intuitive, simple front end, designed to make managing DAO interactions easy and seamless.
 </details>
@@ -85,9 +85,9 @@ All of this will be managed in an intuitive, simple front end, designed to make 
 <details>
 <summary>What is the tech stack for Fractal?</summary>
 
-Smart Contracts and Test Suite: solidity, openZepplin, Hardhat, Ethers
+Web app: Typescript, React, ethers.js
 
-Web app: typescript, react, ethers
+Smart Contracts and Test Suite: Solidity, OpenZeppelin, Hardhat, Ethers
 </details>
 
 <details>
@@ -111,5 +111,5 @@ Yes, Fractal is completely open source.  You can find all of our code at the dec
 <details>
 <summary>How can I get started with Fractal?</summary>
 
-Learn more at https://www.fractalframework.xyz/ and [join our Discord](https://discord.com/invite/decent-dao).
+Learn more at https://www.fractalframework.xyz/ and [join our Discord](https://discord.gg/zARyBCWgZd).
 </details>
