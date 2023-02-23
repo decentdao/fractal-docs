@@ -111,5 +111,5 @@ Yes, Fractal is completely open source.  You can find all of our code at the dec
 <details>
 <summary>How can I get started with Fractal?</summary>
 
-Learn more at https://www.fractalframework.xyz/ and [join our Discord](https://discord.gg/zARyBCWgZd).
+Learn more at [fractalframework.xyz](https://www.fractalframework.xyz/) and [join our Discord](https://discord.com/invite/VGyppnX7wG).
 </details>
