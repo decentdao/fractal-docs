@@ -18,6 +18,8 @@
     * [Proposal Lifecycle](user-guides/user-guides/multisig-dao/proposal-lifecycle/README.md)
       * [rootDAO Proposal Lifecycle](user-guides/user-guides/multisig-dao/proposal-lifecycle/root-dao-proposal-lifecycle.md)
       * [subDAO Proposal Lifecycle](user-guides/user-guides/multisig-dao/proposal-lifecycle/sub-dao-proposal-lifecycle.md)
+* [Smart Contracts](https://github.com/decent-dao/fractal-contracts/blob/develop/README.md)
+  * [NatSpec](https://github.com/decent-dao/fractal-contracts/tree/develop/docs)
 * [FAQ](user-guides/faq.md)
 
 ---
