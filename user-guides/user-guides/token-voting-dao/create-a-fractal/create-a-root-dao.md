@@ -2,7 +2,7 @@
 description: Use the Fractal web app to create a new Token Voting Fractal rootDAO.
 ---
 
-# Creating a Multisig rootDAO
+# Creating a Token Voting rootDAO
 
 ## Overview
 
@@ -20,19 +20,23 @@ Click **Create a Fractal**.
 
 ![](../../../../.gitbook/assets/create-a-fractal-button.png)
 
-Enter a name for your Fractal DAO and click **Next**. 
+Enter a name for your Fractal DAO and click **Next**.
 
 ![](../../../../.gitbook/assets/enter-fractal-name.png)
 
-Select "Governance Type" as "Multisig" and click "Next".
+Select **Governance Type** as **Token Voting** and click **Next**.
 
-![](../../../../.gitbook/assets/choose-governance.png)
+![](../../../../.gitbook/assets/choose-governance-token-voting.png)
 
-The **Configure Multisig** screen lets you define the signers who can create and vote on proposals.
+#### Token Metadata
+The **Configure Voting Token** screen lets you configure your voting token parameters:
 
-Set your signatories and signer threshold:
-- **Total signers**: The number of signers that can submit and approve transactions. One address must be entered under "Signer Addresses" for each signer.
-- **Threshold**: How many signers must sign a proposal for it to pass (and be executed).
+- **Token Name**: Full name of your governance token (i.e. "My Governance Token")
+- **Token Symbol**: Symbol for your token (i.e. MGT)
+- **Token Supply**: Total token supply. Note: This number should be entered as a *whole* token number (think `ETH`, not `WEI`)
+
+#### Token Allocations
+
 
 In the example image below, a proposal for this DAO would have 3 total signers, and would require 2 of those signers to sign for the proposal to pass.
 
