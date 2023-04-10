@@ -6,13 +6,7 @@ description: View and understand the lifecycle of a Multisig rootDAO proposal.
 
 ## Overview
 
-A proposal in a Multisig rootDAO follows the lifecycle displayed in the diagram below.
-
-The different phases are explained in a key underneath.
-
-![](../../../../.gitbook/assets/multisig-root-dao-proposal-lifecycle.png)
-
-## Key
+![](../../../../.gitbook/assets/proposal_state_flows.png)
 
 #### Active
 As soon as the proposal has been created, it becomes active and any signer on the DAO can vote on the proposal. There is no voting period, and the proposal will be able to be voted on as long as the proposal is not passed or executed.
