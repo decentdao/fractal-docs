@@ -1,47 +1,45 @@
 ---
 description: >-
-  Do more with DAOs
+  Do more with Composable DAOs
 ---
 
 # Welcome to Fractal
 
-Fractal is a an open DAO framework that unleashes a new wave of efficient, composable and secure DAOs that get stuff done without compromising asset protections! It does this by forming on-chain asset decision makers into subDAO hierarchies. These subDAO contributor groups are each empowered with their own Safe Treasury, governance (multi-signature or token vote) and permissions. This means each subDAO can operate like its own autonomous DAO, scale with it’s own tools and integrations… but never lose on-chain accountability to parent stakeholders.
+Fractal is the most composable DAO app and framework as it unleashes a new wave of agile, on-chain and interoperable DAOs that can get stuff done! Start from scratch... or import an existing (Gnosis) Safe or ERC20 token. Then create entirely unique subDAO hierarchies to the needs of your specific organization and community. Each subDAO is empowered with their own Treasury, permissions and governance (e.g. multi-sig, token vote, nft based vote etc). Suddenly they can operate like a completely autonomous DAO and get stuff done whilst never losing on-chain accountability to their community or parent stakeholders. 
 
-Fractal offers value to everyone from DAO members to Web3 developers:
+Fractal offers value to everyone in the DAO from:
 
-* DAO Organizers - Create your own on-chain DAOs, establish their structure and governance and track outcomes to keep them accountable (note - soon switching will be even easier with an upcoming 'import your existing Safe Treasuries' feature).
-* DAO Participants - Interact with the DAO based on subDAO permissions as well as track proposals, activities and asset movements.
-* DeFi protocols - Use DAOs to support sophisticated workflows and scale up your DeFi protocol.
-
-The components of the Fractal framework support the creation of a composable operating system for DAOs, which allows DAOs to outscale and outperform traditional organizations.
+* **Leaders and Founders** - Create your own on-chain subDAO hierarchies. Establish the structure, permissions and governance unique to your DAO. Offer your contributors as much - or as little - decision making power on assets as you feel comfortable with. Ensure whatever structure you go for, that it's all transparent, scalable and on-chain to build community confidence.
+* **Community Members**  - Track all DAO activities and asset movements. Engage on proposals based on permissions. Let contributor subDAOs action daily tasks whilst you review - and potentially freeze - activities that may go against your wishes
+* **Daily Contributors** - Get clarity on what budgets and assets you've been allocated. Action your responsibilities with on-chain buy-in from the community. Speed up regular DAO tasks with a template builder that interoperates no-code with any smart contract on Ethereum to access all the benefits DeFi offers your organization.
 
 This site includes the following documentation:
 
-* **User Guides** - Information about [using the Fractal app](broken-reference) to deploy, manage, and participate in DAOs.
-* **FAQ** - Short answers to common [questions](user-guides/faq.md) about Fractal.
+* **User Guides** - Information about [using the Fractal app](https://docs.fractalframework.xyz/welcome-to-fractal/user-guides/user-guides) to explore, deploy, manage, and participate in DAOs.
+* **FAQ** - Short answers to [common questions](https://docs.fractalframework.xyz/welcome-to-fractal/user-guides/faq) about Fractal.
 
 ## Why Fractal?
 
-Fractal fills the need for better DAO tooling and social coordination across the Web3 space. Existing DAO platforms limit the functionality and structure of DAOs by making assumptions about the functions of DAOs. Fractal expands the possibilities for DAOs by providing a composable and extensible framework that supports any structure and governance model that an organization could require.
+There are an infinite number of structures and possibilities available to DAOs. However, organisations right now are delayed moving on-chain. Current options make users feel like stuck; giving up their agility, scalability and community experimentation when they make the switch on-chain. Fractal fills the need for more composable solutions for DAOs. Even better, the switching costs are zero by being entirely built on (Gnosis) Safes. Get the most of Composable DAOs but always feel free to leave with a fully functioning Safe at any point.
 
 ### Benefits
 
 The Fractal framework has several benefits over traditional DAO implementations:
 
-* Build - A composable framework for organizations (a _Fractal_) to be formed as a group of independent governing bodies (_subDAOs) in any structure
-* Govern - Custom governance for each subDAO with custom on-chain parent safeguards such as freezing the subDAO in case of emergency.
-* Scale - An expanding, “plug-and-play” feature set that allows your DAO (or specific subDAOs) to extend the capabilities including treasury management and governance.
+* **Structure** - Compose subDAO hierarchies each with their own treasury, governance and permissions. This could include a CEO with executive powers over a community as they progressively decentralize. Or imagine a community who empowers subDAOs of contributors to deliver daily tasks for them. Every DAO structure is in reach and it's all no-code
+* **Govern** - Create and vote on proposals with multiple governance options per subDAO. Every subDAO can choose what specifically suits them from token voting, nft based voting, a simple multi-sig and many more as we continue to grow
+* **Operate** - Start quickly with any (Gnosis) Safe. Then use our DAO modules & template builder to infinitely expand it’s functionality. Any smart contract on Ethereum can be interacted with no-code in our app and saved to the UI to fast track regular DAO operations
 
 ## Nomenclature
 
 ##### A Fractal
-A specific type of DAO where contributors can be structured into unique Parent and subDAO hierarchies each with its own governance and Safe treasury (by Gnosis). What makes these hierarchies stand out as a Fractal DAO is that each parentDAO has certain on-chain checks and balances over the Sub-DAO that it formed.
+A specific type of DAO where contributors can be structured into unique Parent and subDAO hierarchies each with its own governance and Safe treasury (by Gnosis). What makes these hierarchies stand out as a Fractal DAO is at it's heart just a (Gnosis) Safe with certain smart contract modules built on it to add hierarchichal relationships, new governance options and additional functionaltiy. 
 
 ##### subDAO
-A Safe treasury that has been spawned by a parentDAO. This subDAO always has certain on-chain safe-guards and controls that the parentDAO has customized on creation. Otherwise, the subDAO has autonomy to use it's treasury to make on-chain asset decisions with it's own distinct governance method (e.g. Multi-sig vs. Token Vote). Any parentDAO also has the autonomy to additionally become a parentDAO (but not a rootDAO).
+A Safe treasury that has been spawned by a parentDAO. This subDAO always has certain on-chain relationships and controls that the parentDAO has customized on creation. Otherwise, the subDAO has autonomy to use it's treasury to make on-chain asset decisions with it's own distinct governance method. Any subDAO also has the autonomy to additionally become a parentDAO (but not a rootDAO).
 
 ##### parentDAO 
 A Safe treasury that has spawned a subDAO. On creation, the parentDAO can set the subDAO's governance method, send it funds and set certain on-chain safe-guards and controls to keep the parent in some sort of control (e.g. freeze powers, delaying timelock period per transaction etc)
 
 ##### rootDAO 
-The initial parentDAO that started the on-chain hierarchies that form the Fractal. This is the only Safe treasury that has no safeguards, checks or balances within the Fractal.
+The initial parentDAO that started the on-chain hierarchies that form the Fractal. This is the only Safe treasury that has no parent and so no executive powers or on-chain relationships limiting it's control.
