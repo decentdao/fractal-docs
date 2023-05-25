@@ -1,6 +1,6 @@
 ---
 description: >-
-  Do more with *Composable* DAOs
+  Do more with Composable DAOs
 ---
 
 # Welcome to Fractal
@@ -35,8 +35,11 @@ The Fractal framework has several benefits over traditional DAO implementations:
 
 ## Nomenclature
 
+##### Safe
+The uppercased word Safe (formerly Gnosis Safe) refers to a multisignature smart contract wallet by [Gnosis](https://safe.global/). Safe is the most trusted name in on-chain asset ownership in Ethereum, and the foundation on which every Fractal DAO is based.
+
 ##### Fractal
-A Fractal is a specific type of DAO where contributors can be structured into unique *parentDAO* and *subDAO* hierarchies each with their own governance and Safe treasury. At its heart each Fractal is a Safe contrat wallet with a governance [module](https://docs.safe.global/learn/safe-core/safe-core-protocol/modules) and an optional [guard](https://docs.safe.global/learn/safe-core/safe-core-protocol/guards) contract to allow for *freezing* a subDAO. 
+A Fractal is a specific type of DAO where contributors can be structured into unique *parentDAO* and *subDAO* hierarchies each with their own governance and Safe treasury. At its heart each Fractal is a Safe contract wallet with a governance [module](https://docs.safe.global/learn/safe-core/safe-core-protocol/modules) and an optional [guard](https://docs.safe.global/learn/safe-core/safe-core-protocol/guards) contract to allow for *freezing* a subDAO. 
 
 ##### rootDAO 
 The initial DAO that has started the on-chain hierarchies that form the Fractal. This is the only Safe treasury that has no parent and so no executive powers or on-chain relationships limiting its control.
