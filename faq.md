@@ -49,7 +49,7 @@ DAOs are governance structures for decentralized on-chain decision-making around
 
 Fractal is a small set of components and permissions attached to a Safe contract wallet.  While we provide the initial set of defaults, the Fractal framework itself is infinitely customizable.
 
-Don’t like ERC20 token-based voting?  Your DAO can vote to remove the strategy and approve a new one.  Does your community require a childDAO to manage specific assets?  They can vote to create sub-DAOs and give custody of those assets to it. The crypto ecosystem is always expanding so your DAO from day 1 needs to be upgradeable to the latest and greatest.
+Don’t like ERC-20 token-based voting?  Your DAO can vote to remove the strategy and approve a new one.  Does your community require a childDAO to manage specific assets?  They can vote to create sub-DAOs and give custody of those assets to it. The crypto ecosystem is always expanding so your DAO from day 1 needs to be upgradeable to the latest and greatest.
 </details>
 
 <details>
@@ -73,7 +73,7 @@ Fractal was incubated and launched by [decentDAO](https://www.decent-dao.org/).
 <details>
 <summary>What functionality will there be at launch?</summary>
 
-The Beta Launch in Q1 of 2023 will allow for the creation of subDAOs either with a (Safe) multi-sig-based governance structure, or a 1:1 ERC20 token voting structure.
+The Beta Launch in Q1 of 2023 will allow for the creation of subDAOs either with a (Safe) multi-sig-based governance structure, or a 1:1 ERC-20 token voting structure.
 
 Members in either structure will be able to submit transaction proposals, vote on them, and ultimately execute them, provided they pass the governance vote.
 
