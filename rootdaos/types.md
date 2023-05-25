@@ -1,1 +1,5 @@
-types
+---
+description: Fractal Governance Types
+---
+
+## Overview

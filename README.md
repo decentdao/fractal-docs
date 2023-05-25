@@ -3,7 +3,7 @@ description: >-
   Do more with Composable DAOs
 ---
 
-# Welcome to Fractal
+# Docs
 
 Fractal is the most composable Decentralized Autonomous Organization (DAO) app and framework that unleashes a new wave of agile, on-chain, and interoperable DAOs that are empowered to get stuff done.
 

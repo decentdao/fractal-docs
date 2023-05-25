@@ -1,128 +1,78 @@
 ---
-description: Use the Fractal web app to create a new Token Voting Fractal rootDAO.
+description: Use the Fractal app to create a new rootDAO
 ---
-
-# Creating a Token Voting rootDAO
 
 ## Overview
 
-This guide shows how to create a **rootDAO**. If you would like to create a subDAO, please visit: [Create a subDAO](create-a-sub-dao.md)
+Creating a Fractal **rootDAO** deploys a new Safe contract wallet, with an attached governance module.
 
-Creating a Fractal adds a smart contract for a basic DAO at a new address on the blockchain. You can create new Fractals on any supported Ethereum testnet or mainnet. All you need is an ERC-20 wallet and some ETH to cover the gas fees.
-
-## Create a Fractal
-
-Before you get started, open the Fractal app and connect to your wallet:
-
-[Getting Started](../../getting-started.md)
-
-Click **Create a Fractal**.
-
-![](../.gitbook/assets/create-a-fractal-button.png)
-
-Enter a name for your Fractal DAO and click **Next**.
-
-![](../.gitbook/assets/enter-fractal-name.png)
-
-Select **Governance Type** as **Token Voting** and click **Next**.
-
-![](../.gitbook/assets/choose-governance-token-voting.png)
-
-#### Token Metadata
-The **Configure Voting Token** screen lets you configure your voting token parameters:
-
-- **Token Name**: Full name of your governance token (i.e. "My Governance Token")
-- **Token Symbol**: Symbol for your token (i.e. MGT)
-- **Token Supply**: Total token supply. Note: This number should be entered as a *whole* token number (think `ETH`, not `WEI`)
-
-#### Token Allocations
-
-
-In the example image below, a proposal for this DAO would have 3 total signers, and would require 2 of those signers to sign for the proposal to pass.
-
-![img.png](../.gitbook/assets/multisig-dao-setup-params.png)
-
-Once you have configured your governance model, click **Deploy**. 
-
-The Fractal App opens your connected wallet so that you can approve the transaction:
-
-![](../.gitbook/assets/metamask-confirm-deploy-root-dao.png)
-
-The transaction amount covers the gas fees required to get the transaction mined on chain. Review the transaction and click **Confirm**. MetaMask sends the transaction and the Fractal contracts deploy your DAO. MetaMask displays a notification when the transaction is completed. 
-
-The Fractal app opens the DAO dashboard for your new DAO.
-
-![img.png](../.gitbook/assets/new-fractal-dashboard.png)
-
-{% hint style="info" %}
-Grab the address of your new Fractal from the URL in your browser's address bar.
-{% endhint %}
-
-{% hint style="info" %}
-Deploying a DAO creates and executes your first proposal with 4 transactions. This proposal will show up on your DAO dashboard.
-{% endhint %}
-
-
-
-
-
-
----
-description: Use the Fractal web app to create a new Token Voting Fractal rootDAO.
----
-
-# Creating a Multisig rootDAO
-
-## Overview
-
-This guide shows how to create a **rootDAO**. If you would like to create a subDAO, please visit: [Create a subDAO](create-a-sub-dao.md)
-
-Creating a Fractal adds a smart contract for a basic DAO at a new address on the blockchain. You can create new Fractals on any supported Ethereum testnet or mainnet. All you need is an ERC-20 wallet and some ETH to cover the gas fees.
+As this is the top level *root* of a potential DAO hierarchy, no proposal is necessary, and the DAO will be deployed immediately by your connected wallet.
 
 ## Create a Fractal
 
-Before you get started, open the Fractal app and connect to your wallet:
+From the Fractal app homepage, click `Create a Fractal`, or navigate to [https://app.fractalframework.xyz/create](https://app.fractalframework.xyz/create).
 
-[Getting Started](../../getting-started.md)
+![](../.gitbook/assets/create-dao.png)
 
-Click **Create a Fractal**.
+### Establish Essentials
 
-![](../.gitbook/assets/create-a-fractal-button.png)
+![](../.gitbook/assets/establish-essentials.png)
+The first step is to select a few initial options for your DAO, including:
 
-Enter a name for your Fractal DAO and click **Next**. 
+- **Name** - what you'll call this DAO. This name is simply logged as a smart contract event, and can be changed later on via a proposal on your DAO.
+- **Governance type** - How your DAO will be governed. A multisig DAO is simply a Safe contract wallet.  For Token Voting or NFT (coming soon) governance, this is a Safe contract wallet with an [Azorius Zodiac module](https://github.com/decent-dao/fractal-contracts) attached.
+- **Snapshot** - an optional ENS name used for your DAO's [Snapshot space](https://docs.snapshot.org/user-guides/spaces/create). This may be updated later on as well.
 
-![](../.gitbook/assets/enter-fractal-name.png)
+We'll enter a name and just select `Token Voting`.
 
-Select "Governance Type" as "Multisig" and click "Next".
+### Configure Voting Token
 
-![](../.gitbook/assets/choose-governance.png)
+![](../.gitbook/assets/token1.png)
 
-The **Configure Multisig** screen lets you define the signers who can create and vote on proposals.
+Here we'll select the options for your governance token.
 
-Set your signatories and signer threshold:
-- **Total signers**: The number of signers that can submit and approve transactions. One address must be entered under "Signer Addresses" for each signer.
-- **Threshold**: How many signers must sign a proposal for it to pass (and be executed).
+You may opt to create a new ERC-20 token, or use any existing ERC-20 token to vote on proposals for your new DAO.
 
-In the example image below, a proposal for this DAO would have 3 total signers, and would require 2 of those signers to sign for the proposal to pass.
+We'll select `New Token`.
 
-![img.png](../.gitbook/assets/multisig-dao-setup-params.png)
+![](../.gitbook/assets/token2.png)
 
-Once you have configured your governance model, click **Deploy**. 
+Your new governance token has a few parameters, which include:
 
-The Fractal App opens your connected wallet so that you can approve the transaction:
-
-![](../.gitbook/assets/metamask-confirm-deploy-root-dao.png)
-
-The transaction amount covers the gas fees required to get the transaction mined on chain. Review the transaction and click **Confirm**. MetaMask sends the transaction and the Fractal contracts deploy your DAO. MetaMask displays a notification when the transaction is completed. 
-
-The Fractal app opens the DAO dashboard for your new DAO.
-
-![img.png](../.gitbook/assets/new-fractal-dashboard.png)
+- **Token Name** - The name of your new ERC-20 token.
+- **Token Symbol** - A short "ticker" style symbol for your token, typically 3-5 characters.
+- **Token Supply** - The total available supply of your token, as a *whole* number (think `ETH`, not `WEI`).
+- **Initial Token Allocations** - Which addresses will receive tokens as soon as this token is deployed.  Unallocated tokens are deposited in your new DAO's treasury.
 
 {% hint style="info" %}
-Grab the address of your new Fractal from the URL in your browser's address bar.
+If `Existing Token` is selected, you will not be able to modify name, symbol, or supply, as these are already set on the existing ERC-20 token.
 {% endhint %}
 
+We'll set the shown params, and click `Next` to go to the final stage of DAO creation.
+
+### Compose Governance
+
+![](../.gitbook/assets/compose.png)
+
+Lastly, we'll set governance parameters for our new DAO:
+
+- **Voting Period** - The total time a new proposal is able to be voted on.
+- **Quorum** - The percentage of tokens that are necessary to vote in order to make the pass a proposal, reguardless of how they vote.
+- **Timelock Period** - The amount of time between when a proposal passes, and when it can actually be executed on the blockchain.  This can be as low as 0 minutes.
+- **Execution Period** - The amount of time a passed proposal has to be executed before it expires.
+
 {% hint style="info" %}
-Deploying a DAO creates and executes your first proposal with 4 transactions. This proposal will show up on your DAO dashboard.
+These parameters are only estimates, and are ultimately converted to blocks when submitted to the governance contract.
 {% endhint %}
+
+You can now deploy your new Token Voting Fractal rootDAO.  Connect to your wallet plugin and click `Deploy` to trigger a new transaction.
+
+Once deployed successfully on the blockchain, you will be redirected to your new DAO's homepage. Note that your DAO's Safe address appears in the Fractal URL of your browser.
+
+![](../.gitbook/assets/newdao.png)
+
+## Multisig rootDAO
+
+Deploying a multisig rootDAO is much simpler, and involves only configuring the total number of signers, and the signer threshold to approve of a proposed transaction:
+
+![](../.gitbook/assets/newmultisig.png)

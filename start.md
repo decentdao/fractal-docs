@@ -22,8 +22,6 @@ Use the search bar in the upper left of the app to search for specific DAOs.
 
 Enter the Ethereum address of the Fractal DAO that you want to interact with. If the DAO exists, it will appear as a result.
 
-![](.gitbook/assets/search-fractal.png)
-
 {% hint style="info" %}
 You may also search for and view any existing Safe wallet on Fractal.
 {% endhint %}
@@ -34,6 +32,6 @@ Click the `Connect Wallet` dropdown menu in the upper right corner of the app an
 
 ![](.gitbook/assets/connect-wallet-dropdown.png)
 
-Select your installed wallet plugin from the available options to connect your wallet with Fractal.  Once connected, you should see your wallet address or ENS name and avatar in the upper right of the app.
+Select your installed wallet plugin from the available options to connect your wallet with Fractal.  Once connected, you should see your wallet address or ENS name and avatar in the upper right corner of the app.
 
 Now that you are connected, Fractal will display your full range of options for any given DAO that you are a signer or token holder for.

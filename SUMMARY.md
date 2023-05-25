@@ -17,9 +17,9 @@
 * [Vote](proposals/vote.md)
 * [Execute](proposals/execute.md)
 * [Template](proposals/template.md)
-* [Lifecycle](proposals/lifecycle.md)
 
 ## Learn More
 * [FAQ](faq.md)
+* [Proposal Lifecycle](lifecycle.md)
 * [Smart Contracts](https://github.com/decent-dao/fractal-contracts/blob/develop/README.md)
 * [Contract Audit](https://app.fractalframework.xyz/docs/fractal_audit.pdf)
