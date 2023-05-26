@@ -19,6 +19,8 @@ Before delegating, connect your wallet and navigate to the Proposals page for th
 
 Enter the address that will vote on your behalf. If you will be voting for yourself, click `Delegate to Self`.
 
+![](../.gitbook/assets/delegatemodal.png)
+
 Once you have entered a wallet address, click `Delegate Voting Tokens` to initiate the transaction to delegate your tokens.
 
 You or your delegated address is now able to vote on proposals for this DAO.
