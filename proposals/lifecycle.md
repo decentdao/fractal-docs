@@ -16,8 +16,8 @@ description: DAO Proposal Lifecycles
 
 **Expired** - A passed proposal which is not executed before its `executionPeriod` has elapsed will be `EXPIRED`, and can no longer be executed. Azorius (all) / multisig subDAO.
 
-**Failed** - A failed proposal (as defined by its [BaseStrategy](../BaseStrategy.md) `isPassed` function). For a basic strategy, this would mean it received more NO votes than YES or did not achieve quorum. Azorius only.
+**Failed** - A failed proposal. For a basic strategy (Token Voting), this would mean it received more `NO` votes than `YES` or did not achieve quorum. Azorius only.
 
 **Rejected** - Proposal fails due to a proposal being executed with the same nonce. A multisig proposal is off-chain, and is signed with a specific nonce. If a proposal with the same nonce is executed, any proposal with the same nonce will be impossible to execute, reguardless of how many signers it has. Multisig only.
 
-**Timelockable** - Quorum (or signers) is reached, the proposal can be 'timelocked' for execution. Anyone can move the state from Timelockable to TimeLocked via a transaction. Multisig subDAO only, Azorius DAOs move from ACTIVE to TIMELOCKED automatically.
+**Timelockable** - Quorum (or signers) is reached, the proposal can be 'timelocked' for execution. Anyone can move the state from Timelockable to TimeLocked via a transaction. Multisig subDAO only, Azorius DAOs move from `ACTIVE` to `TIMELOCKED` automatically.
