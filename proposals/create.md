@@ -1,8 +1,6 @@
 ---
-description: Use the Fractal web app to create a new Fractal Multisig Proposal.
+description: Use the Fractal web app to create a new Fractal Multisig Proposal
 ---
-
-# Creating a Multisig Proposal
 
 ## Overview
 A proposal is a way to suggest that a Fractal DAO initiates one or more transactions between the DAO and other addresses (contracts or wallets). 

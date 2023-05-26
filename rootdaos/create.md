@@ -1,5 +1,5 @@
 ---
-description: Use the Fractal app to create a new rootDAO
+description: Deploy a new rootDAO on Fractal
 ---
 
 ## Overview
@@ -7,6 +7,8 @@ description: Use the Fractal app to create a new rootDAO
 Creating a Fractal **rootDAO** deploys a new Safe contract wallet, with an attached governance module.
 
 As this is the top level *root* of a potential DAO hierarchy, no proposal is necessary, and the DAO will be deployed immediately by your connected wallet.
+
+---
 
 ## Create a Fractal
 
@@ -17,6 +19,7 @@ From the Fractal app homepage, click `Create a Fractal`, or navigate to [https:/
 ### Establish Essentials
 
 ![](../.gitbook/assets/establish-essentials.png)
+
 The first step is to select a few initial options for your DAO, including:
 
 - **Name** - what you'll call this DAO. This name is simply logged as a smart contract event, and can be changed later on via a proposal on your DAO.
@@ -71,8 +74,12 @@ Once deployed successfully on the blockchain, you will be redirected to your new
 
 ![](../.gitbook/assets/newdao.png)
 
+---
+
 ## Multisig rootDAO
 
 Deploying a multisig rootDAO is much simpler, and involves only configuring the total number of signers, and the signer threshold to approve of a proposed transaction:
 
 ![](../.gitbook/assets/newmultisig.png)
+
+This is essentially just a Safe multisig with an associated Fractal name and optional Spapshot space.
