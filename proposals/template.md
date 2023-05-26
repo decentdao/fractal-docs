@@ -40,7 +40,13 @@ Once you are finished setting up your Proposal Template, click `Create Proposal`
 
 ### Using Your Template
 
-After your proposal to create the template passes, you will now see the resulting template in the proposals list.
+After your proposal to create the template passes, you will now see the resulting template in the proposals list:
+
+![](../.gitbook/assets/template1.png)
+
+Clicking the Template opens its custom UI, which will create a new DAO proposal:
+
+![](../.gitbook/assets/template2.png)
 
 {% hint style="info" %}
 Even Multisig DAOs can add Proposal Templates.
