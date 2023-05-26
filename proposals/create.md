@@ -3,49 +3,47 @@ description: Use the Fractal web app to create a new Fractal Multisig Proposal
 ---
 
 ## Overview
-A proposal is a way to suggest that a Fractal DAO initiates one or more transactions between the DAO and other addresses (contracts or wallets). 
+A proposal is a way to suggest that a Fractal DAO executes one or more on-chain transactions. Proposals can integrate with any smart contract on the blockchain.
 
-A proposal is passed when the number of signers has reached the signer threshold.
+Whether the proposal is successful, and thus able to be executed, depends on the wishes of the DAO's tokens holders, or signers in the case of a multisig DAO.
 
-A proposal must be passed in order for the proposal to be executed.
-
-If the DAO where a proposal is submitted is a subDAO, then guards are put in place which allow the parentDAO to potentially block a proposal from being executed.
+---
 
 ## Create a Proposal
 
-First, visit a Multisig DAO you are a signer of.
-
-In the left-hand menu, click the **proposals** icon.
+First, navigate to the Proposals page of the DAO you wish to submit a proposal to.
 
 ![](../.gitbook/assets/proposals-icon.png)
 
-Click "Create Proposal" in the upper right corner.
+Here you will find the `Create` button, which takes you to the proposal creation flow.
 
-![](../.gitbook/assets/create-proposal-icon.png)
+![](../.gitbook/assets/create-button.png)
 
-Enter the transactions that should be executed (if the proposal passes and is executed).
+### Proposal Metadata
+
+![](../.gitbook/assets/createmeta.png)
+
+The first step in creating a proposal is to give it an optional **title**, **description**, and **resource URL**.
+
+These fields are optional, and will only be logged as Ethereum events, tagged to the proposal.  They are helpful for adding context to your proposal.
 
 {% hint style="info" %}
-To enter multiple transactions, click **Add Transaction**.
+As multisig proposals are created and voted on off-chain, they do not contain this metadata step.
 {% endhint %}
+
+### Transaction Creator
+
+![](../.gitbook/assets/createproposal.png)
+
+Enter the transaction that will be executed if the proposal passes. To enter multiple transactions, click **Add Transaction**.
 
 Each transaction requires the following properties:
-- **Target Address** - The smart contract address this proposal will modify
-- **Function Name** - The name of the function to be called if this proposal passes
-- **Function Signature** - The function of the smart contract (above) to be called if this proposal passes
-- **Parameters** - Values used to call the function (comma separated)
+- **Target Address** - The smart contract address this proposal will interact with.
+- **Function Name** - The name of the smart contract function to be called if this proposal passes.
+- **Function Signature** - The list of data type parameters for the smart contract function (comma separated).
+- **Parameters** - The actual values used to call the function, as defined above with Function Signature (comma separated).
 
-When you have completed entering transactions, click "Create Proposal". You will be prompted to sign a TX in your wallet.
+When you have completed entering transactions click `Create Proposal`.
 
-{% hint style="info" %}
-Transactions will be executed in the order they are entered.
-{% endhint %}
-
-{% hint style="info" %}
-When creating a proposal, your signature (a "yes" vote), will automatically be added to the proposal, so you do not need to sign the proposal after creation.
-{% endhint %}
-
-![](../.gitbook/assets/create-multisig-proposal.png)
-
-Once the transaction is confirmed, you can view the proposal details from the proposals dashboard.
+You will be prompted to sign a transaction in your wallet plugin, and once confirmed you will be redirected to the DAO's Proposals page, where your new proposal will appear.
 
