@@ -9,5 +9,5 @@ Fractal parentDAOs are given the ability to vote on whether to *freeze* their su
 ---
 
 {% hint style="info" %}
-Coming soon.
+This feature is implemented. Documentation coming soon.
 {% endhint %}
