@@ -14,7 +14,7 @@ There is no need to connect an Ethereum account to view DAOs, their proposals, o
 
 The most common browser-based web3 wallet is MetaMask, which you can [learn more about here](https://learn.metamask.io/lessons/what-is-a-crypto-wallet).
 
-# Find a Fractal DAO
+# Find a specific Fractal DAO
 
 Use the search bar in the upper left of the app to search for specific DAOs.
 
@@ -25,6 +25,12 @@ Enter the Ethereum address of the Fractal DAO that you want to interact with. If
 {% hint style="info" %}
 You may also search for and view any existing Safe wallet on Fractal.
 {% endhint %}
+
+## Explore 'Featured DAOs' built on Fractal
+
+Open the Fractal App homepage and go to the 'Featured DAOs' section. Click on 'Explore DAO' to check out a specific subDAO hierarchy created by our featured users from within Fractal. This includes Fractal's parent, [Decent DAO](https://www.decent-dao.org/) where our team sits as a subDAO.
+
+<img width="1250" alt="Screen Shot 2023-05-23 at 12 19 24 PM" src="https://github.com/decent-dao/fractal-docs/assets/31554133/6cf36f7b-0afa-47b8-8efe-7e29a248705a">
 
 # Connect Wallet
 
