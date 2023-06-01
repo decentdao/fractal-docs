@@ -10,7 +10,7 @@ The Fractal app is available at [app.fractalframework.xyz](https://app.fractalfr
 
 Fractal is built on Ethereum Virtual Machine (EVM) networks, including the testnet Goerli and (coming June 2023) Ethereum Mainnet.
 
-There is no need to connect an Ethereum account to view DAOs, their proposals, or Safe treasuries on Fractal, however for the full experience of voting, creating templates, and managing your DAO's governance, you will need an Ethereum wallet.
+There is no need to connect an Ethereum account to view DAOs, their proposals, or Safe{WALLET} treasuries on Fractal, however for the full experience of voting, creating templates, and managing your DAO's governance, you will need an Ethereum wallet.
 
 The most common browser-based web3 wallet is MetaMask, which you can [learn more about here](https://learn.metamask.io/lessons/what-is-a-crypto-wallet).
 
@@ -23,7 +23,7 @@ Use the search bar in the upper left of the app to search for specific DAOs.
 Enter the Ethereum address of the Fractal DAO that you want to interact with. If the DAO exists, it will appear as a result.
 
 {% hint style="info" %}
-You may also search for and view any existing Safe wallet on Fractal.
+You may also search for and view any existing Safe{WALLET} on Fractal.
 {% endhint %}
 
 ## Explore 'Featured DAOs' built on Fractal
