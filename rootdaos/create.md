@@ -4,7 +4,7 @@ description: Deploy a new rootDAO on Fractal
 
 ## Overview
 
-Creating a Fractal **rootDAO** deploys a new Safe{WALLET} contract, with an attached governance module.
+Creating a Fractal **rootDAO** deploys a new Safe{Wallet} contract, with an attached governance module.
 
 As this is the top level *root* of a potential DAO hierarchy, no proposal is necessary, and the DAO will be deployed immediately by your connected wallet.
 
@@ -23,7 +23,7 @@ From the Fractal app homepage, click `Create a Fractal`, or navigate to [https:/
 The first step is to select a few initial options for your DAO, including:
 
 - **Name** - what you'll call this DAO. This name is simply logged as a smart contract event, and can be changed later on via a proposal on your DAO.
-- **Governance type** - How your DAO will be governed. A multisig DAO is simply a Safe{WALLET}.  For Token Voting or NFT (coming soon) governance, this is a Safe contract wallet with an [Azorius Zodiac module](https://github.com/decent-dao/fractal-contracts) attached.
+- **Governance type** - How your DAO will be governed. A multisig DAO is simply a Safe{Wallet}.  For Token Voting or NFT (coming soon) governance, this is a Safe contract wallet with an [Azorius Zodiac module](https://github.com/decent-dao/fractal-contracts) attached.
 - **Snapshot** - an optional ENS name used for your DAO's [Snapshot space](https://docs.snapshot.org/user-guides/spaces/create). This may be updated later on as well.
 
 We'll enter a name and just select `Token Voting`.
@@ -70,7 +70,7 @@ These parameters are only estimates, and are ultimately converted to blocks when
 
 You can now deploy your new Token Voting Fractal rootDAO.  Connect to your wallet plugin and click `Deploy` to trigger a new transaction.
 
-Once deployed successfully on the blockchain, you will be redirected to your new DAO's homepage. Note that your DAO's Safe{WALLET} address appears in the Fractal URL of your browser.
+Once deployed successfully on the blockchain, you will be redirected to your new DAO's homepage. Note that your DAO's Safe{Wallet} address appears in the Fractal URL of your browser.
 
 ![](../.gitbook/assets/newdao.png)
 
@@ -82,4 +82,4 @@ Deploying a multisig rootDAO is much simpler, and involves only configuring the 
 
 ![](../.gitbook/assets/newmultisig.png)
 
-This is essentially just a Safe{WALLET} multisig with an associated Fractal name and optional Spapshot space.
+This is essentially just a Safe{Wallet} multisig with an associated Fractal name and optional Spapshot space.

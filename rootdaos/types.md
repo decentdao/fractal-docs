@@ -12,11 +12,11 @@ For multisig *subDAOs*, Fractal also attaches a [Safe guard contract](https://do
 
 ## Token Voting
 
-A Token Voting DAO is a Safe{WALLET} contract with an Azorius [module](https://docs.safe.global/learn/safe-core/safe-core-protocol/modules) contract which allows for submitting and voting on proposals by token holders.
+A Token Voting DAO is a Safe{Wallet} contract with an Azorius [module](https://docs.safe.global/learn/safe-core/safe-core-protocol/modules) contract which allows for submitting and voting on proposals by token holders.
 
 Our [Azorius module](https://github.com/decent-dao/fractal-contracts) conforms to Safe's [Zodiac pattern](https://gnosisguild.mirror.xyz/OuhG5s2X5uSVBx1EK4tKPhnUc91Wh9YM0fwSnC8UNcg), and has been audited by [Halborn](https://www.halborn.com/), the results of which can be found [here](https://app.fractalframework.xyz/docs/fractal_audit.pdf).
 
-There are no signers on this Safe{WALLET}, all transaction executions are performed via the Safe module contract after a proposal is successfully voted on.
+There are no signers on this Safe{Wallet}, all transaction executions are performed via the Safe module contract after a proposal is successfully voted on.
 
 In the case of Token Voting *subDAOs* Fractal also attaches a Safe guard contract to allow for freezing, in the same way as a multisig subDAO.
 

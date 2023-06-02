@@ -4,7 +4,7 @@ description: Deploy a new subDAO on Fractal
 
 ## Overview
 
-Creating a Fractal **subDAO** deploys a new Safe{WALLET} contract, with an attached governance module.
+Creating a Fractal **subDAO** deploys a new Safe{Wallet} contract, with an attached governance module.
 
 At the end of the subDAO creation flow a proposal is submitted to the parentDAO, which must be passed by the parent in order to successfully deploy the DAO.
 

@@ -21,5 +21,5 @@
 
 ## Learn More
 * [FAQ](faq.md)
-* [Smart Contracts](https://github.com/decent-dao/fractal-contracts/blob/develop/README.md)
+* [Smart Contracts](https://github.com/decent-dao/fractal-contracts/blob/main/README.md)
 * [Contract Audit](https://app.fractalframework.xyz/docs/fractal_audit.pdf)
