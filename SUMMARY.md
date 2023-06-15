@@ -1,5 +1,10 @@
 # Table of contents
 
+* [Schedule a Call](https://calendly.com/thomas-stuart/)
+* [Follow Fractal](https://twitter.com/FractalForDAOs)
+* [Try the App](https://app.fractalframework.xyz/)
+
+## Documentation
 * [Overview](README.md)
 * [Getting Started](start.md)
 
