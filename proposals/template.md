@@ -4,7 +4,7 @@ description: Create a Proposal Template for repeatable proposals
 
 ## Overview
 
-Proposal templates allow for adding custom UI within your DAO for repeatable proposals.  The allows for structuring common tasks as embedded UI, reducing mistakes while leveraging the power of any other smart contracts on the blockchain.
+Proposal templates allow for adding custom UI within your Safe for repeatable proposals.  The allows for structuring common tasks as embedded UI, reducing mistakes while leveraging the power of any other smart contracts on the blockchain.
 
 ---
 
@@ -14,7 +14,7 @@ Proposal templates allow for adding custom UI within your DAO for repeatable pro
 
 ![](../.gitbook/assets/templateslist.png)
 
-The list of your DAOs templates appears as an option on the lefthand menu of Fractal.  From here you will also find a `Create` button, to enter the Proposal Template creation flow.
+The list of your Safe's templates appears as an option on the lefthand menu of Fractal.  From here you will also find a `Create` button, to enter the Proposal Template creation flow.
 
 ### Template Metadata
 
@@ -44,10 +44,10 @@ After your proposal to create the template passes, you will now see the resultin
 
 ![](../.gitbook/assets/template1.png)
 
-Clicking the Template opens its custom UI, which will create a new DAO proposal:
+Clicking the Template opens its custom UI, which will create a new Safe proposal:
 
 ![](../.gitbook/assets/template2.png)
 
 {% hint style="info" %}
-Even Multisig DAOs can add Proposal Templates.
+Even multisig governed Safes can add Proposal Templates.
 {% endhint %}

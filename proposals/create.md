@@ -3,15 +3,15 @@ description: Use the Fractal web app to create a new Fractal Multisig Proposal
 ---
 
 ## Overview
-A proposal is a way to suggest that a Fractal DAO executes one or more on-chain transactions. Proposals can integrate with any smart contract on the blockchain.
+A proposal is a way to suggest that a Safe executes one or more on-chain transactions. Proposals can integrate with any smart contract on the blockchain.
 
-Whether the proposal is successful, and thus able to be executed, depends on the wishes of the DAO's tokens holders, or signers in the case of a multisig DAO.
+Whether the proposal is successful, and thus able to be executed, depends on the wishes of the Safe's tokens holders, or signers in the case of a multisig Safe.
 
 ---
 
 ## Create a Proposal
 
-First, navigate to the Proposals page of the DAO you wish to submit a proposal to.
+First, navigate to the Proposals page of the Safe you wish to submit a proposal to.
 
 ![](../.gitbook/assets/proposals-icon.png)
 
@@ -45,5 +45,5 @@ Each transaction requires the following properties:
 
 When you have completed entering transactions click `Create Proposal`.
 
-You will be prompted to sign a transaction in your wallet plugin, and once confirmed you will be redirected to the DAO's Proposals page, where your new proposal will appear.
+You will be prompted to sign a transaction in your wallet plugin, and once confirmed you will be redirected to the Safe's Proposals page, where your new proposal will appear.
 

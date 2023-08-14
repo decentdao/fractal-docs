@@ -1,5 +1,5 @@
 ---
-description: Vote on a DAO Proposal
+description: Vote on a Safe Proposal
 ---
 
 ## Overview
