@@ -7,15 +7,15 @@ description: Answers to the most common questions about Fractal.
 <details>
 <summary>What is Fractal?</summary>
 
-Fractal is the most composable DAO app and framework. Users can form complex subDAO hierarchies and govern in whatever structure suits their needs. This extends existing Safe{Wallet}'s with no-code capabilities of multiple governance options, executive powers between subDAOs as well templating functionality to fast-track day to day operations.
+Fractal is the most composable DAO app and framework. Users can form complex sub-Safe hierarchies and govern in whatever structure suits their needs. This extends existing Safe{Wallet}'s with no-code capabilities of multiple governance options, executive powers between sub-Safes as well templating functionality to fast-track day to day operations.
 
-As an example, an organization could form agile subDAOs - each powered by a multisig - that are accountable to a token voting community at the parent level. Or a different user could want to progressively decentralize; a small group of NFT voting members could keep some executive powers over a token voting community. All these options and more are available so that DAOs no longer feel like their locked into doing governance a certain way. Your DAO. Your Way!
+As an example, an organization could form agile sub-Safes - each powered by a multisig - that are accountable to a token voting community at the parent level. Or a different user could want to progressively decentralize; a small group of NFT voting members could keep some executive powers over a token voting community. All these options and more are available so that DAOs no longer feel like their locked into doing governance a certain way. Your DAO. Your Way!
 </details>
 
 <details>
 <summary>What Problem does Fractal solve and how did the idea come to be?</summary>
 
-DAOs are stuck. There are an infinite number of possibilities available to DAOs but current organizations aren't agile or open enough to take advantage. Moving on-chain feels like giving up their agility, scalability and community experimentation. They have to pick one governance for their entire DAO. They lack the technical bandwidth to compose complicated subDAO structures and wish it could be as no-code as drag and drop.
+DAOs are stuck. There are an infinite number of possibilities available to DAOs but current organizations aren't agile or open enough to take advantage. Moving on-chain feels like giving up their agility, scalability and community experimentation. They have to pick one governance for their entire DAO. They lack the technical bandwidth to compose complicated sub-Safe structures and wish it could be as no-code as drag and drop.
 
 The [Decent DAO](https://www.decent-dao.org/) venture studio experienced this challenge firsthand as they transitioned to becoming a DAO, so together we created Fractal. 
 </details>
@@ -23,12 +23,12 @@ The [Decent DAO](https://www.decent-dao.org/) venture studio experienced this ch
 <details>
 <summary>Who is Fractal for?</summary>
 
-Fractal is for those who find existing DAO tools rigid and restrictive. These people know there’s rarely such thing as ‘one governance fits all’ so regularly just use a Safe{Wallet} multisig and Snapshot vote for now. They might have tip-toed around the idea of moving on-chain in a subDAO structure.... but fear getting locked-in to one provider or diverting their own engineers to tackle the probelm. 
+Fractal is for those who find existing DAO tools rigid and restrictive. These people know there’s rarely such thing as ‘one governance fits all’ so regularly just use a Safe{Wallet} multisig and Snapshot vote for now. They might have tip-toed around the idea of moving on-chain in a sub-Safe structure.... but fear getting locked-in to one provider or diverting their own engineers to tackle the probelm. 
 
 Here, Fractal offers value across multiple DAO stakeholders:
 
-* **DAO Leaders and Founders** - Create your own on-chain subDAO hierarchies. Establish the structure, permissions and governance unique to your DAO. Offer your contributors as much - or as little - decision making power on assets as you feel comfortable with. Ensure whatever structure you go for, that it's all transparent, scalable and on-chain to build community confidence. Never feel locked-in as at the end of the day, each subDAO is just a Safe{Wallet} multisig.
-* **DAO Community Members**  - Track all DAO activities and asset movements. Engage on proposals based on permissions. Let contributor subDAOs action daily tasks whilst you review - and potentially freeze - activities that may go against your wishes
+* **DAO Leaders and Founders** - Create your own on-chain sub-Safe hierarchies. Establish the structure, permissions and governance unique to your DAO. Offer your contributors as much - or as little - decision making power on assets as you feel comfortable with. Ensure whatever structure you go for, that it's all transparent, scalable and on-chain to build community confidence. Never feel locked-in as at the end of the day, each sub-Safe is just a Safe{Wallet} multisig.
+* **DAO Community Members**  - Track all DAO activities and asset movements. Engage on proposals based on permissions. Let contributor sub-Safes action daily tasks whilst you review - and potentially freeze - activities that may go against your wishes
 * **DAO Contributors** - Get clarity on what budgets and assets you've been allocated. Action your responsibilities with on-chain buy-in from the community. Speed up regular DAO tasks with a template builder that interoperates no-code with any smart contract on Ethereum to access all the benefits DeFi offers your organization.
 </details>
 

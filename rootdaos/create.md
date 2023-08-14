@@ -1,10 +1,10 @@
 ---
-description: Deploy a new rootDAO on Fractal
+description: Deploy a new parent-Safe on Fractal
 ---
 
 ## Overview
 
-Creating a Fractal **rootDAO** deploys a new Safe{Wallet} contract, with an attached governance module.
+Creating a Fractal **parent-Safe** deploys a new Safe{Wallet} contract, with an attached governance module.
 
 As this is the top level *root* of a potential DAO hierarchy, no proposal is necessary, and the DAO will be deployed immediately by your connected wallet.
 
@@ -68,7 +68,7 @@ Lastly, we'll set governance parameters for our new DAO:
 These parameters are only estimates, and are ultimately converted to blocks when submitted to the governance contract.
 {% endhint %}
 
-You can now deploy your new Token Voting Fractal rootDAO.  Connect to your wallet plugin and click `Deploy` to trigger a new transaction.
+You can now deploy your new Token Voting Fractal parent-Safe.  Connect to your wallet plugin and click `Deploy` to trigger a new transaction.
 
 Once deployed successfully on the blockchain, you will be redirected to your new DAO's homepage. Note that your DAO's Safe{Wallet} address appears in the Fractal URL of your browser.
 
@@ -76,9 +76,9 @@ Once deployed successfully on the blockchain, you will be redirected to your new
 
 ---
 
-## Multisig rootDAO
+## Multisig parent-Safe
 
-Deploying a multisig rootDAO is much simpler, and involves only configuring the total number of signers, and the signer threshold to approve of a proposed transaction:
+Deploying a multisig parent-Safe is much simpler, and involves only configuring the total number of signers, and the signer threshold to approve of a proposed transaction:
 
 ![](../.gitbook/assets/newmultisig.png)
 

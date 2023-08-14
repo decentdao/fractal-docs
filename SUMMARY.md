@@ -8,11 +8,11 @@
 * [Overview](README.md)
 * [Getting Started](start.md)
 
-## rootDAOs
+## parent-Safes
 * [Governance Types](rootdaos/types.md)
 * [Create](rootdaos/create.md)
 
-## subDAOs
+## sub-Safes
 * [Create](subdaos/create.md)
 * [Freeze](subdaos/freeze.md)
 

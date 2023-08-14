@@ -28,7 +28,7 @@ You may also search for and view any existing Safe{Wallet} on Fractal.
 
 ## Explore 'Featured DAOs' built on Fractal
 
-Open the Fractal App homepage and go to the 'Featured DAOs' section. Click on 'Explore DAO' to check out a specific subDAO hierarchy created by our featured users from within Fractal. This includes Fractal's parent, [Decent DAO](https://www.decent-dao.org/) where our team sits as a subDAO.
+Open the Fractal App homepage and go to the 'Featured DAOs' section. Click on 'Explore DAO' to check out a specific sub-Safe hierarchy created by our featured users from within Fractal. This includes Fractal's parent, [Decent DAO](https://www.decent-dao.org/) where our team sits as a sub-Safe.
 
 ![](.gitbook/assets/featured.png)
 
