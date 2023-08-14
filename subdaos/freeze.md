@@ -1,10 +1,10 @@
 ---
-description: Vote to Freeze a subDAO
+description: Vote to Freeze a sub-Safe
 ---
 
 ## Overview
 
-Fractal parentDAOs are given the ability to vote on whether to *freeze* their subDAOs, locking them from executing any proposals until their *freeze period* time has elapsed.
+Fractal parent-Safes are given the ability to vote on whether to *freeze* their sub-Safes, locking them from executing any proposals until their *freeze period* time has elapsed.
 
 ---
 
