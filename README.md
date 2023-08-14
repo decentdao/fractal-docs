@@ -1,51 +1,70 @@
 ---
-description: >-
-  Do more with Composable DAOs
+description: Your Modular Safe Organization!
 ---
 
-# Docs
+# Overview
 
-Fractal is the most composable Decentralized Autonomous Organization (DAO) app and framework that unleashes a new wave of agile, on-chain, and interoperable DAOs that are empowered to get stuff done.
+### Our Belief:
 
-Start entirely from scratch or import an existing (Gnosis) Safe{Wallet} or ERC-20 token to use for governance. Then create unique subDAO hierarchies to the needs of your specific community or organization. Each subDAO is empowered with their own treasury, permissions, and governance style. Suddenly they can operate like a completely autonomous DAO and get stuff done whilst never losing on-chain accountability to their community or parent stakeholders. 
+#### _" Anything in an web3 organization that can be automated should be..._
 
-Fractal offers value to everyone in your DAO from:
+#### _...anything that needs on-chain alterations should be permissioned to teams at the edges..._
 
-* **Leaders and Founders** - Create your own on-chain subDAO hierarchies. Establish the structure, permissions and governance unique to your DAO. Offer your contributors as much - or as little - decision making power on assets as you feel comfortable with. Ensure that whatever structure you decide on, it is transparent, scalable, and on-chain to build community confidence.
-* **Community Members**  - Track all DAO activities and asset movements. Engage on proposals based on permissions. Let contributor subDAOs action daily tasks whilst you review - and potentially freeze - activities that may go against your wishes.
-* **Daily Contributors** - Get clarity on what budgets and assets you've been allocated. Action your responsibilities with on-chain buy-in from the community. Speed up regular DAO tasks with a template builder that interoperates no-code with any smart contract on Ethereum to access all the benefits DeFi offers your organization.
+#### _...only the activity left should be governed by the centre! "_
 
----
+Note - this is taken and tweaked from the original quote [here](https://twitter.com/jessewldn/status/1382896939591667713?ref=bankless.ghost.io).
 
-## Why Fractal?
 
-There are an infinite number of structures and possibilities available to DAOs today. However, even web3 organisations right now are hesitant to move on-chain. Current options make potential users feel they may be stuck giving up their agility, scalability, and community experimentation when they make the switch. Fractal fills the need for more composable solutions for DAOs by being highly modular and adaptable to new trends.
 
-Even better, the switching costs are zero by being entirely built on Safe{Wallet} multisignature contract wallets at their core. Get the most out of composable DAOs but always feel free to leave with a fully functioning Safe at any point.
+## What is Fractal?&#x20;
 
-### Benefits
+Fractal turns an organization's Multisig into a modular, automated, and governable on-chain organization. This means adding a UI and modules to your Safe Multisig wallet specifically focused around helping founders who are outgrowing their Multisig. No more chasing signers for each and every protocol interaction, weekly payroll, monthly airdrop, or treasury management decision.
 
-The Fractal framework has several benefits over traditional DAO implementations:
+Instead, Fractal gives organizations all the best things of being on-chain whilst letting them keep the security of their existing Safe Multisig. This includes:\
 
-* **Structure** - Compose subDAO hierarchies each with their own treasury, governance, and permissions. This could include a CEO with executive powers over a community as they progressively decentralize. Or, imagine a community who empowers subDAOs of contributors to deliver daily tasks for them. Every DAO structure is in reach and it's all no-code to set up and begin using.
-* **Govern** - Create and vote on proposals with multiple governance options per subDAO. Every subDAO can choose what specifically suits them from token voting, NFT-based voting, or a simple multisig Safe{Wallet} and many more options as we continue to grow.
-* **Operate** - Start quickly with any existing Safe{Wallet}. Then use our DAO modules & template builder to infinitely expand its functionality. Any smart contract on Ethereum can be interacted with in our app and added to your DAO's UI to fast track regular DAO operations without writing a line of code yourself.
 
----
+**1) Creating modular sub-Safe hierarchies** so leaders can permission on-chain activity to the sub-team experts at the edge without losing on-chain protections.
+
+**2) Making recurring transactions easy** from the centre via 'set it & forget it' automated payment streams. This is backed by reusable templates for the more complex smart contract interactions at the edge.
+
+**3) Picking a unique governance for every sub-Safe** in your modular organization to ensure agile delivery, security for founders, and eventual progressive decentralization to NFT, ERC-20, or other methods of voting.
+
+Fractal is built on top of Safe (previously Gnosis Safe) meaning Fractal doesn't risk losing your assets or modifying your Multisig without warning.
+
+***
+
+## What problem does Fractal solve?
+
+We know founders can't organize their web3 project via a Multisig forever. _**Chasing signers (1)**_ to  secure transactions is a coordination nightmare. Creating _**manual bulk transactions (2**_**)** in the first place wastes hours for ops and finance teams.  Finally, as teams scale - and on-chain complexity gets worse - founders really don't want all the _**liability of every decision (3)**_ to sit with them. It's all too much for one Multisig!
+
+### Organization Benefits
+
+Adding Fractal to your Multisig to become a modular sub-Safe organization has several benefits over a traditional Safe{Wallet}:
+
+* _**1) Chasing signers is replaced by**_ optimistic & granular permissions between the Parent Safe Multisig and sub-Safes. Teams can form around these Sub-Safes to execute on set transactions 'optimistically' whilst giving the Parent Safe veto safeguards (i.e. 'Freeze').
+* _**2) Regular Manual Bulk Transactions are replaced by**_ reusable and automated transactions for 'set and forget' operations. Ops teams can set up automated payment streams of payroll, airdrop, and revenue share from the centre. At the same time, sub-teams can no-code create their own reusable template for more complex smart contract interactions
+* _**3) Founder liability for all activity is replaced by**_ custom on-chain governance being modularly passed to sub-teams and progressive decentralization on their terms and timeline.
+
+***
 
 ## Nomenclature
 
-##### Safe
-The uppercased word Safe (formerly Gnosis Safe) refers to a multisignature smart contract wallet by [Gnosis](https://safe.global/wallet). Safe{Wallet} is the most trusted name in on-chain asset ownership in Ethereum, and the foundation on which every Fractal DAO is based.
+**Safe**
 
-##### Fractal
-A Fractal is a specific type of DAO where contributors can be structured into unique *parentDAO* and *subDAO* hierarchies each with their own governance and Safe{Wallet} treasury. At its heart each Fractal is a Safe contract wallet with a governance [module](https://docs.safe.global/learn/safe-core/safe-core-protocol/modules) and an optional [guard](https://docs.safe.global/learn/safe-core/safe-core-protocol/guards) contract to allow for *freezing* a subDAO. 
+The uppercased word Safe (formerly Gnosis Safe) refers to a multisignature Safe smart contract Wallet by [Gnosis](https://safe.global/wallet). Safe{Wallet} is the most trusted name in on-chain asset ownership in Ethereum, and the foundation on which Fractal is based.
 
-##### rootDAO 
-The initial DAO that has started the on-chain hierarchies that form the Fractal. This is the only Safe{Wallet} treasury that has no parent and so no executive powers or on-chain relationships limiting its control.
+**Fractal**
 
-##### parentDAO 
-A Fractal that has spawned a subDAO (see below). On creation of a subDAO, the parentDAO can set the subDAO's governance method, send it funds and set certain on-chain safe-guards and controls to give the parent some measure of control (e.g. freeze powers, delaying timelock period per proposal etc.).
+A Fractal is a specific type of on-chain modular organization. Here users have added Fractal modules to connect Safe Multisigs into sub-Safe hierarchies. Each sub-team has their own Safe{Wallet} with optional permissions by the parent-Safe. They can pick their own governance, create their own specific onchain reusable/automated transactions and add a sub-Safe themselves. At its heart, this offering is powered by a Safe contract wallet with an optional governance [module](https://docs.safe.global/learn/safe-core/safe-core-protocol/modules) and [guard](https://docs.safe.global/learn/safe-core/safe-core-protocol/guards) contract to allow for _freezing_ a sub-Safe. Future modules for other offerings are on the way.
 
-##### subDAO
-A Fractal that has been spawned by a parentDAO Fractal. A subDAO always has certain on-chain relationships and controls that the parentDAO has customized on creation. Aside from this, the subDAO has autonomy to use its treasury to make on-chain asset decisions with its own distinct governance method. Any subDAO also has the autonomy to additionally become a parentDAO itself by creating subDAOs.
+**root-Safe**
+
+The initial Safe{Wallet] at the top of the sub-Safe hierarchy. This is the only Safe{Wallet} treasury that has no parent with executive powers unless it is added retroactively. Most users can start with their existing Safe{Wallet} Multisignature by searching for it by address in the Fractal nav bar (see 'Getting Started'). Saying that, you can also choose to start from scratch with a new Safe.
+
+**parent-Safe**
+
+A Safe{Wallet} that has spawned a sub-Safe (see below). On creation of a sub-Safe, the parent-Safe can set the sub-Safe's governance method, reusable transaction templates, send it funds and set certain on-chain permissions and controls (e.g. freeze powers, execution timelock period, etc.).
+
+**sub-Safe**
+
+A Safe{Wallet} that has been spawned by a parent-Safe Fractal. A sub-Safe has certain on-chain permissions and governance that the parent-Safe has customized on creation. However, these can be removed or altered via proposal at any time. Aside from this, the sub-Safe has autonomy to use its treasury to make on-chain asset decisions with its own distinct governance method. Any sub-Safe also has the autonomy to additionally become a parent-Safe itself by creating sub-Safes.
